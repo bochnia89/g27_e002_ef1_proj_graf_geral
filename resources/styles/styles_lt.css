@@ -29,6 +29,8 @@ section {
     margin-bottom: 2.5em;
     page-break-before: always;
     page-break-after: avoid;
+
+     border: 1px solid red;
 }
 section header {
     padding: 15px 0 0px 0;
@@ -464,8 +466,48 @@ p1sumarioaudiospeso2
 p1sumarioaudiospeso3
 */
 .p1sumariopv{}
-.p1seciniciaistit1{}
-.p1seciniciaistit2{}
+
+.p1seciniciaistit1,
+.p1seciniciaistit2{
+ border-radius: 5em;
+ font-family: var(--titulo);
+ font-size: var(--peso1);
+ width: fit-content;
+ font-weight: 800;
+ padding: 0.5em 1em;
+ 
+}
+.p1seciniciaistit1{
+    position: relative;
+    background: var(--amarelo1);
+    color: var(--vermelho1);
+     
+}
+.p1seciniciaistit1::before {
+    content: '';
+    background: url(../images/pv_apres.svg) top left no-repeat;
+    background-size: 100%;
+    width: 80px;
+    height: 75px;
+    margin: -45px 0 0 -50px;
+    position: absolute;
+}
+.p1seciniciaistit2{
+    color: var(--branco);
+    background: var(--turquesa1);
+    margin: 1.3em 0 0 0px;
+}
+.p1seciniciaistit2::before {
+    content: '';
+    background: url(../images/pv_conheca.svg) top left no-repeat;
+    background-size: 100%;
+    content: '';
+    position: absolute;
+    width:80px;
+    height: 92px;
+    margin: -1.5em 0 0 -1.9em;
+
+}
 .p1seciniciaistit3{}
 .p1sumariopeso1pv{}
 
@@ -3221,14 +3263,31 @@ o0glossario
 .o0mpg{}
 .o0infofichacatalografica{}
 .o0facsimile{}
-.o0secconheca{}
+.o0secconheca, .o0secconheca2, .o0secconheca3 {
+    background: var(--turquesa2);
+    border-radius: 0 0em 0em 0em;
+    margin: 1em 0;
+}
+.o0secconheca  .box,
+.o0secconheca2 .box,
+.o0secconheca3 .box{
+    padding: 2em;
+}
 .o0secconheca2{}
 .o0secconheca3{}
 .o0secconhecabox1{}
 .o0secconhecabox2{}
 .o0secconhecabox3{}
 .o0secconhecabox4{}
-.o0secapresentacao{}
+.o0secapresentacao{
+    margin: 1em 0;
+    background: var(--amarelo2);
+    border-radius: 0 3em 0em 0em;
+}
+.o0secapresentacao .box {    
+     padding: 2em;
+    
+}
 .o0sumariobox1{}
 .o0aberturabox{}
 .o0aberturaintrobox{}

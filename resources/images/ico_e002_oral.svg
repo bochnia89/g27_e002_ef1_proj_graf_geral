@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.278" height="30" viewBox="0 0 34.278 30">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_3302" data-name="Caminho 3302" d="M0,17.6H34.278v-30H0Z" transform="translate(0 12.404)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ico_e002_oral" transform="translate(0 12.404)">
+    <g id="Grupo_2113" data-name="Grupo 2113" transform="translate(0 -12.404)" clip-path="url(#clip-path)">
+      <g id="Grupo_2111" data-name="Grupo 2111" transform="translate(0 1.175)">
+        <path id="Caminho_3300" data-name="Caminho 3300" d="M20.105,7.019A11.968,11.968,0,0,0,8.138-4.948H-2.206A11.966,11.966,0,0,0-14.173,7.019,11.966,11.966,0,0,0-2.206,18.986H7.352l5.234,4.53c.745.646,1.129.4.856-.547l-1.354-4.7A11.931,11.931,0,0,0,20.105,7.019" transform="translate(14.173 4.948)" fill="#0fbed2"/>
+      </g>
+      <g id="Grupo_2112" data-name="Grupo 2112" transform="translate(0 -0.001)">
+        <path id="Caminho_3301" data-name="Caminho 3301" d="M20.105,7.019A11.968,11.968,0,0,0,8.138-4.948H-2.206A11.966,11.966,0,0,0-14.173,7.019,11.966,11.966,0,0,0-2.206,18.986H7.352l5.234,4.53c.745.646,1.129.4.856-.547l-1.354-4.7A11.931,11.931,0,0,0,20.105,7.019" transform="translate(14.173 4.948)" fill="#ff9147"/>
+      </g>
+    </g>
+  </g>
+</svg>

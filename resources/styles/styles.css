@@ -7,3 +7,150 @@
 @import url(styles_res.css);
 
 /* CSS Document */
+
+:root {
+    /* Fontes */
+    --titulo: 'Barlow' ;
+    --citacao: 'Noto Serif' ;
+    --texto:  'Work Sans' ;
+    --ordinal: ;
+    --quimico: ;
+    --fonema: ;
+
+/*👉 
+    --oedtitulo:;
+    --oedtexto:;
+    --oedcitacao:;
+    --oedinstrucao:;
+👈*/
+
+    /* Tamanhos */
+    --peso1: 1.8em;
+    --peso2: 1.7em;
+    --peso3: 1.6em;
+    --peso4: 1.5em;
+    --peso5: 1.4em;
+    --peso6: 1.3em;
+    --peso6: 1.2em;
+    --peso7: 1.1em;
+    --peso8: 0.9em;
+    --pesoPadrao: 1em;
+    --pesoMenor: 0.8em;
+    --pesoIntermediario:0.9em;
+
+    /* Cores */
+    --corprof: #8a014c;
+    --preto_: #2B2E34;
+    --preto:#000;
+    --branco: #fff;
+    --cinza: #ececec;
+    --link: #00649c;
+    --manualu: #E4F2E7;
+
+    --boxshadow:rgba(0, 0, 0, 0.1);
+
+    --creditoimg:#3EE0CE;
+
+    /* Matemática */
+    --unidade: #50b848 ;
+    --dezena: #ef404a;
+    --centena: #0095d9 ;
+    --decimo: #f5833c;
+    --centesimo: #6f60aa;
+    --milesimo: #00b6be;
+
+    /* Pinte */
+    --pinteamarelo: #ffdf30;
+    --pintevermelho: #ed6b62;
+    --pinteverde: #85be57;
+    --pinteazul: #78b7e5;
+    --pintelaranja: #f39655;
+    --pintemarrom: #c0987c;
+    
+    /* Paleta do projeto */
+    --azul1: #00aaca;
+    --azul2: #d5ecf4;
+    --azul3: #005b6c;
+    /*--azul4:#DFEAF8;*/
+
+    --turquesa1: #15af97;
+    --turquesa2: #e0f0eb;
+    --turquesa3: #c0dfcd;
+    /*👉--turquesa4:#E0F1F5;👈*/
+
+    --verde1:#4DB05B;
+    --verde2:#9BCEA4;
+    --verde3:#CCE4CE;
+    --verde4:#E1F0EB;
+
+    --citrico1: #dce169;
+    --citrico2: #f8f4bd;
+    /*
+    --citrico3:#E4ECBC;
+    --citrico4:#ECF3DA;
+    */
+
+    --laranja1: #f3953f;
+    --laranja2: #feead3;
+    /*
+    --laranja3:#FCD7B8;
+    --laranja4:#FDE7DD;
+    */
+
+    --amarelo1: #fed061;
+    --amarelo2: #fff1c4;
+    /*
+    --amarelo3:#FFE6AC;
+    --amarelo4:#FEEFDE;
+    */
+
+    --vermelho1: #e94f35;
+    --vermelho2: #fce4e0;
+    /*👉--vermelho3:#fce3df;
+    --vermelho4:#fff5f3;👈*/
+
+    /*👉
+    --rosa1:#ED6D84;
+    --rosa2:#F39DB0;
+    --rosa3:#F8C7D0;
+    --rosa4:#FCE5E9;
+    👈*/
+
+    --roxoquente1: #b9348b;
+    --roxoquente2: #f2e1f0;
+
+    /*👉
+    --roxo1:#7263A9;
+    --roxo2:#A69DCD;
+    --roxo3:#D2CDE8;
+    --roxo4:#EDEBF7;
+
+    --lilas1:#7263A9;
+    --lilas2:#A69DCD;
+    --lilas3:#D2CDE8;
+    --lilas4:#EDEBF7;
+    👈*/
+}
+
+
+
+
+
+/*👉Versão Mobile*/
+@media screen and (max-width: 540px) {
+    :root {
+        /* Tamanhos */
+            --peso1: 1.8em;
+            --peso2: 1.7em;
+            --peso3: 1.6em;
+            --peso4: 1.5em;
+            --peso5: 1.4em;
+            --peso6: 1.3em;
+            --peso6: 1.2em;
+            --peso7: 1.1em;
+            --peso8: 0.9em;
+            --pesoPadrao: 1em;
+            --pesoMenor: 0.8em;
+            --pesoIntermediario:0.9em;
+    }
+}

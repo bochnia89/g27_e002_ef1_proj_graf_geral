@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36.679" height="30" viewBox="0 0 36.679 30">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_3320" data-name="Caminho 3320" d="M0,16.462H36.679v-30H0Z" transform="translate(0 13.538)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ico_e002_audio" transform="translate(0 13.538)">
+    <g id="Grupo_2133" data-name="Grupo 2133" transform="translate(0 -13.538)" clip-path="url(#clip-path)">
+      <g id="Grupo_2127" data-name="Grupo 2127" transform="translate(0 0.873)">
+        <path id="Caminho_3314" data-name="Caminho 3314" d="M20.078,11.118a8.059,8.059,0,0,0-5.5-7.621A12.891,12.891,0,0,0-11.2,3.555a8.059,8.059,0,0,0-5.316,7.563,8.066,8.066,0,0,0,6.18,7.831,2.314,2.314,0,0,0,1.9,1.035,2.36,2.36,0,0,0,2.36-2.362V4.614a2.351,2.351,0,0,0-.68-1.655A8.581,8.581,0,0,1,1.695-4.973a8.588,8.588,0,0,1,8.469,8.157,2.328,2.328,0,0,0-.527,1.429V17.622A2.361,2.361,0,0,0,12,19.984a2.315,2.315,0,0,0,1.9-1.035,8.066,8.066,0,0,0,6.18-7.831" transform="translate(16.512 9.143)" fill="#b43fa0"/>
+      </g>
+      <g id="Grupo_2128" data-name="Grupo 2128" transform="translate(5.393 0)">
+        <path id="Caminho_3315" data-name="Caminho 3315" d="M11.759,7.079h4.374a12.9,12.9,0,0,0-25.8,0h4.377A8.63,8.63,0,0,1,3.231-1.654a8.63,8.63,0,0,1,8.527,8.733" transform="translate(9.67 5.822)" fill="#0fbed2"/>
+      </g>
+      <g id="Grupo_2129" data-name="Grupo 2129" transform="translate(0.087 12.179)">
+        <path id="Caminho_3316" data-name="Caminho 3316" d="M4.435,0a8.081,8.081,0,1,0,0,16.161Z" transform="translate(3.647)" fill="#0fbed2"/>
+      </g>
+      <g id="Grupo_2130" data-name="Grupo 2130" transform="translate(28.598 12.179)">
+        <path id="Caminho_3317" data-name="Caminho 3317" d="M0,0A8.082,8.082,0,0,1,8.082,8.082,8.082,8.082,0,0,1,0,16.161Z" fill="#0fbed2"/>
+      </g>
+      <g id="Grupo_2131" data-name="Grupo 2131" transform="translate(5.809 11.393)">
+        <path id="Caminho_3318" data-name="Caminho 3318" d="M1.3,0a2.361,2.361,0,0,0-2.36,2.362v13.01a2.36,2.36,0,1,0,4.72,0V2.362A2.361,2.361,0,0,0,1.3,0" transform="translate(1.065)" fill="#b43fa0"/>
+      </g>
+      <g id="Grupo_2132" data-name="Grupo 2132" transform="translate(26.238 11.393)">
+        <path id="Caminho_3319" data-name="Caminho 3319" d="M1.3,0a2.361,2.361,0,0,1,2.36,2.362v13.01a2.36,2.36,0,1,1-4.72,0V2.362A2.361,2.361,0,0,1,1.3,0" transform="translate(1.065)" fill="#b43fa0"/>
+      </g>
+    </g>
+  </g>
+</svg>
