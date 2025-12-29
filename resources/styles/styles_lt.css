@@ -1,0 +1,4268 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(colorfonts.css);
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: var(--texto);
+    font-size: 16px;   
+    font-weight:500 ;
+    line-height: 1.5em;
+    overflow-x: hidden;
+    hyphens: none;   
+}
+main {
+   max-width: 600px;
+    margin: 0 auto;
+    
+}
+section {
+    box-sizing: border-box;
+    margin-bottom: 2.5em;
+    page-break-before: always;
+    page-break-after: avoid;
+}
+section header {
+    padding: 15px 0 0px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+blockquote {
+    font-size: 1em;
+    max-width: 100%;
+}
+figure {
+    margin: 1em 0.5em;
+    display: table;
+}
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+figcaption.p4legenda {
+    display: table-caption;
+    caption-side: bottom;
+    hyphens: none;
+}
+figcaption.legenda2 {
+    display: table-caption;
+    caption-side: top;
+    hyphens: none;
+}
+
+p, ul li {
+    hyphens: none;
+    max-width: 100%;
+}
+
+p {
+    hyphens: none !important;
+    line-height: 130%;    
+    max-width: 100%;  
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+    font-weight: 500;
+}
+
+strong em, em strong  {
+    font-weight: bold;
+    font-style: italic;
+}
+
+table {
+    max-width: 100%;
+}
+
+caption {
+    font-family: var(--titulo);
+    font-weight: bold;
+    margin: 8px 0 0 0;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+
+table tr td,
+table tr th {
+    padding: 8px;
+}
+table p {
+    margin: 0px;
+    padding: 0;
+}
+
+
+dfn sup {
+    color: var(--preto);
+    margin: 0 0 0 -2px;
+
+}
+
+dd sup {
+    color: var(--preto);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: 1.1em;
+}
+
+/*👉 ----- IDs PARA MAPEAMENTO ------ 👈
+//mathml_id_2028548792szo
+//aj_pro_id_t092036697776uk
+//lang_id_ed2047233561g
+//glossario_id_mOm092057201488_glos
+//glossario_id_mOm092057201488_voc
+//list_id_gv2456551860w
+*/
+
+/*👉 CLASSE PARA OCULTAR CONTEÚDO VISIVELMENTE, MAS MANTER ACESSÍVEL PARA LEITORES DE TELA 👈*/
+.sr_only{
+    clip-path: inset(50%);
+    position:absolute;
+    height:1px;
+    width:1px;
+    overflow:hidden; 
+    opacity: 0; 
+}
+
+/*👉 CLASSES RESERVADAS DIGITAL 👈*/
+/* 
+d0box_aluno
+d0box_geralmp
+d0box_especificompu
+d0box_resolucoesmp
+d0box_respostas
+
+
+aluno
+professor
+url_para_encurta
+pag
+pag-tx
+pag-tx-mp
+p5paginacao
+caracterizada
+descaracterizada
+ajustepronuncia
+conteudoOriginal
+conteudoAdaptado
+creditoimagemOED
+creditoimagem
+creditoimagemResposta
+creditoimagemPage
+orienta
+orientatx
+ocultatx
+ocultamn
+hifen_ano
+trocacaracter1
+trocacaracter2
+a0indicacao
+page-number
+screen-reader-only
+sr-only
+*/
+
+.aluno{}
+.professor{}
+.url_para_encurta{}
+.pag{}
+.pag-tx{}
+.pag-tx-mp{}
+.p5paginacao{}
+.d0box_aluno{
+    padding: 0.5em 0 1em 0;
+}
+.d0box_geralmp{}
+.d0box_especificompu{
+    background: var(--manualu);
+    padding: 0 1em 1em 1em;
+}
+.d0box_resolucoesmp{}
+.d0box_respostas{}
+
+
+.caracterizada{}
+.descaracterizada{}
+.ajustepronuncia{}
+.conteudoOriginal{}
+.conteudoAdaptado{}
+.creditoimagemOED{}
+.creditoimagem{}
+.creditoimagemResposta{}
+.creditoimagemPage{}
+
+.orienta{
+    background: var(--cinza);
+    border-radius: 0 0 1em 1em;
+    color: var(--preto);
+    font-family: var(--titulo);
+    text-align: center;
+    padding: 0.5em 1em;
+    margin: 0 0 1em 0;
+    box-shadow: 3px 3px 3px var(--boxoshadow);
+}
+.orientatx{
+    font-family: var(--texto);
+    padding: 0.5em 0;
+}
+.ocultatx, .ocultamn{
+    /*👉color: transparent;👈*/
+   /*👉 visibility: hidden; 👈*/
+   color: var(--preto);
+}
+.ocultatx{
+    font-size: 0.3em;
+}
+.ocultamn{
+    font-size: 0.9em;
+}
+.hifen_ano{
+    margin-left: -8px;
+}
+.trocacaracter1{}
+.trocacaracter2{}
+.a0indicacao{} /* Especifico do impresso Word */
+.page-number{} /*classe page-number adicionada para paginação, conforme edital G27 fund1*/
+.screen-reader-only{
+   position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;}  /*classe screen-reader-only adicionada para paginação, conforme edital G27 fund1*/
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;} /*classe sr-only adicionada para paginação, conforme edital G27 fund1*/
+
+/* Visual do número da página */
+header .pag {
+    align-self: flex-end;
+}
+.pag {
+    color: var(--preto);
+    font-family: var(--titulo);
+    font-size: var(--pesoPadrao);
+    font-weight: bold;
+    padding: 4px 8px;    
+    page-break-before: always;
+    page-break-after: avoid;
+    width: fit-content;
+}
+
+.teste{
+    background: #EA4F3D;
+    color: var(--branco);
+    font-weight: bold;
+    font-size: var(--peso1);
+    font-family: var(--titulo);
+    padding: 1em;
+}
+
+
+/*👉CLASSES PARA DIAGRAMAR👈*/
+/* COLUNAS E ALINHAMENTO */
+.col2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col2c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.col2s {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 16px;
+}
+
+.col2d{}
+
+
+/* Alinhamento vertical */
+.coltop {
+    align-items: flex-start;
+}
+
+.colcenter {
+    align-items: center;
+}
+
+.colbottom {
+    align-items: flex-end;
+}
+
+/* Alinhamento vertical de imagens dentro do parágrafo */
+.imgbottom {
+    vertical-align: text-bottom;
+}
+
+.imgtop {
+    vertical-align: sub;
+}
+
+.ico,
+.imgmiddle {
+    vertical-align: middle;
+}
+/* ALINHA REPERTÓRIO E MARCADOR */
+
+.alinhamarcador2{
+    width: calc(100% - 3em) !important; 
+    margin-left:3em !important;
+} 
+.alinhamarcador{
+    max-width: 90% !important;
+    margin-left:3em !important;
+} 
+
+.alinhapalavras{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 colunas de tamanho igual */
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+.semalinha{
+    margin-left: 0 !important;
+}
+
+/* ALINHAMENTO DE TEXTO  */
+.esquerda tr td,
+.esquerda tr th,
+.esquerda {
+    text-align: left !important;
+}
+
+.direita tr td,
+.direita tr th,
+.direita {
+    text-align: right;
+}
+
+.centro tr td,
+.centro tr th,
+.centro {
+    text-align: center;
+}
+
+.justificado tr td,
+.justificado tr th,
+.justificado {
+    text-align: justify;
+}
+
+
+.largura25 {
+    width: 25% !important;
+}
+
+.largura33 {
+    width: 33% !important;
+}
+
+.largura45 {
+    width: 45% !important;
+}
+
+
+/*👉ESTILOS CONSUMIVEL👈*/
+.linharesposta1, .linharesposta2,
+.linharesposta3, .linharesposta4,
+.linharesposta5{
+    background: url(../images/linha_resposta.svg) ;
+    width: 100%;
+    margin: 1em 0;
+}
+.linharesposta1{
+    height:20px;
+}
+.linharesposta2{ 
+    height: 30px;
+}
+.linharesposta3{ 
+    height: 50px;   
+}
+.linharesposta4{   
+    height: 60px;   
+}
+.linharesposta5{    
+    height: 80px;
+   
+}
+
+.lacunarespostap, .lacunarespostam,
+.lacunarespostag{
+    background: url(../images/linha_resposta.svg) ;
+    background-position-y:20px ;
+    margin: 0 5px;
+}
+.lacunarespostap{
+    padding:0em 1em;
+}
+.lacunarespostam{
+    padding:0em 2.5em;
+}
+.lacunarespostag{  
+    padding:0em 4.5em;
+}
+
+/*👉 ================ SUMÁRIO / APRESENTAÇÃO E CONHEÇA LT ==================👈*/
+/* 
+p1sumariopv
+p1seciniciaistit1
+p1seciniciaistit2
+p1seciniciaistit3
+p1sumariopeso1pv
+p1sumariopeso1
+p1sumariopeso2
+p1sumariopeso3
+p1sumariopeso4
+p1sumariopeso5
+p1sumarioextrapeso1
+p1sumarioextrapeso2
+p1sumarioextrapeso3
+p1sumariopeso1numero
+p1sumariopeso2numero
+p1sumariooedpv
+p1sumariooedpeso1
+p1sumariooedpeso2
+p1sumariooedpeso3
+p1sumarioaudiospeso1
+p1sumarioaudiospeso2
+p1sumarioaudiospeso3
+*/
+.p1sumariopv{}
+.p1seciniciaistit1{}
+.p1seciniciaistit2{}
+.p1seciniciaistit3{}
+.p1sumariopeso1pv{}
+
+.p1sumariopeso1{}
+.p1sumariopeso2{}
+.p1sumariopeso3{}
+.p1sumariopeso4{}
+.p1sumariopeso5{}
+.p1sumarioextrapeso1{}
+.p1sumarioextrapeso2{}
+.p1sumarioextrapeso3{}
+.p1sumariopeso1numero{}
+.p1sumariopeso2numero{}
+
+.p1sumariooedpv{}
+.p1sumariooedpeso1{}
+.p1sumariooedpeso2{}
+.p1sumariooedpeso3{}
+
+.p1sumarioaudiospeso1{}
+.p1sumarioaudiospeso2{}
+.p1sumarioaudiospeso3{}
+
+/*👉=================== ESTILOS MIOLO ================================👈*/
+/* TÍTULOS  */
+/* 
+p0tit1
+p0tit1numpv
+p0tit1pv
+p0tit2
+p0tit2numpv
+p0tit2pv
+p0tit3
+p0tit3pv
+p0tit4
+p0tit5
+p0tit6
+p0tit3negativo
+p0tit4negativo
+p0tit5negativo
+p0tit6negativo
+*/
+
+.p0tit1,
+.p0tit2,
+.p0tit3,
+.p0tit4,
+.p0tit5,
+.p0tit6,
+.p0tit3negativo,
+.p0tit4negativo,
+.p0tit5negativo,
+.p0tit6negativo{
+    font-family: var(--titulo);
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.p0tit1{
+    font-size: var(--peso1);
+}
+.p0tit1numpv{}
+.p0tit1pv{}
+
+
+.p0tit2{
+    font-size: var(--peso2);
+}
+.p0tit2numpv{}
+.p0tit2pv{}
+
+
+.p0tit3{
+    font-size: var(--peso3);
+}
+.p0tit3pv{}
+.p0tit4{
+    font-size: var(--peso4);
+}
+.p0tit5{
+    font-size: var(--peso5);
+}
+.p0tit6{
+    font-size: var(--peso6);
+}
+
+
+.p0tit3negativo{
+    font-size: var(--peso3);
+}
+.p0tit4negativo{
+    font-size: var(--peso4);
+}
+.p0tit5negativo{
+    font-size: var(--peso5);
+}
+.p0tit6negativo{
+    font-size: var(--peso6);
+}
+
+/* TÍTULOS DE ELEMENTOS */
+
+/* Tabelas e Quadros */
+/* 
+p1tabelatit
+p1tabelatitcoluna
+p1tabelatexto
+p1tabelatextoitem
+p1tabelatextoitemcont
+*/
+.p1tabelatit{}
+.p1tabelatitcoluna{}
+.p1tabelatexto{}
+.p1tabelatextoitem{}
+.p1tabelatextoitemcont{}
+
+/* Especificação exclusiva do Digital */
+.quadro td:first-child,
+.quadro th:first-child {
+    border: 1px solid var(--preto_);
+}
+.quadro td:last-child,
+.quadro th:last-child {
+    border: 1px solid var(--preto_);
+}
+.tabela td:first-child,
+.tabela th:first-child,
+.tabela caption {
+    border-left: none;
+}
+.tabela td:last-child,
+.tabela th:last-child,
+.tabela caption  {
+    border-right: none;
+}
+
+.tb_tabela {
+    width: 100%;
+    max-width: 100%;
+    margin: 1em 0;
+    box-sizing: border-box;
+}
+.tb_tabela td {
+    border: 1px solid var(--preto_);
+}
+.tb_tabela th {
+    border: 1px solid var(--preto_);
+    background: var(--cinza);
+    font-family: var(--titulo);
+    font-size: 0.9em;
+    text-align: center;
+}
+.tb_tabela tr td:empty,
+.tb_tabela tr th:empty {
+    height: 40px;
+}
+
+.tb_zebrada tr:nth-child(odd){
+    background: var(--cinza);
+}
+
+
+/* ESQUEMA */
+/* 
+p1esquematit
+o2esquemabox
+*/
+.p1esquematit{
+    font-family: var(--titulo);
+    font-size: var(--peso7);
+    font-weight: bold;
+}
+.o2esquemabox{}
+
+/* GRÁFICOS */
+/* 
+p1graficotit
+o2graficogravata1
+o2graficogravata2
+*/
+.p1graficotit{}
+.o2graficogravata1{}
+.o2graficogravata2{}
+
+/* MAPAS */
+/* 
+p1mapatit
+o2mapagravata1
+o2mapagravata2
+*/
+.p1mapatit{}
+.o2mapagravata1{}
+.o2mapagravata2{}
+
+/* FIGURA */
+/* 
+p1figuratit
+ */
+.p1figuratit{
+    color: var(--verde1a);
+    border-top: 2px solid var(--verde1a);
+    border-left: 2px solid var(--verde1a);
+    border-top-left-radius: 10px;
+    padding: 0.3em 0 0 0.5em;
+    width: fit-content;
+    max-width: 100%;
+    font-weight: 900;
+    font-family: var(--titulo);
+    margin: 1em 0 0 0;
+}
+
+/* TÍTULO BOX */
+/* 
+p1box1tit
+p1box2tit
+p1box3tit
+*/
+.p1box1tit{
+    font-family: var(--titulo);
+    font-weight: bold;
+    color: var(--branco);
+}
+.p1box2tit{
+    font-family: var(--titulo);
+    font-weight: bold;
+    color: var(--preto);
+}
+.p1box3tit{
+    font-family: var(--titulo);
+    font-weight: bold;
+    color: var(--preto);
+}
+
+/* TÍTULO SEÇÃO */
+/* 
+p1sec1tit1
+p1sec1tit2
+p1sec1tit3
+p1sec1tit4
+p1sec2tit1
+p1sec2tit2
+p1sec2tit3
+p1sec2tit4
+p1sec3tit1
+p1sec3tit2
+p1sec3tit3
+p1sec3tit4
+p1sec4tit1
+p1sec4tit2
+p1sec4tit3
+p1sec4tit4
+p1sec5tit1
+p1sec5tit2
+p1sec5tit3
+p1sec5tit4
+p1sec6tit1
+p1sec6tit2
+p1sec6tit3
+p1sec6tit4
+p1sec7tit1
+p1sec7tit2
+p1sec7tit3
+p1sec7tit4
+p1sec8tit1
+p1sec8tit2
+p1sec8tit3
+p1sec8tit4
+p1sec9tit1
+p1sec9tit2
+p1sec9tit3
+p1sec9tit4
+p1sec10tit1
+p1sec10tit2
+p1sec10tit3
+p1sec10tit4
+p1sec11tit1
+p1sec11tit2
+p1sec11tit3
+p1sec11tit4
+p1sec12tit1
+p1sec12tit2
+p1sec12tit3
+p1sec12tit4
+p1sec13tit1
+p1sec13tit2
+p1sec13tit3
+p1sec13tit4
+p1materialcomplementartit1
+p1materialcomplementartit2
+p1materialcomplementartit3
+*/
+.p1sec1tit1{}
+.p1sec1tit2{}
+.p1sec1tit3{}
+.p1sec1tit4{}
+
+.p1sec2tit1{}
+.p1sec2tit2{}
+.p1sec2tit3{}
+.p1sec2tit4{}
+
+.p1sec3tit1{}
+.p1sec3tit2{}
+.p1sec3tit3{}
+.p1sec3tit4{}
+
+.p1sec4tit1{}
+.p1sec4tit2{}
+.p1sec4tit3{}
+.p1sec4tit4{}
+
+.p1sec5tit1{}
+.p1sec5tit2{}
+.p1sec5tit3{}
+.p1sec5tit4{}
+
+.p1sec6tit1{}
+.p1sec6tit2{}
+.p1sec6tit3{}
+.p1sec6tit4{}
+
+.p1sec7tit1{}
+.p1sec7tit2{}
+.p1sec7tit3{}
+.p1sec7tit4{}
+
+.p1sec8tit1{}
+.p1sec8tit2{}
+.p1sec8tit3{}
+.p1sec8tit4{}
+
+.p1sec9tit1{}
+.p1sec9tit2{}
+.p1sec9tit3{}
+.p1sec9tit4{}
+
+.p1sec10tit1{}
+.p1sec10tit2{}
+.p1sec10tit3{}
+.p1sec10tit4{}
+
+.p1sec11tit1{}
+.p1sec11tit2{}
+.p1sec11tit3{}
+.p1sec11tit4{}
+
+.p1sec12tit1{}
+.p1sec12tit2{}
+.p1sec12tit3{}
+.p1sec12tit4{}
+
+.p1sec13tit1{}
+.p1sec13tit2{}
+.p1sec13tit3{}
+.p1sec13tit4{}
+
+.p1materialcomplementartit1{
+    color: var(--preto);
+    font-family: var(--titulo);
+    font-size: var(--peso2);
+    font-weight: 800;
+    width: fit-content;
+    max-width: 100%;
+    margin: 2em 0 0.5em 0;
+    padding: 0.5em;
+}
+.p1materialcomplementartit2{
+      color: var(--preto);
+    font-family: var(--titulo);
+    font-size: var(--peso3);
+    font-weight: 800;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0 0.5em 0;
+    padding: 0.5em;
+}
+.p1materialcomplementartit3{
+      color: var(--preto);
+    font-family: var(--titulo);
+    font-size: var(--peso4);
+    font-weight: 800;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0 0.5em 0;
+    padding: 0.5em;
+}
+
+/*👉 SUGESTÕES COMPLEMENTARES 👈*/
+/* 
+p1sugestcomptit1
+p1sugestcomptit2
+p1sugestcomptit3
+p2sugestcomp
+p2sugestcompitem
+p2sugestcompcoment
+*/
+.p1sugestcomptit1{}
+.p1sugestcomptit2{}
+.p1sugestcomptit3{}
+.p2sugestcomp{}
+.p2sugestcompitem{}
+.p2sugestcompcoment{}
+
+/*👉TRANSCRIÇÃO👈*/
+/* 
+p1transcricaotit1
+p1transcricaotit2
+p1transcricaotit3
+*/
+.p1transcricaotit1{}
+.p1transcricaotit2{}
+.p1transcricaotit3{}
+
+/*👉REFERÊNCIAS BIBLIOGRAFICAS👈*/
+/* 
+p1referenciasbibliotit1
+p1referenciasbibliotit2
+p1referenciasbibliotit3
+p2referenciasbiblio
+p2referenciasbiblioitem
+p2referenciasbibliocoment
+*/
+.p2referenciasbiblio,
+.p2referenciasbiblioitem,
+.p2referenciasbibliocoment{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    text-align: left;
+    max-width: 100%;
+}
+
+.p1referenciasbibliotit1{
+    font-family: var(--titulo);
+    font-size: var(--peso2);
+    font-weight: bold;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0.5em 0 0.5em 0;
+}
+.p1referenciasbibliotit2{
+    font-family: var(--titulo);
+    font-size: var(--peso6);
+    font-weight: bold;
+    width: fit-content;
+    max-width: 100%;
+    margin:1em 0 0.5em 0;
+}
+.p1referenciasbibliotit3{}
+.p2referenciasbiblio{
+    margin: 1em 0 0.1em 0;
+    word-break: break-all;
+}
+.p2referenciasbiblioitem{}
+.p2referenciasbibliocoment{
+    margin: 0 0 0 0;
+}
+
+/*👉GLOSSÁRIO👈*/
+/*
+p1glossariotit1
+p1glossariotit2
+p2glossario
+p2glossarioitem
+p2glossariocoment
+*/
+.p1glossariotit1{}
+.p1glossariotit2{}
+.p2glossario{
+    margin: 0.5em 0 0.5em 0;
+}
+.p2glossario > dt {
+ 
+}
+.p2glossario > dd {
+   margin-bottom: 1em;
+}
+ul.p2glossarioitem{
+    list-style: disc;
+    margin: 0 0 0 1.5em;
+}
+p.p2glossarioitem{
+    margin: 0 0 0 1.5em;
+}
+p.p2glossarioitem::before{
+content: '•';
+font-size: 1.2em;
+width:10px ;
+height:10px ;
+position: absolute;
+margin:0 0 0 -14px ;
+}
+.p2glossariocoment{
+    margin: 0.5em 0 0.5em 0;
+}
+
+/* TODO: Bruna, desativar estilo p2textonumsemrecuo, nome fora do padrão, estilo válido  p2textosemrecuonum*/
+
+/*👉======= TEXTOS PESO: principal =======👈*/
+/* TEXTO SEM RECUO PRINCIPAL */
+/* 
+p2textosemrecuo
+p2textosemrecuoitem
+p2textosemrecuoitemcont
+p2textosemrecuosubitem
+p2textosemrecuosubitemcont
+p2textonumsemrecuo 👉nome do estilo fora do padrão, desativar, válido p2textosemrecuonum👈
+p2textomarcadorsemrecuo
+p2textomarcadorsemrecuocont
+p2textomarcadorsemrecuoromano
+p2textosemrecuonum
+p2textosemrecuonumcont
+p2textosemrecuonumitem
+p2textosemrecuonumitemcont
+p2textosemrecuonumletra
+p2textosemrecuonumletracont
+p2textosemrecuoletra
+p2textosemrecuoletracont
+*/
+.p2textosemrecuo,
+.p2textosemrecuoitem,
+.p2textosemrecuoitemcont,
+.p2textosemrecuosubitem,
+.p2textosemrecuosubitemcont,
+.p2textonumsemrecuo,
+.p2textomarcadorsemrecuo,
+.p2textomarcadorsemrecuocont,
+.p2textomarcadorsemrecuoromano,
+.p2textosemrecuonum,
+.p2textosemrecuonumcont,
+.p2textosemrecuonumitem,
+.p2textosemrecuonumitemcont,
+.p2textosemrecuonumletra,
+.p2textosemrecuonumletracont,
+.p2textosemrecuoletra,
+.p2textosemrecuoletracont{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    text-align: justify;
+}
+.p2textosemrecuo{
+    margin: 0.5em 0;
+}
+ul.p2textosemrecuoitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 1em;
+}
+p.p2textosemrecuoitem{
+    margin: 0.5em 0 0.5em 1em;
+}
+p.p2textosemrecuoitem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+.p2textosemrecuoitemcont{
+    margin: 0.5em 0 0.5em 1em;
+}
+ul.p2textosemrecuosubitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 2em;
+}
+p.p2textosemrecuosubitem{
+    margin: 0.5em 0 0.5em 2em;
+}
+p.p2textosemrecuosubitem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+.p2textosemrecuosubitemcont{
+    margin: 0.5em 0 0.5em 2em;
+}
+
+.p2textonumsemrecuo{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p2textomarcadorsemrecuo{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p2textomarcadorsemrecuocont{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p2textomarcadorsemrecuoromano{
+    margin: 0.5em 0 0.5em 2.5em;
+}
+.p2textosemrecuonum{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p2textosemrecuonumcont{
+    margin: 0.5em 0 0.5em 2em;
+}
+ul.p2textosemrecuonumitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 3.5em;
+}
+p.p2textosemrecuonumitem{
+    margin: 0.5em 0 0.5em 3.5em;
+}
+p.p2textosemrecuonumitem::before{
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    width:10px ;
+    height:10px ;
+    position: absolute;
+    margin:0 0 0 -14px ;
+    }
+.p2textosemrecuonumitemcont{
+    margin: 0.5em 0 0.5em 3.5em;
+}
+.p2textosemrecuonumletra{
+    margin: 0.5em 0 0.5em 3.5em;
+}
+.p2textosemrecuonumletracont{
+    margin: 0.5em 0 0.5em 3.5em;
+}
+/*👉FIXME: Cria o css 👈*/
+.p2textosemrecuoletra {
+    margin: 0.5em 0 0.5em 2em;
+}
+.p2textosemrecuoletracont{
+    margin: 0.5em 0 0.5em 2em;
+}
+
+/* TEXTO PRINCIPAL */
+/* 
+p2texto
+p2textoitem
+p2textoitemcont
+p2textosubitem
+p2textosubitemcont
+p2textoitemletra
+p2textoitemletracont
+p2textoletra
+p2textoletracont
+p2textoletraitem
+p2textoletraitemcont
+p2textomarcador
+p2textomarcadorcont
+p2textomarcadorromano
+p2textomarcadorletra
+p2textomarcadorletracont
+p2textomarcadoritem
+p2textomarcadoritemcont
+p2textomarcadorsubitem
+p2textomarcadorsubitemcont
+*/
+.p2texto,
+.p2textoitem,
+.p2textoitemcont,
+.p2textosubitem,
+.p2textosubitemcont,
+.p2textoitemletra,
+.p2textoitemletracont,
+.p2textoletra,
+.p2textoletracont,
+.p2textoletraitem,
+.p2textoletraitemcont,
+.p2textomarcador,
+.p2textomarcadorcont,
+.p2textomarcadorromano,
+.p2textomarcadorletra,
+.p2textomarcadorletracont,
+.p2textomarcadoritem,
+.p2textomarcadoritemcont,
+.p2textomarcadorsubitem,
+.p2textomarcadorsubitemcont{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    text-align: justify;
+}
+
+.p2texto{
+    margin: 0.5em 0 0.5em 0;
+    text-indent: 1.5em;
+}
+
+ul.p2textoitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 40px;
+}
+p.p2textoitem{
+    margin: 0.5em 0 0.5em 40px;
+}
+p.p2textoitem::before {
+    content: '';  /*content: '•';*/
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+
+.p2textoitemcont{
+    margin: 0em 0 0.5em 40px;
+}
+
+ul.p2textosubitem{
+    list-style: none;
+    margin: 0.5em 0 0.5em 3.5em;
+}
+ul.p2textosubitem li::before {
+    content: '•';
+    color: var(--verde1);
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+
+p.p2textosubitem{
+    margin: 0.5em 0 0.5em 3.5em;
+}
+p.p2textosubitem::before {
+    content: ''; /*content: '•';*/
+    color: var(--verde1);
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+.p2textosubitemcont{
+    margin: 0.5em 0 0.5em 3.5em;
+}
+
+.p2textoitemletra{
+    margin: 0.5em 0 0.5em 4em;
+}
+.p2textoitemletracont{
+    margin: 0.5em 0 0.5em 4em;
+}
+
+.p2textoletra{
+    margin: 0.5em 0 0.5em 50px;
+}
+.p2textoletracont{
+    margin: 0.5em 0 0.5em 50px;
+}
+ul.p2textoletraitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 65px;
+}
+p.p2textoletraitem{
+    margin: 0.5em 0 0.5em 65px;
+}
+p.p2textoletraitem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+.p2textoletraitemcont{
+    margin: 0.5em 0 0.5em 65px;
+}
+
+.p2textomarcador{
+    margin: 0.5em 0 0.5em 50px;
+}
+.p2textomarcadorcont{
+    margin: 0.5em 0 0.5em 50px;
+}
+.p2textomarcadorromano{
+    margin: 0.5em 0 0.5em 5.5em;
+}
+
+.p2textomarcadorletra{
+    margin: 0.5em 0 0.5em 4.5em;
+}
+.p2textomarcadorletracont{
+    margin: 0.5em 0 0.5em 4.5em;
+}
+
+ul.p2textomarcadoritem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 4em;
+}
+p.p2textomarcadoritem{
+    margin: 0.5em 0 0.5em 4em;
+}
+p.p2textomarcadoritem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+.p2textomarcadoritemcont{
+    margin: 0.5em 0 0.5em 4em;
+}
+
+ul.p2textomarcadorsubitem{
+    list-style: none;
+    margin: 0.5em 0 0.5em 5em;
+}
+ul.p2textomarcadorsubitem li::before{
+    content: '•';
+    color: var(--verde1);
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+p.p2textomarcadorsubitem{
+    margin: 0.5em 0 0.5em 5em;
+}  
+p.p2textomarcadorsubitem::before {
+    content: ''; /*content: '•';*/
+    color: var(--verde1);
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+.p2textomarcadorsubitemcont{
+    margin: 0.5em 0 0.5em 5em;
+}
+
+
+/* QUESTÃO TEORIA */
+/* 
+p2questao
+p2questaocont
+p2questaoletra
+p2questaoletracont
+p2questaoletraitem
+p2questaoletraitemcont
+p2questaoitem
+p2questaoitemcont
+p2questaosubitem
+p2questaosubitemcont
+p2questaomarcador
+p2questaomarcadorcont
+*/
+
+.p2questao,
+.p2questaocont,
+.p2questaoletra,
+.p2questaoletracont,
+.p2questaoletraitem,
+.p2questaoletraitemcont,
+.p2questaoitem,
+.p2questaoitemcont,
+.p2questaosubitem,
+.p2questaosubitemcont,
+.p2questaomarcador,
+.p2questaomarcadorcont{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    text-align: justify;
+}
+.p2questao{
+    margin: 0.5em 0;
+}
+.p2questaocont{
+    margin: 0.5em 0;
+}
+
+.p2questaoletra{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p2questaoletracont{
+    margin: 0.5em 0 0.5em 2em;
+}
+
+ul.p2questaoletraitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 3em;
+}
+p.p2questaoletraitem{
+    margin: 0.5em 0 0.5em 3em;
+}
+p.p2questaoletraitem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -14px;
+}
+.p2questaoletraitemcont{
+    margin: 0.5em 0 0.5em 3em;
+}
+
+ul.p2questaoitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 1em;
+}
+p.p2questaoitem{
+    margin: 0.5em 0 0.5em 1em;
+}
+p.p2questaoitem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -14px;
+}
+.p2questaoitemcont{
+    margin: 0.5em 0 0.5em 1em;
+}
+
+ul.p2questaosubitem{
+    margin: 0.5em 0 0.5em 2em;
+}
+ul.p2questaosubitem li::before{
+    content: '•';
+    color: var(--verde1);
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -14px;
+}
+p.p2questaosubitem{
+    margin: 0.5em 0 0.5em 2em;
+}
+p.p2questaosubitem::before {
+    content: ''; /*content: '•';*/
+    color: var(--verde1);
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -14px;
+}
+.p2questaosubitemcont{
+    margin: 0.5em 0 0.5em 2em;
+} 
+.p2questaomarcador{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p2questaomarcadorcont{
+    margin: 0.5em 0 0.5em 2em;
+}
+
+
+
+/* ATIVIDADES */
+/*
+p2atv
+p2atvcont
+p2atvromano
+p2atvromanocont
+p2atvitem
+p2atvitemcont
+p2atvsubitem
+p2atvsubitemcont
+p2atvitemletra
+p2atvitemletracont
+p2atvletra
+p2atvletracont
+p2atvletramarcador
+p2atvletramarcadorcont
+p2atvletramarcadorromano
+p2atvletraromano
+p2atvletraromanocont
+p2atvletraitem
+p2atvletraitemcont
+p2atvletrasubitem
+p2atvletrasubitemcont
+p2atvletraitemromano
+p2atvletraitemromanocont
+p2atvmarcador
+p2atvmarcadorcont
+p2atvmarcadorromano
+p2atvmarcadoritem
+p2atvmarcadoritemcont
+p2atvsomatoria
+p2atvsomatoriacont
+p2atvsemrecuomarcador
+p2atvsemrecuomarcadorcont
+p2atvsemrecuomarcadorromano
+*/
+.p2atv,
+.p2atvcont,
+.p2atvletramarcador,
+.p2atvletramarcadorcont,
+.p2atvletramarcadorromano,
+.p2atvromano,
+.p2atvromanocont,
+.p2atvitem,
+.p2atvitemcont,
+.p2atvsubitem,
+.p2atvsubitemcont,
+.p2atvitemletra,
+.p2atvitemletracont,
+.p2atvletra,
+.p2atvletracont,
+.p2atvletraromano,
+.p2atvletraromanocont,
+.p2atvletraitem,
+.p2atvletraitemcont,
+.p2atvletrasubitem,
+.p2atvletrasubitemcont,
+.p2atvletraitemromano,
+.p2atvletraitemromanocont,
+.p2atvmarcador,
+.p2atvmarcadorcont,
+.p2atvmarcadorromano,
+.p2atvmarcadoritem,
+.p2atvmarcadoritemcont,
+.p2atvsomatoria,
+.p2atvsomatoriacont,
+.p2atvsemrecuomarcador,
+.p2atvsemrecuomarcadorcont,
+.p2atvsemrecuomarcadorromano{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    text-align: justify;
+
+   
+}
+
+.p2atv{
+    margin: 0.5em 0 0.5em 30px;
+}
+.p2atvcont{
+    margin: 0.5em 0 0.5em 30px;
+}
+.p2atvletramarcador{
+    margin: 0.5em 0 0.5em 4em;
+}
+.p2atvletramarcadorcont{
+    margin: 0.5em 0 0.5em 4em;
+}
+.p2atvletramarcadorromano{
+    margin: 0.5em 0 0.5em 6em;
+}
+.p2atvromano{
+    margin: 0.5em 0 0.5em 4em;
+}
+.p2atvromanocont{
+    margin: 0.5em 0 0.5em 4em;
+}
+
+ul.p2atvitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 3em;
+}
+p.p2atvitem{
+    margin: 0.5em 0 0.5em 3em;
+}
+p.p2atvitem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+.p2atvitemcont{
+    margin: 0.5em 0 0.5em 3em;
+}
+
+ul.p2atvsubitem{
+    margin: 0.5em 0 0.5em 4em;
+}
+ul.p2atvsubitem li::before{
+    content: '•';
+    color: var(--verde1);
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+p.p2atvsubitem{
+    margin: 0.5em 0 0.5em 4em;
+}
+p.p2atvsubitem::before {
+    content: ''; /*content: '•';*/
+    color: var(--verde1);
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+.p2atvsubitemcont{
+    margin: 0.5em 0 0.5em 4em;
+}
+
+.p2atvitemletra{
+    margin: 0.5em 0 0.5em 4em;
+}
+.p2atvitemletracont{
+    margin: 0.5em 0 0.5em 4em;
+}
+
+.p2atvletra{
+    margin: 0.5em 0 0.5em 3em;
+}
+.p2atvletracont{
+    margin: 0.5em 0 0.5em 3em;
+}
+
+.p2atvletraromano{
+    margin: 0.5em 0 0.5em 5.1em;
+}
+.p2atvletraromanocont{
+    margin: 0.5em 0 0.5em 5.1em;
+}
+
+ul.p2atvletraitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 4em;
+}
+p.p2atvletraitem{
+    margin: 0.5em 0 0.5em 4em;
+}
+p.p2atvletraitem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.3em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -14px;
+}
+.p2atvletraitemcont{
+    margin: 0.5em 0 0.5em 4em;
+}
+
+ul.p2atvletrasubitem{
+    margin: 0.5em 0 0.5em 5em;
+}
+ul.p2atvletrasubitem li::before{
+    content: '•';
+    color: var(--verde1);
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -12px;
+}
+p.p2atvletrasubitem{
+    margin: 0.5em 0 0.5em 5em;
+}
+p.p2atvletrasubitem::before {
+    content: ''; /*content: '•';*/
+    color: var(--verde1);
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -12px;
+}
+.p2atvletrasubitemcont{
+    margin: 0.5em 0 0.5em 5em;
+}
+
+.p2atvletraitemromano{
+    margin: 0.5em 0 0.5em 7em;
+}
+.p2atvletraitemromanocont{
+    margin: 0.5em 0 0.5em 7em;
+}
+
+.p2atvmarcador{
+    margin: 0.5em 0 0.5em 4em;
+}
+.p2atvmarcadorcont{
+    margin: 0.5em 0 0.5em 4em;
+}
+.p2atvmarcadorromano{
+    margin: 0.5em 0 0.5em 5.5em;
+}
+ul.p2atvmarcadoritem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 5em;
+}
+p.p2atvmarcadoritem{
+    margin: 0.5em 0 0.5em 5em;
+}
+p.p2atvmarcadoritem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -14px;
+}
+.p2atvmarcadoritemcont{
+    margin: 0.5em 0 0.5em 5em;
+}
+
+.p2atvsomatoria{
+    margin: 0.5em 0 0.5em 5em;
+}
+.p2atvsomatoriacont{
+    margin: 0.5em 0 0.5em 5em;
+}
+
+.p2atvsemrecuomarcador{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p2atvsemrecuomarcadorcont{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p2atvsemrecuomarcadorromano{
+    margin: 0.5em 0 0.5em 2.5em;
+}
+
+
+/*👉==================== TEXTOS PESO: intermediário ===================👈*/
+/* TEXTOS INTERMEDIÁRIOS */
+/*
+p3intermediariotit
+p3intermediario
+p3intermediarioitem
+p3intermediarioitemcont
+p3intermediarioitemletra
+p3intermediarioitemletracont
+p3intermediarioletra
+p3intermediarioletracont
+p3intermediarionumero
+p3intermediarionumerocont
+p3intermediariomarcador
+p3intermediariomarcadorcont
+p3intermediariomarcadorromano
+p3intermediariomarcadoritem
+p3intermediariomarcadoritemcont
+p3intermediariosemrecuo
+p3intermediariosemrecuomarcador
+p3intermediariosemrecuomarcadorcont
+p3intermediariosemrecuomarcadorromano
+p3intermediariosemrecuoitem
+p3intermediariosemrecuoitemcont
+p3intermediariosemrecuoitemletra
+p3intermediariosemrecuoitemletracont
+p3intermediariosemrecuoletra
+p3intermediariosemrecuoletracont
+p3intermediariosemrecuonumero
+p3intermediariosemrecuonumerocont
+*/
+.p3intermediariotit,
+.p3intermediario,
+.p3intermediarioitem,
+.p3intermediarioitemcont,
+.p3intermediarioitemletra,
+.p3intermediarioitemletracont,
+.p3intermediarioletra,
+.p3intermediarioletracont,
+.p3intermediarionumero,
+.p3intermediarionumerocont,
+.p3intermediariomarcador,
+.p3intermediariomarcadorcont,
+.p3intermediariomarcadorromano,
+.p3intermediariomarcadoritem,
+.p3intermediariomarcadoritemcont,
+.p3intermediariosemrecuo,
+.p3intermediariosemrecuomarcador,
+.p3intermediariosemrecuomarcadorcont,
+.p3intermediariosemrecuomarcadorromano,
+.p3intermediariosemrecuoitem,
+.p3intermediariosemrecuoitemcont,
+.p3intermediariosemrecuoitemletra,
+.p3intermediariosemrecuoitemletracont,
+.p3intermediariosemrecuoletra,
+.p3intermediariosemrecuoletracont,
+.p3intermediariosemrecuonumero,
+.p3intermediariosemrecuonumerocont{
+    font-family: var(--texto);
+    font-size: var(--pesoIntermediario);
+    text-align: left;
+    max-width: 100%;
+}
+.p3intermediariotit{
+    font-family: var(--titulo);
+    font-size: var(--pesoPadrao);
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+.p3intermediario{
+    margin: 0.5em 0;
+}
+
+ul.p3intermediarioitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 1em;
+}
+p.p3intermediarioitem{
+    margin: 0.5em 0 0.5em 1em;
+}
+p.p3intermediarioitem::before{
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px ;
+    position: absolute;
+    margin:0 0 0 -1em;
+    }
+.p3intermediarioitemcont{
+    margin: 0.5em 0 0.5em 1em;
+}
+.p3intermediarioitemletra{
+    margin: 0.5em 0 0.5em 3.5em;
+}
+.p3intermediarioitemletracont{
+    margin: 0.5em 0 0.5em 3.5em;
+}
+
+.p3intermediarioletra{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p3intermediarioletracont{
+    margin: 0.5em 0 0.5em 2em;
+}
+
+.p3intermediarionumero{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p3intermediarionumerocont{
+    margin: 0.5em 0 0.5em 2em;
+}
+
+.p3intermediariomarcador{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p3intermediariomarcadorcont{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p3intermediariomarcadorromano{
+    margin: 0.5em 0 0.5em 2.8em;
+}
+ul.p3intermediariomarcadoritem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 3em;
+}
+p.p3intermediariomarcadoritem{
+    margin: 0.5em 0 0.5em 3em;
+}
+.p3intermediariomarcadoritemcont{
+    margin: 0.5em 0 0.5em 3em;
+}
+
+/* TEXTOS INTERMEDIÁRIOS SEM RECUO */
+.p3intermediariosemrecuo{
+    margin: 0.5em 0;
+}
+.p3intermediariosemrecuomarcador{
+    margin: 0.5em 0 0.5em 2.5em;
+}
+.p3intermediariosemrecuomarcadorcont{
+    margin: 0.5em 0 0.5em 2.5em;
+}
+.p3intermediariosemrecuomarcadorromano{
+    margin: 0.5em 0 0.5em 3em;
+}
+
+
+ul.p3intermediariosemrecuoitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 1.5em;
+}
+p.p3intermediariosemrecuoitem{
+    margin: 0.5em 0 0.5em 1.5em;
+}
+p.p3intermediariosemrecuoitem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -12px;
+}
+
+.p3intermediariosemrecuoitemcont{
+    margin: 0.5em 0 0.5em 1.5em;
+}
+
+.p3intermediariosemrecuoitemletra{
+    margin: 0.5em 0 0.5em 3.5em;
+}
+.p3intermediariosemrecuoitemletracont{
+margin: 0.5em 0 0.5em 3.5em;
+}
+
+.p3intermediariosemrecuoletra{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p3intermediariosemrecuoletracont{
+    margin: 0.5em 0 0.5em 2em;
+}
+
+.p3intermediariosemrecuonumero{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p3intermediariosemrecuonumerocont{
+    margin: 0.5em 0 0.5em 2em;
+}
+
+/* TEXTOS CITADOS - CITAÇÃO */
+/*
+p3citacaomanchete
+p3citacaotit1
+p3citacaotit2
+p3citacaoolho
+p3citacaosemrecuo
+p3citacao
+p3citacaopoema
+p3citacaoitem
+p3citacaoitemcont
+p3citacaoletra
+p3citacaoletracont
+p3citacaonumero 
+p3citacaonumerocont
+p3citacaobastao
+p3citacaopoemabastao
+p3citacaosemrecuobastao
+*/
+.p3citacaomanchete,
+.p3citacaotit1,
+.p3citacaotit2,
+.p3citacaoolho,
+.p3citacaosemrecuo,
+.p3citacao,
+.p3citacaopoema,
+.p3citacaoitem,
+.p3citacaoitemcont,
+.p3citacaoletra,
+.p3citacaoletracont,
+.p3citacaonumero,
+.p3citacaonumerocont,
+.p3citacaobastao,
+.p3citacaopoemabastao,
+.p3citacaosemrecuobastao{
+    font-family: var(--citacao);
+    font-size: var(--pesoPadrao);
+}
+
+.p3citacaomanchete{
+    font-weight: bold;
+    font-size: var(--peso4);
+    text-align: center;
+    margin: 0.5em 0;
+}
+.o3jornalfundo>.p3citacaomanchete {
+    font-weight: bold;
+    font-size: var(--peso4);
+    text-align: center;
+    margin: 0.5em 0;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #A7ACA8;
+}
+
+.p3citacaotit1{
+    font-weight: bold;
+    font-size: var(--peso5);
+    text-align: center;
+    margin: 0.5em 0;
+}
+.p3citacaotit2{
+    font-weight: bold;
+    font-size: var(--peso6);
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.p3citacaoolho{
+    font-style: italic;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.p3citacaosemrecuo{
+    font-family: var(--pesoPadrao);
+    font-family: var(--citacao);
+    text-align: justify;
+    margin: 0.5em 0;
+} 
+/* TODO: ELEMENTO NOVO */
+
+.p3citacao{
+    font-family: var(--pesoPadrao);
+    font-family: var(--citacao);
+    text-align: justify;
+    text-indent: 1.5em;
+    margin: 0.5em 0;
+}
+
+.p3citacaopoema{
+    margin: 0.5em 0 0.5em 1em;
+}
+ul.p3citacaoitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 1em;
+}
+blockquote.p3citacaoitem{
+    margin: 0.5em 0 0.5em 1em;
+}
+blockquote.p3citacaoitem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -14px;
+}
+
+.p3citacaoitemcont{
+    margin: 0.5em 0 0.5em 1em;
+}
+
+.p3citacaoletra{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p3citacaoletracont{
+    margin: 0.5em 0 0.5em 2em;
+}
+
+.p3citacaonumero{
+    text-align: justify;
+    margin: 0.5em  0  0.5em 30px;
+
+}  
+.p3citacaonumerocont{
+    text-align: justify;
+    margin: 0.5em  0  0.5em 30px;
+}
+
+.p3citacaobastao{}
+.p3citacaopoemabastao{}
+.p3citacaosemrecuobastao{}
+
+/*👉==================== TEXTOS PESO: menor ===========================👈*/
+/* Ícone OED */
+/* 
+p4iconeoed
+p4iconeoed1
+p4iconeoed2
+p4iconeoed3
+p4iconeoed4
+*/
+.p4iconeoed{}
+.p4iconeoed1{}
+.p4iconeoed2{}
+.p4iconeoed3{}
+.p4iconeoed4{}
+
+/* Legenda */
+.p4legenda{}
+.p4legendanegativo{
+    color: var(--corprof);
+}
+
+/* Crédito geral */
+.p4credgeral{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    text-align: right;
+    margin: 0.5em 0;
+}
+
+/* Cotas */
+.p4cota{
+    margin: 0.5em 0 0.5em 0;
+}
+.p4cotanegativo{}
+.p4cotamarcador{
+    margin: 0.5em 0 0.5em 2em;
+}
+
+/* Vocabulário */
+.p4vocabulario{
+    margin: 1em 0;
+}
+
+/* Glossário */
+.p4glossario{}
+
+/* Recado imagem e medida animal */
+.p4recadoimagem{
+    font-family: var(--texto);
+    font-size: var(--pesoMenor);
+    text-align: right;
+}
+
+/* Crédito Imagem*/
+/* 
+p4credimagem
+p4credimagemresposta
+p4credimagemnegativo
+*/
+.p4credimagem{
+    background:var(--creditoimg);
+    font-family: var(--texto);
+    font-size: var(--pesoMenor);
+    text-align: right;
+}
+.p4credimagemresposta{
+    background: var(--creditoimg);
+    color: var(--corprof);
+    font-family: var(--texto);
+    font-size: var(--pesoMenor);
+    text-align: right;
+}
+.p4credimagemnegativo{
+    background: var(--creditoimg);
+    color: var(--branco);
+    font-family: var(--texto);
+    font-size: var(--pesoMenor);
+    text-align: right;
+}
+
+/* Cuidado dica */
+.p4cuidadodica{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    text-align: left;
+    margin: 0.5em 0;
+}
+ul.p4cuidadodicaitem{
+    list-style:disc;
+    margin: 0.5em 0 0.5em 1em ;
+}
+p.p4cuidadodicaitem{
+    margin: 0.5em 0 0.5em 1em ;
+}
+p.p4cuidadodicaitem::before{
+    content: ''; /* content: '•';*/
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -0.9em;
+}
+.p4cuidadodicaitemcont{
+    margin: 0.5em 0 0.5em 1em ;
+} 
+
+/* Respostas */
+/*  
+p4resposta
+*/
+.p4resposta{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    color: var(--corprof);
+    text-align: justify;
+    margin: 0.2em 0  0.2em 1.5em;
+}
+
+/* Cortar Dobrar e Colar */
+/* 
+p4recortardobrarcolar 
+*/
+.p4recortardobrarcolar{}
+
+/* Página */
+/* 
+p5paginacao
+p5paginacaoextenso
+*/
+.pag + .p5paginacaoextenso {
+    background: var(--amarelo2);
+    border-radius: 0 0.5em 0.5em 0;
+    padding: 4px 6px 4px 4px;
+  }
+.p5paginacao{
+    background: var(--amarelo2);
+  border-radius: 0.5em 0 0 0.5em;
+  padding: 4px 4px 4px 6px;
+}
+.pag, .p5paginacaoextenso {
+    color: var(--preto);
+    font-family: var(--titulo);
+    font-size: var(--pesoPadrao);
+    font-weight: bold;
+    page-break-before: always;
+    page-break-after: avoid;
+    width: fit-content;
+  }
+
+
+
+/*👉TEXTOS SUPORTE👈*/
+/* Balão de fala */
+/* 
+p5balao
+p5balaoitem
+*/
+.p5balao{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    text-align: center;
+}
+.p5balaoitem{}
+
+/* Ajuste de alinhamento de imagem resolução e gabarito*/
+/* 
+p5figuraespacamentogabreso
+*/
+.p5figuraespacamentogabreso{
+    margin: 0.5em 0;
+}
+/* CURSIVA */
+/* 
+p5cursiva
+*/
+.p5cursiva{}
+
+/* MARCADORES */
+/* 
+p5marcador
+p5marcadornegativo
+p5marcadorromano
+p5marcador2
+p5marcador2negativo
+p5marcador2romano
+p5marcadorcaixa
+p5marcadorcaixanegativo
+p5marcadorcaixa2
+p5marcadorcaixa2negativo
+p5marcadorcaixa3
+p5marcadorcaixa3negativo
+p5marcadorquestao
+*/
+.p5marcador{
+    background: var(--preto);
+    font-family: var(--texto);
+    color: var(--branco);
+    font-weight: bold;
+    height: 25px;
+    position: absolute;
+    text-align: center;
+    margin: 0 0 0 -30px;
+    width: 25px;
+}
+.p5marcadornegativo{}
+.p5marcadorromano{
+    background: var(--preto);
+    color: var(--branco);
+    font-weight: bold;
+    height: 25px;
+    position: absolute;
+    text-align: center;
+    margin: 0 0 0 -40px;
+    width: 35px;
+    padding: 0 4px;
+}
+
+.p5marcador2{
+    background: var(--preto);
+    color: var(--branco);
+    font-weight: bold;
+    height: 25px;
+    position: absolute;
+    text-align: center;
+    margin: 0 0 0 -30px;
+    width: 25px;
+}
+.p5marcador2negativo{}
+.p5marcador2romano{
+    background: var(--amarelo3);
+    border-radius: 0.4em;
+    color: var(--preto);
+    font-weight: bold;
+    height: 28px;
+    position: absolute;
+    text-align: center;
+    margin: 0 0 0 -40px;
+    width: 35px;
+    padding: 4px 0px 0 0px;
+}
+figure>.p5marcador {
+    background: var(--preto);
+    color: var(--branco);
+    font-weight: bold;
+    height: 25px;
+    text-align: center;
+    margin: 0 0 0 0px;
+    position: static;
+    width: 25px;
+}
+.p5marcadorcaixa{
+    background: var(--verde1);
+    border-radius: 0em 0 0 0;
+    color: var(--branco);
+    font-family: var(--titulo);
+    font-weight: bold;
+    width: fit-content;
+    max-width: 100%;
+    padding: 0 1em 0.2em 1em;
+    margin: 0.5em 0;
+}
+.p5marcadorcaixanegativo{}
+
+.p5marcadorcaixa2{
+    background: var(--preto);
+    border-radius: 0.6em;
+    color: var(--branco);
+    font-family: var(--titulo);
+    font-weight: bold;
+    padding: 0em 0.5em 0.2em 0.5em;
+    width: fit-content;
+    margin: 1em 0;
+}
+.p5marcadorcaixa2negativo{}
+
+.p5marcadorcaixa3{}
+.p5marcadorcaixa3negativo{}
+
+
+.p5marcadorquestao{
+    background: var(--preto);
+    color: var(--branco);
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+}
+
+/* ABERTURA DE CAPITULO */
+/* 
+p5aberturaobjtit
+p5aberturaobjitem
+p5aberturaobjtexto
+*/
+.p5aberturaobjtexto{}
+.p5aberturaobjtit{}
+.p5aberturaobjitem{}
+
+/*👉PÁGINA INFO👈*/
+/*
+p6infoautorformacao
+p6infoautornome
+p6infocargoresponsavel
+p6infoeditora
+p6infografica
+p6infolei
+*/
+.p6infoautorformacao{}
+.p6infoautornome{}
+.p6infocargoresponsavel{}
+.p6infoeditora{}
+.p6infografica{}
+.p6infolei{}
+
+
+
+/*👉ESTILOS EXCLUSIVOS DO DIGITAL (Link)👈*/
+/* 
+d0secsumario
+d0sumariosecinicial
+d0sumariooed
+d0navsumario
+d0secsumarioindex
+d0orientacaousooed
+d0groupline
+d0grouptit
+d0icoatencao
+d0boxsumariotit
+d0semfundo
+d0bgbranco
+d0boxabertura
+d0boxabertura2
+d0imgabertura
+d0tit1
+d0tit2
+d0boxaberturatit
+d0materiaistit
+d0secatividade
+d0secatividadetit
+d0anote
+d0estrategiastit
+d0ods
+d0atvanote
+d0perfil
+d0chat
+d0conversa1 
+d0conversa2
+d0fotoperfil
+d0mensagem
+d0name 
+d0texto
+d0hora
+d0textarea
+d0input
+d0carimbo 
+d0linha
+d0boxpoema
+d0separabloco
+d0selotema
+d0selotema2
+d0fracao
+d0fracao2
+d0fracao3
+d0matriz1
+d0alfabeto
+d0table
+
+*/
+.d0secsumario{}
+.d0sumariosecinicial{}
+.d0sumariooed{}
+.d0navsumario{}
+.d0secsumarioindex{}
+.d0orientacaousooed{}
+.d0groupline{}
+.d0grouptit{}
+.d0icoatencao{}
+.d0sumariosecinicial{}
+.d0boxsumariotit{}
+.d0semfundo{}
+.d0bgbranco{
+    background: var(--branco);
+}
+.d0boxabertura{}
+.d0boxabertura2{}
+.d0imgabertura{}
+.d0tit1{}
+.d0tit2{}
+.d0boxaberturatit{}
+.d0materiaistit{}
+.d0secatividade{}
+.d0secatividadetit{}
+.d0anote{}
+.d0estrategiastit{}
+.d0ods{}
+.d0atvanote{}
+.d0perfil{}
+.d0chat{}
+.d0conversa1{} 
+.d0conversa2{}
+.d0fotoperfil{}
+.d0mensagem{}
+.d0name{} 
+.d0texto{}
+.d0hora{}
+.d0textarea{}
+.d0input{}
+.d0carimbo{}
+.d0carimbo::after{
+    background: url(../images/pv_modelo.svg) no-repeat;
+    content: '';
+    background-size: 100%;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    margin: 0 0 0 0;
+    z-index: 10;
+}
+.d0linha{
+    border-bottom: 1px solid var(--preto);
+    width: 50%;
+    display: inline-block;
+    max-width: 100%;
+}
+.d0boxpoema{
+    padding: 1em 3em !important;    
+ }
+.d0boxpoema>blockquote{
+    line-height: 2em;
+}
+.d0separabloco{
+    margin: 2em 0 0 0 !important;
+}
+.d0selotema{}
+.d0selotema2{}
+
+.d0fracao{}
+.d0fracao>.c0destaquenumero,
+.d0fracao>.c0destaqueletra,
+ul.d0fracao>li,
+li.d0fracao{
+    margin-top: 7px;
+}
+
+.d0fracao2{}
+.d0fracao2>.c0destaquenumero,
+.d0fracao2>.c0destaqueletra{
+    margin-top: 14px;
+}
+
+.d0fracao3{}
+.d0fracao3>.c0destaquenumero,
+.d0fracao3>.c0destaqueletra{
+    margin-top: 4px;
+}
+.d0matriz1{}
+
+.d0alfabeto{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.d0alfabeto>figure{
+    margin: 0.2em 0;
+}
+.d0table{
+    overflow-x: auto;
+} /*👉para habilitar barra de rolagem horizontal em tabelas muito largas👈*/
+
+
+
+
+
+/*👉ESTILOS DIGITAL: página crédito👈*/
+/* 
+d1pagecreditos
+d1nomeautor
+d1cargoresponsavel1
+d1cargoresponsavel2
+d1fichacatalografica
+d1infoeditora
+d1infoimpressao
+*/
+
+.d1pagecreditos{
+    border: 1px solid var(--preto);
+    padding: 1em 1.5em;
+}
+.d1pagecreditos+.descaracterizada{
+    border: 1px solid var(--preto);
+    padding: 1em 1.5em;
+    min-height: 800px;
+}
+.d1nomeautor{
+    margin: 1em 0 0.5em 0;
+}
+.d1cargoresponsavel1{
+    margin: 1.5em 0;
+}
+.d1cargoresponsavel2{
+    margin: 1.5em 0;
+}
+.d1fichacatalografica{}
+.d1infoeditora{
+    text-align: center;
+    margin: 1.5em 0;
+}
+.d1infoimpressao{
+    text-align: center;
+    margin: 1.5em 0;
+}
+.d1infoimpressao>p:first-child{
+    border: 1px solid var(--preto);
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+}
+
+/*👉ESTILOS DIGITAL: atividades adaptadas👈*/
+/* 
+d2boxadaptacaoconteudo
+d2boxadaptaprof
+d2boxadaptaaluno
+d2adaptadatit
+*/
+.d2boxadaptacaoconteudo{}
+.d2boxadaptaprof{}
+.d2boxadaptaaluno{}
+.d2adaptadatit{}
+
+
+/*👉ESTILOS DE CARACTER👈*/
+/*👉C0: Estilos “reservados” (uso em Nested Styles)👈*/
+/* Sumário */
+/* 
+c0sumariosecao1
+c0sumariosecao2
+c0sumariosecao3
+c0sumariosecao4
+c0sumariosecao5
+c0sumdestaque1
+c0sumdestaque2
+c0sumdestaque3
+c0sumdestaque4
+c0sumdestaque5
+c0sumdestaquecap
+c0sumdestaqueuni
+c0sumpagina
+c0sumpontilhado
+c0sumarioaudio
+c0sumariooed
+*/
+.c0sumariosecao1{}
+.c0sumariosecao2{}
+.c0sumariosecao3{}
+.c0sumariosecao4{}
+.c0sumariosecao5{}
+.c0sumdestaque1{}
+.c0sumdestaque2{}
+.c0sumdestaque3{}
+.c0sumdestaque4{}
+.c0sumdestaque5{}
+.c0sumdestaquecap{}
+.c0sumdestaqueuni{}
+.c0sumpagina{}
+.c0sumpontilhado{}
+.c0sumarioaudio{}
+.c0sumariooed{}
+
+/* Geral */
+/* 
+c0destaqueoed
+c0destaqueoed1
+c0destaqueoed2
+c0destaqueoed3
+c0destaqueletra
+c0destaqueletracitacao
+c0destaquenumero
+c0destaquenumerocitacao 👉Estilo de caracter utilizado na citacao 
+c0destaqueparentese 👉demanda surgiu no g27 fund1 E002, para alinhamento de parêntense devido a tipografia utilizada
+c0destaqueromano
+c0destaquequestaonumero
+c0destaquequestaoletra
+c0destaquequestaoparentese
+c0destaqueintermediarioletra
+c0destaqueintermediarionumero
+c0destaqueintermediarioparentese
+c0destaquesomatoria
+c0bulletnumitem
+c0bulletsubitem  👉Estilo de caracter utilizado no manual em U 
+c0destaqueuni
+c0destaquecap 👉Estilo de caracter utilizado no sumário mp  
+c0destaquesecao 👉Estilo de caracter utilizado no sumário mp 
+c0destaquebullet 👉Demanda surgiu no G26 física E002 para trocar cor de bullet para azul
+*/
+.c0destaqueoed{}
+.c0destaqueoed1{}
+.c0destaqueoed2{}
+.c0destaqueoed3{}
+
+.c0destaqueletra{
+    font-weight: bold;
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    margin: 0 0 0 -30px;
+    text-align: center;
+}
+.c0destaqueletracitacao{
+    font-weight: bold;
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    margin: 0 0 0 -30px;
+    text-align: center;
+}
+.c0destaquenumero{
+    font-weight: bold;
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    margin: 0 0 0 -30px;
+    text-align: center;
+}
+.c0destaquenumerocitacao{
+    font-weight: bold;
+    position: absolute;
+    width: 30px;
+    height:20px;
+    margin: 0 0 0 -40px;
+} /* Estilo de caracter utilizado na citacao */ 
+
+.c0destaqueparentese{}
+
+.c0destaqueromano{
+    font-weight: bold;
+    width: 38px;
+    height: 36px;
+    position: absolute;
+    margin: 0 0 0 -40px;
+    text-align: right;
+}
+.c0destaquequestaonumero{
+    color: var(--verde1);
+    font-family: var(--titulo);
+    font-weight: bold;
+}
+
+.c0destaquequestaoletra{}
+.c0destaquequestaoparentese{}
+.c0destaqueintermediarioletra{}
+.c0destaqueintermediarionumero{}
+.c0destaqueintermediarioparentese{}
+
+
+.c0destaquesomatoria{
+    font-weight: 550;
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    margin: 0 0 0 -40px;
+}
+.c0bulletnumitem{
+    width: 20px;
+  height: 24px;
+  position: absolute;
+  margin: 0 0 0 -22px;
+  font-size: 1.2em;
+  text-align: center;
+}
+.c0bulletsubitem{} /* Estilo de caracter utilizado no manual em U */ 
+.c0destaqueuni{}
+.c0destaquecap{}/* Estilo de caracter utilizado no sumário mp */ 
+.c0destaquesecao{}/* Estilo de caracter utilizado no sumário mp */ 
+.c0destaquebullet{} /*Demanda surgiu no G26 física E002: para trocar cor de bullet para azul */
+
+/*👉C1: Estilos de bold e itálico👈*/
+/* 
+c1bold
+c1italico
+c1bolditalico
+c1citacaobold
+c1citacaoitalico
+c1citacaobolditalico
+c1leitura
+c1boldleitura
+c1italicoleitura
+c1bolditalicoleitura
+*/
+.c1bold{
+    font-weight: bold;
+}
+.c1italico{
+    font-style: italic;
+}
+.c1bolditalico{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.c1citacaobold{
+    font-weight: bold;
+}
+.c1citacaoitalico{
+    font-style: italic;
+}
+.c1citacaobolditalico{
+    font-style: italic;
+    font-weight: bold;
+}
+.c1leitura{}
+.c1boldleitura{
+    font-weight: bold;
+}
+.c1italicoleitura{
+    font-style: italic;
+}
+.c1bolditalicoleitura{
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*👉C2: Estilos de Respostas👈*/
+/* 
+c2respostabold
+c2respostaitalico
+c2respostabolditalico
+*/
+.c2respostabold{
+    color: var(--corprof);
+    font-weight: bold;    
+}
+.c2respostaitalico{
+    color: var(--corprof);
+    font-style: italic;
+}
+.c2respostabolditalico{
+    color: var(--corprof);
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/*👉C3: Estilos de Acessibilidade👈*/
+/* 
+c3idioma
+c3idiomabold
+c3idiomaitalico
+c3idiomabolditalico
+c3idiomasimuladorhiperlink
+c3idiomaglossariodestaque
+c3idiomaglossariodestaqueitalico
+
+*/
+.c3idioma{
+    background: var(--vermelho2);
+}
+.c3idiomabold{
+    font-weight: bold;
+}
+.c3idiomaitalico{
+    font-style: italic;
+}
+.c3idiomabolditalico{
+    font-weight: bold;
+    font-style: italic;
+}
+.c3idiomasimuladorhiperlink{
+    color: var(--link);
+    font-size: var(--pesoPadrao);
+    text-decoration: underline;
+}
+
+.c3idiomaglossariodestaque{}
+.c3idiomaglossariodestaqueitalico{
+    font-style: italic;
+}
+
+
+/* idioma citação */
+/* 
+c3idiomacitacaoitalico
+ */
+.c3idiomacitacaoitalico{}
+
+/* (exceção no INDD - overprint) */ 
+/* 
+c3idiomaresposta
+c3idiomaboldresposta
+c3idiomaitalicoresposta
+c3idiomabolditalicoresposta
+*/
+.c3idiomaresposta{
+    background: var(--vermelho2);
+    color: var(--corprof);    
+}
+.c3idiomaboldresposta{
+    color: var(--corprof);
+    font-weight: bold;    
+}
+.c3idiomaitalicoresposta{
+    color: var(--corprof);
+    font-style: italic;
+}
+.c3idiomabolditalicoresposta{
+    color: var(--corprof);
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* idioma vocabulario */
+/* 
+c3idiomavocabulariodestaque
+c3idiomavocabulariodestaqueitalico
+*/
+.c3idiomavocabulariodestaque{
+    font-weight: bold;
+}
+.c3idiomavocabulariodestaqueitalico{
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*👉C4: Estilos de Suporte👈*/
+/* 
+c4cifrao
+c4fonema
+c4lacuna
+c4ordinal
+c4ordinalbold
+c4ordinalnegativo
+c4ordinalresposta
+c4ordinalrespostabold
+c4ordinalsobrescrito
+c4simuladorhiperlink
+c4linhalacuna
+c4vocabulariodestaque
+c4vocabulariodestaqueitalico
+c4vocabulariodestaquevoltar
+c4glossariodestaque
+c4glossariodestaqueitalico
+c4glossariodestaquevoltar
+c4textotachado
+c4textosublinhadoidioma
+c4textosublinhado
+c4cartaoresp
+c4quadrinho
+c4linhalacuna
+*/
+.c4cifrao{}
+.c4fonema{
+    font-family: var(--fonema);
+}
+.c4lacuna{
+    font-family: var(--ordinal);
+    font-size: 1.4em;
+    vertical-align: baseline;
+}
+.c4ordinal{
+    font-family: var(--ordinal);
+}
+.c4ordinalbold{
+    font-family: var(--ordinal);
+    font-weight: bold;
+}
+.c4ordinalnegativo{
+    font-family: var(--ordinal);
+}
+.c4ordinalresposta{
+    color: var(--corprof);
+    font-family: var(--ordinal);
+}
+.c4ordinalrespostabold{
+    color: var(--corprof);
+    font-family: var(--ordinal);
+    font-weight: bold;
+}
+.c4ordinalsobrescrito{}
+.c4simuladorhiperlink{
+    color: var(--link);
+    font-size: var(--pesoPadrao);
+    text-decoration: underline;
+}
+
+.c4linhalacuna, .c4linhalacunap, .c4linhalacunam, .c4linhalacunag{
+    margin: 0.5em 0;
+     display: inline-block;
+      border-bottom: 1px solid var(--preto);
+}
+.c4linhalacuna{
+   
+    width: 70px ;
+}
+.c4linhalacunap{
+
+    width:40px ;
+
+}
+.c4linhalacunam{
+    width: 150px ;
+}
+.c4linhalacunag{
+    width: 250px;
+}
+.p2atvresposta{
+    border-bottom: 1px solid var(--preto);
+    width: calc(100% - 30px);
+    display: inline-block;
+    margin: 0.5em 0 0.5em 30px;
+}
+.c4vocabulariodestaque{
+    border-bottom: 2px solid var(--verde1);
+    font-weight: bold;
+}
+.c4vocabulariodestaqueitalico{
+    border-bottom: 2px solid var(--verde1);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*👉TODO: verificar a aplicação - teste para caso haja diligência de descrição de links de vocabulário
+a:has(.c4vocabulariodestaque)::before{
+    clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;   
+    content:'acessar a definição do termo';
+} 👈*/
+
+.c4vocabulariodestaquevoltar{
+    background: var(--cinza);
+    font-weight: bold;
+    color: #000;
+}
+.c4glossariodestaque{
+     font-weight: bold;
+    color: #000;
+}
+.c4glossariodestaqueitalico{
+     font-weight: bold;
+    color: #000;
+    font-style: italic;
+}
+.c4glossariodestaquevoltar{
+      background: var(--cinza);
+    font-weight: bold;
+    color: #000;
+}
+
+.c4textotachado{
+    text-decoration: line-through;
+}
+.c4textosublinhadoidioma{
+    
+}
+.c4textosublinhado{}
+
+.c4cartaoresp{
+    background: var(--branco);
+    border: 1px solid var(--preto);
+    border-left: 2px solid var(--preto);
+    border-bottom: 2px solid var(--preto);
+    font-family: var(--texto);
+    line-height: 1.5em;
+    padding: 0.2em 0.4em;
+    text-align: center;
+
+}
+.c4quadrinho{
+    width: 40px; 
+    height: 40px;
+    border: 1px solid var(--preto);
+    display:inline-block;
+}
+
+/*👉C5: Estilos de  👈*/
+/* 
+c5destaqueverbetedicionario
+c5indicacao
+c5extradestaque
+c5extradestaqueleitura
+c5extradestaquecor1
+c5extradestaquecor2
+c5extradestaquecor3
+c5extradestaquecor4
+c5extradestaquecor5
+c5extradestaquecor6
+c5extraitalico
+c5extraitalicoidioma
+*/
+.c5destaqueverbetedicionario{
+    color: var(--link);
+}
+.c5indicacao{}
+.c5extradestaque{
+    color: var(--roxo1);
+}
+.c5extradestaqueleitura{}
+.c5extradestaquecor1{
+    background: var(--amarelo1);
+}
+.c5extradestaquecor2{
+    background: var(--vermelho2);
+}
+.c5extradestaquecor3{
+     background: var(--verde1);
+}
+.c5extradestaquecor4{
+     background: var(--azul2);
+}
+.c5extradestaquecor5{
+     background: var(--laranja1);
+}
+.c5extradestaquecor6{
+     background: var(--marrom);
+}
+
+.c5extradestaquecor1::before, .c5extradestaquecor1::after,
+.c5extradestaquecor2::before, .c5extradestaquecor2::after,
+.c5extradestaquecor3::before, .c5extradestaquecor3::after,
+.c5extradestaquecor4::before, .c5extradestaquecor4::after,
+.c5extradestaquecor5::before, .c5extradestaquecor5::after,
+.c5extradestaquecor6::before, .c5extradestaquecor6::after{
+clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; /* added line */
+    width: 1px;   
+}
+.c5extradestaquecor1::before {
+    content:"Início do texto em destaque na cor amarela "; 
+}
+.c5extradestaquecor1::after {
+    content:"final do texto em destaque ";
+}
+.c5extradestaquecor2::before {
+    content:"Início do texto em destaque na cor vermelha "; 
+}
+.c5extradestaquecor2::after {
+    content:"final do texto em destaque ";
+}
+.c5extradestaquecor3::before {
+    content:"Início do texto em destaque na cor verde "; 
+}
+.c5extradestaquecor3::after {
+    content:"final do texto em destaque ";
+}
+.c5extradestaquecor4::before {
+    content:"Início do texto em destaque na cor azul "; 
+}
+.c5extradestaquecor4::after {
+    content:"final do texto em destaque";
+}
+.c5extradestaquecor5::before {
+    content:"Início do texto em destaque na cor laranja "; 
+}
+.c5extradestaquecor5::after {
+    content:"final do texto em destaque ";
+}
+.c5extradestaquecor6::before {
+    content:"Início do texto em destaque na cor marrom "; 
+}
+.c5extradestaquecor6::after {
+    content:"final do texto em destaque ";
+}
+
+
+
+.c5extraitalico{
+    font-style: italic;
+    color: #ae3cff;
+}
+.c5extraitalicoidioma{
+    font-style: italic;
+    color: #ae3cff;
+}
+
+/*👉C6: Destaque para sistema de classificação decimal - matemática (CDU)👈*/
+/* 
+c6destaqueunidade
+c6destaquedezena
+c6destaquecentena
+c6destaquedecimo
+c6destaquecentesimo
+c6destaquemilesimo
+
+*/
+
+.c6destaqueunidade,
+.c6destaquedezena,
+.c6destaquecentena,
+.c6destaquedecimo,
+.c6destaquecentesimo,
+.c6destaquemilesimo{
+    font-weight: bold;
+}
+
+.c6destaqueunidade{
+    color: var(--unidade);
+}
+.c6destaquedezena{
+    color: var(--dezena);
+}
+.c6destaquecentena{
+    color: var(--centena);
+}
+.c6destaquedecimo{
+    color: var(--decimo);
+}
+.c6destaquecentesimo{
+    color: var(--centesimo);
+}
+.c6destaquemilesimo{
+    color: var(--milesimo);
+}
+
+
+/*👉 Troca de caractere 👈*/
+/*
+trocacaracter1
+trocacaracter2
+*/
+.trocacaracter1{}
+.trocacaracter2{}
+
+
+/* ESTILO DE OBJETO */
+
+/*👉O0: Estilos “reservados” (Essenciais em todo projeto)👈*/
+
+/* Abertura  estilos esclusivos do digital*/
+.boxabertura
+.imgAbertura
+/* Abertura  estilos esclusivos do digital*/
+
+/* Estilos de objeto: APRESENTAÇÃO E CONHEÇA */
+/* 
+o0mpg
+o0infofichacatalografica
+o0facsimile
+o0secconheca
+o0secconheca2
+o0secconheca3
+o0secconhecabox1
+o0secconhecabox2
+o0secconhecabox3
+o0secconhecabox4
+o0secapresentacao
+o0sumariobox1
+o0aberturabox
+o0aberturaintrobox
+o0aberturaatvbox
+o0aberturaobjbox
+o0aberturalegenda
+o0aberturaimgmini
+o0secrespostas
+o0sec1
+o0sec2
+o0sec3
+o0sec4
+o0sec5
+o0sec6
+o0sec7
+o0sec8
+o0sec9
+o0sec10
+o0sec11
+o0sec12
+o0sec13
+o0sec1a
+O0Sec2a
+o0sec3a
+o0sec4a
+o0sec5a
+o0sec6a
+o0sec7a
+o0sec8a
+o0sec9a
+o0sec10a
+o0sec1box
+o0sec1box2
+o0sec1box3
+o0sec2box
+o0sec2box2
+o0sec2box3
+o0sec3box
+o0sec3box2
+o0sec3box3
+o0sec4box
+o0sec4box2
+o0sec4box3
+o0sec5box
+o0sec5box2
+o0sec5box3
+o0sec6box
+o0sec6box2
+o0sec6box3
+o0sec7box
+o0sec7box2
+o0sec7box3
+o0sec8box
+o0sec8box2
+o0sec8box3
+o0sec9box
+o0sec9box2
+o0sec9box3
+o0sec9box4
+o0sec10box
+o0sec10box2
+o0sec10box3
+o0sec11box1
+o0sec11box2
+o0sec11box3
+o0sec11box4
+o0sec12box1
+o0sec12box2
+o0sec12box3
+o0sec12box4
+o0sec13box1
+o0sec13box2
+o0sec13box3
+o0sec13box4
+o0parasabermais
+o0referencias
+o0materialcomplementar
+o0pronuncia
+o0sugestcomp
+o4medidaanimalbox
+o0boxpalavra
+o0pronunciation 👉 Especifico de inglês
+o0transcricao
+o0glossariobox
+o0glossario
+*/
+.o0mpg{}
+.o0infofichacatalografica{}
+.o0facsimile{}
+.o0secconheca{}
+.o0secconheca2{}
+.o0secconheca3{}
+.o0secconhecabox1{}
+.o0secconhecabox2{}
+.o0secconhecabox3{}
+.o0secconhecabox4{}
+.o0secapresentacao{}
+.o0sumariobox1{}
+.o0aberturabox{}
+.o0aberturaintrobox{}
+.o0aberturaatvbox{}
+.o0aberturaobjbox{}
+.o0aberturalegenda{}
+.o0aberturaimgmini{}
+.o0secrespostas{}
+.o0sec1{}
+.o0sec2{}
+.o0sec3{}
+.o0sec4{}
+.o0sec5{}
+.o0sec6{}  
+.o0sec7{}
+.o0sec8{}
+.o0sec9{}
+.o0sec10{}
+.o0sec11{}
+.o0sec12{}
+.o0sec13{}
+.o0sec1a{}
+.o0sec2a{}
+.o0sec3a{}
+.o0sec4a{}
+.o0sec5a{}
+.o0sec6a{}  
+.o0sec7a{}
+.o0sec8a{}
+.o0sec9a{}
+.o0sec10a{}
+.o0sec1box{}
+.o0sec1box2{}
+.o0sec1box3{}
+.o0sec2box{}
+.o0sec2box2{}
+.o0sec2box3{}
+.o0sec3box{}
+.o0sec3box2{}
+.o0sec3box3{}
+.o0sec4box{}
+.o0sec4box2{}
+.o0sec4box3{}
+.o0sec5box{}
+.o0sec5box2{}
+.o0sec5box3{}
+.o0sec6box{}
+.o0sec6box2{}
+.o0sec6box3{}
+.o0sec7box{}
+.o0sec7box2{}
+.o0sec7box3{}
+.o0sec8box{}
+.o0sec8box2{}
+.o0sec8box3{}
+.o0sec9box{}
+.o0sec9box2{}
+.o0sec9box3{}
+.o0sec9box4{}
+.o0sec10box{}
+.o0sec10box2{}
+.o0sec10box3{}
+.o0sec11box1{}
+.o0sec11box2{}
+.o0sec11box3{}
+.o0sec11box4{}
+.o0sec12box1{}
+.o0sec12box2{}
+.o0sec12box3{}
+.o0sec12box4{}
+.o0sec13box1{}
+.o0sec13box2{}
+.o0sec13box3{}
+.o0sec13box4{}
+.o0parasabermais{}
+.o0referencias{}
+.o0materialcomplementar{}
+.o0pronuncia{}
+.o0sugestcomp{}
+.o4medidaanimalbox{}
+.o0boxpalavra{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.2em 1em;
+    background: var(--cinza);
+    justify-content: center;
+    border-radius: 0.5em;
+    padding: 1em;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0;
+}
+.o0boxpalavra li::before {
+    content: '•';
+    width: 10px;
+    text-align: center;
+    position: absolute;
+    margin: 0 0 0 -13px;
+}
+.o0boxpalavra li:first-child::before {
+    content: '';
+}
+.o0transcricao{}
+.o0glossariobox{}
+.o0glossario{}
+
+/*👉O1: Estilos para boxes genéricos, suportes e papeletas👈*/
+/* 
+o1boxfundo
+o1boxfundobranco
+o1boxfundoazul1
+o1boxfundoazul2
+o1boxfundoroxo1
+o1boxfundoroxo2
+o1boxfundorosa1
+o1boxfundorosa2
+o1boxfundoamarelo1
+o1boxfundoamarelo2
+o1boxfundolaranja1
+o1boxfundolaranja2
+o1boxfundoverde1
+o1boxfundoverde2
+o1boxfundoturquesa1
+o1boxfundoturquesa2
+o1fioindicacaoroxo1
+o1fioindicacaoverde1
+o1boxfio1
+o1boxfiolaranja1
+o1boxfioroxo1
+o1boxfioazul1
+o1boxfioverde1
+o1fiocotapreto
+o1cotafiopreto
+o1setaroxo1
+o1setaazul1
+o1setaverde1
+o1contornoimagem  👉 atualizar lista de stilos
+o1acabamentoimagem
+o1contornoimagembranco
+o1zoomcontorno
+o1marcador 👉 demanda do impresso automação
+o1marcador2 👉 demanda do impresso automação
+o1marcadorcaixa 👉 demanda do impresso automação
+o1marcadorcaixa2 👉 demanda do impresso automação
+*/
+.o1boxfundo{}
+.o1boxfundobranco{}
+.o1boxfundoazul1{}
+.o1boxfundoazul2{}
+.o1boxfundoroxo1{}
+.o1boxfundoroxo2{}
+.o1boxfundorosa1{}
+.o1boxfundorosa2{}
+.o1boxfundoamarelo1{
+
+}
+.o1boxfundoamarelo2{}
+.o1boxfundolaranja1{}
+.o1boxfundolaranja2{}
+.o1boxfundoverde1{}
+.o1boxfundoverde2{}
+.o1boxfundoturquesa1{}
+.o1boxfundoturquesa2{}
+.o1fioindicacaoroxo1{}
+.o1fioindicacaoverde1{}
+.o1boxfio1{
+    border: 1px solid var(--preto);
+    padding: 1em;
+    margin: 1em 0;
+}
+.o1boxfiolaranja1{
+    border: 1px solid var(--laranja1);
+    padding: 1em;
+    margin: 1em 0;
+}
+.o1boxfioroxo1{
+    border: 1px solid var(--roxo1);
+    padding: 1em;
+    margin: 1em 0;
+}
+.o1boxfioazul1{
+    border: 1px solid var(--azul1);
+    padding: 1em;
+    margin: 1em 0;
+}
+.o1boxfioverde1{
+    border: 1px solid var(--verde1);
+    padding: 1em;
+    margin: 1em 0;
+}
+.o1fiocotapreto{}
+.o1setaroxo1{}
+.o1setaazul1{}
+.o1setaverde1{}
+.o1contornoimagem{
+    border: 1px solid var(--preto);
+}
+.o1acabamentoimagem{
+    border-radius: 1em;
+}
+.o1contornoimagembranco{}
+.o1zoomcontorno{}
+
+.o1marcador{}
+.o1marcador2{}
+.o1marcadorcaixa{}
+.o1marcadorcaixa2{}
+
+
+/*👉O2: Gráficos e mapas👈*/
+/* 
+o2mapabox
+o2mapaescala
+o2mapaescalabox
+o2graficobox
+o2graficobox2
+o2esquemabox
+*/
+.o2mapabox{}
+.o2mapaescala{}
+.o2mapaescalabox{}
+.o2graficobox{}
+.o2graficobox2{}
+.o2esquemabox{}
+
+/*👉O3: Jornal e Citação👈*/
+/* 
+o3jornalfundo
+o3fiocitacao
+o3fiovocabulario
+*/
+.o3jornalfundo{
+    background: var(--cinza);
+    padding: 1em;
+    border: 1px solid #A7ACA8;
+    margin: 1em 0;
+}
+.o3fiocitacao{}
+.o3fiovocabulario{}
+
+
+/*👉O4: Boxes específicos👈*/
+/* 
+o4questaobox
+o4ficha1
+o4ficha2
+o4boxinfo
+o4boxmateriais
+o4balao
+o4balaobranco
+o4balaopensamento
+o4balaopensamentobranco
+o4balaosussuro
+o4balaosussurobranco
+o4cuidadobox
+o4dicabox
+o4dicaboxnegativo
+o4autorbox
+o4atencaobox
+o4conceitobox
+o4avaliacaobox
+o4vocabulariobox
+o4vocabularioboxbranco
+o4glossariobox
+o4etapabox
+o4exemplobox
+o4intermediariobox
+o4destaquepalavrabox
+o4destaquepalavrafio
+o4recadoimagem1
+o4recadoimagem2
+o4recadoimagem3
+o4recadoimagem4
+o4tipofrase1
+o4tipofrase2
+o4tipofrase3
+o4ideiabox
+o4quadrinho
+*/
+.o4questaobox{}
+.o4ficha1{}
+p.o4ficha1 {
+    border: 3px solid var(--cinza);
+    border-radius: 0.5em;
+    line-height: 1.1em;
+    padding: 0.4em 0.5em 0em 0.5em;
+    width: fit-content;
+    margin: 0.5em;
+}
+ul.o4ficha1{
+    display:  flex;
+    justify-content: left;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin: 1em 0;
+}
+ul.o4ficha1 li{
+    border: 3px solid var(--cinza);
+    border-radius: 0.5em;
+    line-height: 1.1em;
+    padding: 0.4em 0.5em 0em 0.5em;
+    width: fit-content;
+}
+span.o4ficha1 {
+    border: 3px solid var(--cinza);
+    border-radius: 0.5em;
+    padding: 0.2em 0.5em;
+    width: fit-content;
+    margin: 0em;
+}
+p.o4ficha2 {
+    border: 3px solid var(--preto_);
+    border-radius: 0.5em;
+    line-height: 1.1em;
+    padding: 0.4em 0.5em 0em 0.5em;
+    width: fit-content;
+    margin: 0.5em;
+}
+ul.o4ficha2{
+    display:  flex;
+    justify-content: left;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin: 1em 0;
+}
+ul.o4ficha2 li{
+    border: 3px solid var(--preto_);
+    border-radius: 0.5em;
+    line-height: 1.1em;
+    padding: 0.4em 0.5em 0em 0.5em;
+    width: fit-content;
+    
+
+}
+
+span.o4ficha2 {
+    border: 3px solid var(--preto_);
+    border-radius: 0.5em;
+    padding: 0.2em 0.5em;
+    width: fit-content;
+    margin: 0em;
+}
+.o4boxinfo{}
+.o4boxmateriais{
+    margin: 1em 0;
+}
+.o4balao{}
+.o4balao, .o4balaopensamento {
+    background: var(--amarelo1);
+    border-radius: 2em ;
+    padding: 1.2em;
+    width: 250px;
+    margin: 1em 0 2em 0;
+}
+
+.o4balao.direita::after{
+    content: '';
+    background: url(../images/pv_o4balao_dir.svg) no-repeat;
+    background-size: 100%;
+    width: 15px;
+    height:30px;
+    position: absolute;
+    margin: 10px 0 0 -50px;
+}
+.o4balaopensamento.direita::after{
+    content: '';
+    background: url(../images/pv_o4balaopensamento_dir.svg) no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height:30px;
+    position: absolute;
+    margin: 15px 0 0 -50px;
+}
+
+.o4balao.esquerda::after{
+    content: '';
+    background: url(../images/pv_o4balao_esq.svg) no-repeat;
+    background-size: 100%;
+    width: 15px;
+    height:30px;
+    position: absolute;
+    margin: 10px 0 0 40px;
+}
+
+.o4balaopensamento.esquerda::after{
+    content: '';
+    background: url(../images/pv_o4balaopensamento_esq.svg) no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height:30px;
+    position: absolute;
+    margin: 15px 0 0 40px;
+}
+.o4balaobranco{}
+.o4balaobranco, .o4balaopensamentobranco, .o4balaosussurobranco {
+    background: var(--branco);
+    border-radius: 2em ;
+    padding: 1.2em;
+    width: 250px;
+    margin: 1em 0 2em 0;
+}
+
+.o4balaobranco.direita::after{
+    content: '';
+    background: url(../images/pv_o4balaobranco_dir.svg) no-repeat;
+    background-size: 100%;
+    width: 15px;
+    height:30px;
+    position: absolute;
+    margin: 10px 0 0 -50px;
+}
+
+.o4balaobranco.esquerda::after{
+    content: '';
+    background: url(../images/pv_o4balaobranco_esq.svg) no-repeat;
+    background-size: 100%;
+    width: 15px;
+    height:30px;
+    position: absolute;
+    margin: 10px 0 0 40px;
+}
+.o4balaopensamentobranco{}
+.o4balaopensamentobranco.direita::after{
+    content: '';
+    background: url(../images/pv_o4balaopensamentobranco_dir.svg) no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height:30px;
+    position: absolute;
+    margin: 15px 0 0 -50px;
+}
+
+.o4balaopensamentobranco.esquerda::after{
+    content: '';
+    background: url(../images/pv_o4balaopensamentobranco_esq.svg) no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height:30px;
+    position: absolute;
+    margin: 15px 0 0 40px;
+}
+.o4balaosussuro{
+     background: var(--branco);
+    border:4px dashed var(--amarelo2);
+    border-radius: 2em ;
+    padding: 1.2em;
+    width: 250px;
+    margin: 1em 0 2em 0;
+}
+.o4balaosussurobranco{}
+
+
+
+
+.o4cuidadobox{
+    background: var(--cinza);
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 1em 0;
+}
+.o4dicabox{}
+.o4dicaboxnegativo{}
+.o4autorbox{}
+.o4atencaobox{}
+.o4conceitobox{
+    background: var(--cinza);
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 1em 0;
+}
+.o4avaliacaobox{}
+.o4vocabulariobox{}
+.o4vocabularioboxbranco{}
+.o4glossariobox{}
+.o4etapabox{}
+.o4exemplobox{}
+.o4intermediariobox{}
+.o4destaquepalavrabox{}
+.o4destaquepalavrafio{}
+.o4recadoimagem1{}
+.o4recadoimagem2{}
+.o4recadoimagem3{}
+.o4recadoimagem4{}
+.o4tipofrase1{}
+.o4tipofrase2{}
+.o4tipofrase3{}
+.o4ideiabox{}
+.o4quadrinho{}
+
+/*👉O5: Papeletas e papelaria👈*/
+/* 
+o5bilhete1
+o5bilhete2
+o5nota1
+o5nota2
+o5nota3
+o5postit1
+o5postit2
+o5postit3
+o5papeleta1
+o5papeleta2
+o5passoapasso
+o5passoapassocheck
+o5passoapassosec
+o5prancheta
+o5lousa
+o5quadrobranco
+o5moldura
+o5navegador
+o5navegadorbarra
+o5navegadorfundo
+o5navegadorfundobranco
+o5verbetedicionario
+o5curriculo
+o5email
+o5emailrecorte
+o5email2
+o5trechopeca
+o5revista
+o5socialinsta
+o5redesocial
+o5redesocial2
+o5livroreceita
+o5caderno
+*/
+.o5bilhete1{}
+.o5bilhete2{}
+.o5nota1{}
+.o5nota2{}
+.o5nota3{}
+.o5postit1{}
+.o5postit2{}
+.o5postit3{}
+.o5papeleta1{}
+.o5papeleta2{}
+.o5passoapasso{}
+.o5passoapassocheck{}
+.o5passoapassosec{}
+.o5prancheta{}
+.o5lousa{}
+.o5quadrobranco{}
+.o5moldura{}
+.o5navegador{}
+.o5navegadorbarra{}
+.o5navegadorfundo{}
+.o5navegadorfundobranco{}
+.o5verbetedicionario{
+    background: var(--amarelo2);
+    padding: 1em;
+    margin: 1em 0;
+}
+.o5verbetedicionario :has(span.c4quadrinho),
+.o5verbetedicionario :has(span.o8quadroconsumivel){
+    line-height: 1.5em;
+}
+.o5curriculo{}
+.o5email{}
+.o5emailrecorte{}
+.o5email2{}
+.o5trechopeca{}
+.o5revista{}
+.o5socialinsta{}
+.o5redesocial{}
+.o5redesocial2{}
+.o5livroreceita{}
+.o5caderno{
+    border: 10px solid var(--azul2);
+    border-left: 5px solid var(--azul2);
+    margin: 1em 0 0 1.5em;
+    width: fit-content;
+    max-width: 100%;
+    position: relative;
+}
+.o5caderno::before{
+    background: url('../images/pv_caderno.svg') top left repeat-y;
+    background-size: 100%;
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    bottom: 0;
+    width: 50px;
+    z-index: 1;
+}
+.o5caderno .box{
+    border: 1px solid var(--roxo1);
+    padding: 0.5em 1em 0.5em 3em;
+    min-height: 2em;
+}
+
+
+/*👉06: Elistos para Fluxograma👈*/
+/* 
+o6fluxogramaseta
+o6fluxogramainiciofim
+o6fluxogramaacao
+o6fluxogramadecisao
+*/
+.o6fluxogramaseta{}
+.o6fluxogramainiciofim{}
+.o6fluxogramaacao{}
+.o6fluxogramadecisao{}
+
+/*👉07: Estilos para Linha do tempo👈*/
+/* 
+o7linhatempocaixatexto
+o7linhatempodestaquedata
+o7linhatempolinhaeixo
+o7linhatempolinha1
+o7linhatempolinha2
+o7linhatempolinha3
+o7linhatempolinha4
+o7linhatempolinha5
+o7linhatempoperiodo1
+o7linhatempoperiodo2
+o7linhatempoperiodo3
+o7linhatempoperiodo4
+o7linhatempoperiodo5
+o7linhatempoperiodo6
+*/
+.o7linhatempocaixatexto{}
+.o7linhatempodestaquedata{}
+.o7linhatempolinhaeixo{}
+.o7linhatempolinha1{}
+.o7linhatempolinha2{}
+.o7linhatempolinha3{}
+.o7linhatempolinha4{}
+.o7linhatempolinha5{}
+.o7linhatempoperiodo1{}
+.o7linhatempoperiodo2{}
+.o7linhatempoperiodo3{}
+.o7linhatempoperiodo4{}
+.o7linhatempoperiodo5{}
+.o7linhatempoperiodo6{}
+
+/*👉08: Estilos para CONSUMÍVEL QUADRO 👈*/
+/* 
+
+o8cruzadinha1
+o8cruzadinha2
+o8fiodobra
+o8fiorecorte
+o8fundocole
+o8pautacaligrafica
+o8quadroconsumivel
+o8quadroconsumivelg
+o8quadroconsumivelm
+o8quadroconsumivelp
+o8quadrolibras
+*/
+.o8cruzadinha1{}
+.o8cruzadinha2{}
+.o8fiodobra{}
+.o8fiorecorte{}
+.o8fundocole{}
+.o8pautacaligrafica{}
+.o8quadroconsumivel{}
+
+.o8quadroconsumivelp,
+.o8quadroconsumivelm,
+.o8quadroconsumivelg {
+    border: 1px solid var(--preto);
+    margin: 1em 0;
+}
+.o8quadroconsumivelp
+{
+    width: 25%;
+    height: 250px;
+}
+.o8quadroconsumivelm 
+{
+    width: 50%;
+    height: 250px;
+}
+.o8quadroconsumivelg 
+{
+    width: 100%;
+    height: 250px;
+}
+
+.o8quadrolibras{}
+
+figure .p5marcador{
+    float: left;    
+}
+
+/*👉08: Estilos para CONSUMÍVEL LINHA 👈*/
+/* 
+p2textosemrecuolinha
+p2atvlinha
+p2atvitemletralinha
+p2atvitemlinha
+p2atvletraitemlinha
+p2atvletraitemromanolinha
+p2atvletralinha
+p2atvletraromanolinha
+p2atvmarcadorlinha
+p2atvromanolinha
+p2atvsubitemlinha
+p2questaoitemlinha
+p2questaoletraitemlinha
+p2questaoletralinha
+p2questaomarcadorlinha
+p2questaolinha
+p2questaosubitemlinha
+*/
+.p2textosemrecuolinha,
+.p2atvlinha,
+.p2atvitemletralinha,
+.p2atvitemlinha,
+.p2atvletraitemlinha,
+.p2atvletraitemromanolinha,
+.p2atvletralinha,
+.p2atvletraromanolinha,
+.p2atvmarcadorlinha,
+.p2atvromanolinha,
+.p2atvsubitemlinha,
+.p2questaoitemlinha,
+.p2questaoletraitemlinha,
+.p2questaoletralinha,
+.p2questaomarcadorlinha,
+.p2questaolinha,
+.p2questaosubitemlinha{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid var(--preto);   
+    display: inline-block;
+
+}
+
+.p2textosemrecuolinha{
+    margin: 0.5em 0 0.5em 0px;
+    width: calc(100%);
+}
+.p2atvlinha{
+    margin: 0.5em 0 0.5em 30px;
+    width: calc(100% - 30px);
+}
+.p2atvitemletralinha{
+    margin: 0.5em 0 0.5em 4em;
+    width: calc(100% - 4em);
+}
+.p2atvitemlinha{
+    margin: 0.5em 0 0.5em 4em;
+    width: calc(100% - 4em);
+}
+.p2atvletraitemlinha{
+    margin: 0.5em 0 0.5em 3em;
+    width: calc(100% - 3em);
+}
+.p2atvletraitemromanolinha{
+    margin: 0.5em 0 0.5em 7em;
+    width: calc(100% - 7em);
+}
+.p2atvletralinha{
+    margin: 0.5em 0 0.5em 3em;
+    width: calc(100% - 3em);
+}
+.p2atvletraromanolinha{
+    margin: 0.5em 0 0.5em 5em;
+    width: calc(100% - 5em);
+}
+.p2atvmarcadorlinha{
+    margin: 0.5em 0 0.5em 4em;
+    width: calc(100% - 4em);
+}
+.p2atvromanolinha{
+    margin: 0.5em 0 0.5em 4em;
+    width: calc(100% - 4em);
+}
+.p2atvsubitemlinha{
+    margin: 0.5em 0 0.5em 4em;
+    width: calc(100% - 4em);
+}
+.p2questaoitemlinha{
+    margin: 0.5em 0 0.5em 1em;
+    width: calc(100% - 1em);
+}
+.p2questaoletraitemlinha{
+    margin: 0.5em 0 0.5em 3em;
+    width: calc(100% - 3em);
+}
+.p2questaoletralinha{
+    margin: 0.5em 0 0.5em 2em;
+    width: calc(100% - 2em);
+}
+.p2questaomarcadorlinha{
+    margin: 0.5em 0 0.5em 2em;
+    width: calc(100% - 2em);
+}
+.p2questaolinha{
+    margin: 0.5em 0 0.5em 0em;
+    width: calc(100% - 0em);
+}
+.p2questaosubitemlinha{
+    margin: 0.5em 0 0.5em 2em;
+    width: calc(100% - 2em);
+}
+
+
+
+
+
+/*👉08: Estilos para CONSUMÍVEL QUADRINHO 👈*/
+/* 
+p2atvitemletraquadrinho
+p2atvitemquadrinho
+p2atvletraitemquadrinho
+p2atvletraitemromanoquadrinho
+p2atvletraquadrinho
+p2atvletraromanoquadrinho
+p2atvmarcadorquadrinho
+p2atvquadrinho
+p2atvromanoquadrinho
+p2atvsubitemquadrinho
+p2questaoitemquadrinho
+p2questaoletraitemquadrinho
+p2questaoletraquadrinho
+p2questaomarcadorquadrinho
+p2questaoquadrinho
+p2questaosubitemquadrinho
+p2textoitemquadrinho
+p2textoquadrinho
+p2textosemrecuoquadrinho
+*/
+.p2atvitemletraquadrinho,
+.p2atvitemquadrinho,
+.p2atvletraitemquadrinho,
+.p2atvletraitemromanoquadrinho,
+.p2atvletraquadrinho,
+.p2atvletraromanoquadrinho,
+.p2atvmarcadorquadrinho,
+.p2atvquadrinho,
+.p2atvromanoquadrinho,
+.p2atvsubitemquadrinho,
+.p2questaoitemquadrinho,
+.p2questaoletraitemquadrinho,
+.p2questaoletraquadrinho,
+.p2questaomarcadorquadrinho,
+.p2questaoquadrinho,
+.p2questaosubitemquadrinho,
+.p2textoitemquadrinho,
+.p2textoquadrinho,
+.p2textosemrecuoquadrinho{
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+    text-align: justify;
+}
+.p2atvitemletraquadrinho .c4quadrinho,
+.p2atvitemquadrinho .c4quadrinho,
+.p2atvletraitemquadrinho .c4quadrinho,
+.p2atvletraitemromanoquadrinho .c4quadrinho,
+.p2atvletraquadrinho .c4quadrinho,
+.p2atvletraromanoquadrinho .c4quadrinho,
+.p2atvmarcadorquadrinho .c4quadrinho,
+.p2atvquadrinho .c4quadrinho,
+.p2atvromanoquadrinho .c4quadrinho,
+.p2atvsubitemquadrinho .c4quadrinho,
+.p2questaoitemquadrinho .c4quadrinho,
+.p2questaoletraitemquadrinho .c4quadrinho,
+.p2questaoletraquadrinho .c4quadrinho,
+.p2questaomarcadorquadrinho .c4quadrinho,
+.p2questaoquadrinho .c4quadrinho,
+.p2questaosubitemquadrinho .c4quadrinho,
+.p2textoitemquadrinho .c4quadrinho,
+.p2textoquadrinho .c4quadrinho,
+.p2textosemrecuoquadrinho .c4quadrinho{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: inline-block;
+    position: absolute;
+    margin: 0 0 0 -50px;
+}
+
+.p2atvitemletraquadrinho{
+    margin: 0.5em 0 0.5em 7.2em;
+}
+.p2atvitemquadrinho{
+    margin: 0.5em 0 0.5em 6.2em;
+}
+.p2atvletraitemquadrinho{
+    margin: 0.5em 0 0.5em 7.2em;
+}
+.p2atvletraitemromanoquadrinho{
+    margin: 0.5em 0 0.5em 10.2em;
+}
+.p2atvletraquadrinho{
+    margin: 0.5em 0 0.5em 6.2em;
+}
+.p2atvletraromanoquadrinho{
+    margin: 0.5em 0 0.5em 8.2em;
+}
+.p2atvmarcadorquadrinho{
+    margin: 0.5em 0 0.5em 7.2em;
+}
+.p2atvquadrinho{
+    margin: 0.5em 0 0.5em 5.2em;
+}
+.p2atvromanoquadrinho{
+    margin: 0.5em 0 0.5em 7.2em;
+}
+.p2atvsubitemquadrinho{
+    margin: 0.5em 0 0.5em 7.2em;
+}
+.p2questaoitemquadrinho{
+    margin: 0.5em 0 0.5em 4.2em;
+}
+.p2questaoletraitemquadrinho{
+    margin: 0.5em 0 0.5em 6.2em;
+}
+.p2questaoletraquadrinho{
+    margin: 0.5em 0 0.5em 5.2em;
+}
+.p2questaomarcadorquadrinho{
+    margin: 0.5em 0 0.5em 5.2em;
+}
+.p2questaoquadrinho{
+    margin: 0.5em 0 0.5em 3.2em;
+}
+.p2questaosubitemquadrinho{
+    margin: 0.5em 0 0.5em 5.2em;
+}
+.p2textoitemquadrinho{
+    margin: 0.5em 0 0.5em 5.8em;
+}
+.p2textoquadrinho{
+    margin: 0.5em 0 0.5em 5.2em;
+}
+.p2textosemrecuoquadrinho{
+    margin: 0.5em 0 0.5em 3.2em;
+}
+
+/*👉OE: Elementos vindos da editora👈*/
+/* 
+oemestrategias
+oemestrategias1
+oemestrategias2
+oemestrategias3
+oemestrategias4
+oemestrategias5
+oemestrategias6
+oemestrategias7
+oemestrategias8
+oemestrategias9
+oemamplieseurepertoriobox
+oemorientacoesdeuso
+*/
+.oemestrategias{}
+.oemestrategias1{}
+.oemestrategias2{}
+.oemestrategias3{}
+.oemestrategias4{}
+.oemestrategias5{}
+.oemestrategias6{}
+.oemestrategias7{}
+.oemestrategias8{}
+.oemestrategias9{}
+.oemamplieseurepertoriobox{}
+.oemorientacoesdeuso
+
+/* ESTILOS ESPECIFICOS */
+
+
+/*MEDIA QUERY*/
+/*👉Versão Mobile Cel👈*/
+@media screen and (min-width: 300px) and (max-width: 700px) {
+     main {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+      /* COLUNAS E ALINHAMENTO */
+      .col2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .col2c {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 16px;
+        max-width: 100%;
+    }
+
+    .col2s {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 16px;
+    }
+
+    .largura25 {
+        width: 100% !important;
+    }
+
+    .largura45 {
+        width: 100% !important;
+    }
+
+    .largura33 {
+        width: 100% !important;
+    }
+
+    .d0box_aluno {
+        padding: 0.5em 0 1em 0;
+    }
+    .alinhamarcador{
+        max-width: 81% !important;
+        margin-left:3em !important;
+    } 
+    .alinhapalavras{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 6 colunas de tamanho igual */
+        gap: 10px; /* Espaçamento entre os itens */
+    }
+
+    /*👉TABELA MOBILE 👈*/
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+}
+
+/*👉Versão Mobile tablet👈*/
+@media screen and (min-width: 720px) and (max-width: 1024px) {}
+
+/*👉Versão Desktop👈*/
+@media screen and (min-width: 1200px) {}
+
+/*👉Versão IMPRESSÃO👈*/
+@media print and (max-height: 280mm) {}

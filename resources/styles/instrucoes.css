@@ -1,0 +1,296 @@
+@charset "UTF-8";
+ /* fallback */
+ @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v37/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  mark{
+    word-break: break-all;
+  }
+  s{
+    color: none;
+  }
+  math{
+    border: 1px solid red;
+  }
+  .hifen_ano{
+    border:1px solid #8400ff;
+  }
+
+  ul.tem_lista_com_1_item > li{
+    background: #ffa600;
+  }
+
+  /*👉VISUALIZAÇÃO AJUSTE DE PRONUNCIA👈*/
+  .ajustepronuncia {
+    background: #80ecff;
+}
+
+  /*👉VISUALIZAÇÃO DO IDIOMA👈*/
+    .c3idioma, 
+    .c3idiomabold, 
+    .c3idiomaitalico,
+    .c3idiomabolditalico,
+    .c3idiomasimuladorhiperlink,
+    .c3idiomaresposta,
+    .c3idiomaboldresposta,
+    .c3idiomaitalicoresposta,
+    .c3idiomabolditalicoresposta,
+    .c3idiomavocabulariodestaque,
+    .c3idiomavocabulariodestaqueitalico,
+    .c5extraitalicoidioma,
+    .c4textosublinhadoidioma{
+        background: #EDAAA0;
+    }
+
+    .desabilitasemuso{
+        opacity: 0.2;
+      }
+  #back-to-top{
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    margin: 1em;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+
+/*👉Navegação do cardápio 👈*/
+
+#mylinks {
+    display: none;
+  }
+
+.menucardapio{
+position: fixed;
+left: 0;
+top: 0.5em;
+background: #131313;
+border-radius: 0 1em 1em 0em  ;
+box-shadow: 2px 2px 8px rgb(48, 48, 48, 0.5);
+font-weight: bold;
+padding: 1em;
+color:aliceblue;
+width: fit-content;
+z-index: 25;
+}
+
+.menucardapio h1 {
+    color: #0bd8df;
+    border-bottom: 1px solid #0bd8df;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+.menucardapio ul li{
+    padding: 0.2em 0;
+    font-size: 14px;
+}
+.menucardapio a {
+    color:aliceblue;
+}
+.menucardapio a:hover{
+    color: #0bd8df;
+}
+/*👉INSTRUÇÃO DA PRODUÇÃO👈*/
+.instrucao{
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+    color: #FFF;
+    margin-top: 2em;
+    padding: 0.5em;
+    margin: 2.5em 0 1em 0;
+    background: rgb(49, 49, 49);
+    font-size: 1.3em;
+}
+
+
+
+.markLaranja{
+    background: #ffa600;
+}
+
+.exemplo {
+    border-top: 2px dotted rgb(56, 56, 56);
+}
+
+.ti_instrucao {
+    background: rgb(56, 56, 56);
+    color: #fff;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.exemploaplicado {
+    border-top: 1px solid rgb(56, 56, 56);
+    margin-top: 3em;
+}
+.exemploaplicado::before{
+    content: 'Exemplo Aplicado';
+    position: absolute;
+    margin: -2em 0 0 0.5em;
+    color: #fff;
+    font-size: 1em;
+    background:  rgb(56, 56, 56) ;
+    border: 1px solid rgb(56, 56, 56) ;
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 0.1em 0.5em  0 0.5em;
+    box-shadow: 3px 1px 3px rgb(56, 56, 56, 0.3);
+}
+
+
+.snippt{
+    background: rgb(255, 255, 255, 0.9);
+    color: rgb(56, 56, 56);
+    padding: 0.2em 0.4em;
+     border-radius: 0.5em;
+}
+.codigoexemplo {
+   display: block;
+
+    padding: 1em;
+    outline: none;
+   
+    margin-block-start: 4.5em;
+    margin-block-end: 1em;  
+    overflow: none;
+    overflow-wrap: ;
+    white-space:pre-wrap;
+    background: rgb(56, 56, 56);
+    color: #fff;
+    border-radius: 10px;
+
+
+  
+}
+.codigoexemplo::before{
+    content: 'Exemplo de Código Fonte';
+    position: absolute;
+    margin: -3em 0 0 0;
+    color: #000;
+    font-size: 1.1em;
+    border: 1px solid rgb(56, 56, 56) ;
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 0.1em 0.5em  0 0.5em;
+    box-shadow: 3px 3px 3px rgb(56, 56, 56, 0.3);
+}
+
+.comentariocode {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    text-align: justify;
+    padding:2em 1em 1em 1em;
+    background: rgb(220, 220, 220);
+    margin: 1em 0;
+}
+.comentariocode::before{
+    content: 'Comentário:';
+    position:absolute;
+    margin: -20px 0 0 0;
+    font-weight: bold;
+    
+}
+
+.leituranvda{
+     border-left: 1px solid #000;
+     padding:0 1em 0 1em;
+     margin: 3em 0 1em 1em ;
+    font-style: italic;
+     line-height: 1.5em;
+   
+}
+.leituranvda::before{
+    content: 'Forma de leitura no NVDA (em modo de leitura contínua):';
+    position:absolute;
+    margin: -30px 0 0 -1em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.boxteste{
+    border: 2px dotted #000;
+    padding:0.5em 1em 0.5em 1em;
+    margin: 3em 0 1em 0;
+
+}
+.numeroteste{
+    font-weight: bold;
+   
+    position: absolute;
+    margin: -2.7em 0 0 -19px;
+    background: rgba(46, 46, 46, 0.2);
+    padding: 0.2em  0.5em ;
+    border-radius: 5px 5px 0 0;
+
+}
+
+.aplicar{
+    background: rgb(113, 173, 123) !important;
+}
+
+
+
+/*👉 TODO: ==================== início itens inseridos temporariamente somente para testes de leitor de tela👈*/
+
+.summary{
+    background-color: rgb(220, 220, 220);
+    width: fit-content;
+    padding: 0.1em 1em;
+}
+
+.summary:hover{
+    background-color: rgb(49, 49, 49);
+    color: #fff;
+}
+
+.leitura{
+    font-weight: bold;
+    margin: 1em 0 1em 1em
+}
+
+.leiturablock {
+    border-left: 1px solid #000;
+    padding:0 1em 0 1em;
+    margin: 0.5em 0 1em 1em ;
+   font-style: italic;
+    line-height: 1.5em;
+  
+}
+
+.tabela_simples td, .tabela_simples th{
+    border: 1px solid #000;
+    padding: 0.5em;
+}
+.tabela_simples th{
+    font-weight: bold;
+}
+.caption_simples{
+    background-color: #ccc;
+}
+
+/*👉==================== fim de itens inseridos temporariamente somente para testes de leitor de tela👈*/

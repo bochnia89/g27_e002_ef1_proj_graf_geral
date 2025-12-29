@@ -1,0 +1,809 @@
+/* CSS Document */
+/* Padrões de Fontes no projeto
+// Títulos: 'Barlow' ;
+// Citações: 'Noto Serif';
+// Texto: 'Work Sans' ;
+// Ordinal / químico: 'Calibri' ;
+
+
+
+/*👉 -------------- TÍTULOS --------------👈*/
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal ;
+    font-weight: 100;
+    src: 
+        url(../fonts/Barlow-Thin.woff2) format("woff2"),
+        url(../fonts/Barlow-Thin.woff) format("woff"),
+        url(../fonts/Barlow-Thin.otf) format("opentype"),
+        url(../fonts/Barlow-Thin.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style: italic ;
+    font-weight: 100;
+    src: 
+        url(../fonts/Barlow-ThinItalic.woff2) format("woff2"),
+        url(../fonts/Barlow-ThinItalic.woff) format("woff"),
+        url(../fonts/Barlow-ThinItalic.otf) format("opentype"),
+        url(../fonts/Barlow-ThinItalic.ttf) format("truetype");            
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal ;
+    font-weight: 200;
+    src: 
+        url(../fonts/Barlow-ExtraLight.woff2) format("woff2"),
+        url(../fonts/Barlow-ExtraLight.woff) format("woff"),
+        url(../fonts/Barlow-ExtraLight.otf) format("opentype"),
+        url(../fonts/Barlow-ExtraLight.ttf) format("truetype");      
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style:  italic;
+    font-weight: 200 ;
+    src: 
+        url(../fonts/Barlow-ExtraLightItalic.woff2) format("woff2"),
+        url(../fonts/Barlow-ExtraLightItalic.woff) format("woff"),
+        url(../fonts/Barlow-ExtraLightItalic.otf) format("opentype"),
+        url(../fonts/Barlow-ExtraLightItalic.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style:normal ;
+    font-weight: 300 ;
+    src: 
+        url(../fonts/Barlow-Light.woff2) format("woff2"),
+        url(../fonts/Barlow-Light.woff) format("woff"),
+        url(../fonts/Barlow-Light.otf) format("opentype"),
+        url(../fonts/Barlow-Light.ttf) format("truetype");    
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 300;
+    src: 
+        url(../fonts/Barlow-LightItalic.woff2) format("woff2"),
+        url(../fonts/Barlow-LightItalic.woff) format("woff"),    
+        url(../fonts/Barlow-LightItalic.otf) format("opentype"),
+        url(../fonts/Barlow-LightItalic.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal ;
+    font-weight: 400;
+    src: 
+        url(../fonts/Barlow-Regular.woff2) format("woff2"),
+        url(../fonts/Barlow-Regular.woff) format("woff"),
+        url(../fonts/Barlow-Regular.otf) format("opentype"),
+        url(../fonts/Barlow-Regular.ttf) format("truetype");        
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight:400 ;
+    src: 
+        url(../fonts/Barlow-Italic.woff2) format("woff2"),
+        url(../fonts/Barlow-Italic.woff) format("woff"),
+        url(../fonts/Barlow-Italic.otf) format("opentype"),
+        url(../fonts/Barlow-Italic.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal ;
+    font-weight:500 ;
+    src: 
+        url(../fonts/Barlow-Medium.woff2) format("woff2"),
+        url(../fonts/Barlow-Medium.woff) format("woff"),
+        url(../fonts/Barlow-Medium.otf) format("opentype"),
+        url(../fonts/Barlow-Medium.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    src: 
+        url(../fonts/Barlow-Medium.woff2) format("woff2"),
+        url(../fonts/Barlow-Medium.woff) format("woff"),
+        url(../fonts/Barlow-Medium.otf) format("opentype"),
+        url(../fonts/Barlow-Medium.ttf) format("truetype");        
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    src: 
+        url(../fonts/Barlow-SemiBold.woff2) format("woff2"),
+        url(../fonts/Barlow-SemiBold.woff) format("woff"),
+        url(../fonts/Barlow-SemiBold.otf) format("opentype"),
+        url(../fonts/Barlow-SemiBold.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style: italic ;
+    font-weight: 600;
+    src: 
+        url(../fonts/Barlow-SemiBoldItalic.woff2) format("woff2"),
+        url(../fonts/Barlow-SemiBoldItalic.woff) format("woff"),
+        url(../fonts/Barlow-SemiBoldItalic.otf) format("opentype"),
+        url(../fonts/Barlow-SemiBoldItalic.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight:700 ;
+    src: 
+        url(../fonts/Barlow-Bold.woff2) format("woff2"),
+        url(../fonts/Barlow-Bold.woff) format("woff"),
+        url(../fonts/Barlow-Bold.otf) format("opentype"),
+        url(../fonts/Barlow-Bold.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style:italic ;
+    font-weight: 700;
+    src: 
+        url(../fonts/Barlow-BoldItalic.woff2) format("woff2"),
+        url(../fonts/Barlow-BoldItalic.woff) format("woff"),
+        url(../fonts/Barlow-BoldItalic.otf) format("opentype"),
+        url(../fonts/Barlow-BoldItalic.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style:normal ;
+    font-weight: 800 ;
+    src: 
+        url(../fonts/Barlow-ExtraBold.woff2) format("woff2"),
+        url(../fonts/Barlow-ExtraBold.woff) format("woff"),
+        url(../fonts/Barlow-ExtraBold.otf) format("opentype"),
+        url(../fonts/Barlow-ExtraBold.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style:italic ;
+    font-weight: 800;
+    src: 
+        url(../fonts/Barlow-ExtraBoldItalic.woff2) format("woff2"),
+        url(../fonts/Barlow-ExtraBoldItalic.woff) format("woff"),
+        url(../fonts/Barlow-ExtraBoldItalic.otf) format("opentype"),
+        url(../fonts/Barlow-ExtraBoldItalic.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 900;
+    src: 
+        url(../fonts/Barlow-Black.woff2) format("woff2"),
+        url(../fonts/Barlow-Black.woff) format("woff"),
+        url(../fonts/Barlow-Black.otf) format("opentype"),
+        url(../fonts/Barlow-Black.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    font-style: italic ;
+    font-weight: 900 ;
+    src:
+        url(../fonts/Barlow-BlackItalic.woff2) format("woff2"),
+        url(../fonts/Barlow-BlackItalic.woff) format("woff"),
+        url(../fonts/Barlow-BlackItalic.otf) format("opentype"),
+        url(../fonts/Barlow-BlackItalic.ttf) format("truetype");
+        
+        font-display: swap;
+}
+
+
+/*👉 -------------- CITAÇÕES --------------👈*/
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight:100 ;
+    src: 
+        url(../fonts/NotoSerif-Thin.woff2) format("woff2"),
+        url(../fonts/NotoSerif-Thin.woff) format("woff"),
+        url(../fonts/NotoSerif-Thin.otf) format("opentype"),
+        url(../fonts/NotoSerif-Thin.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: italic ;
+    font-weight: 100;
+    src: 
+        url(../fonts/NotoSerif-ThinItalic.woff2) format("woff2"),
+        url(../fonts/NotoSerif-ThinItalic.woff) format("woff"),
+        url(../fonts/NotoSerif-ThinItalic.otf) format("opentype"),
+        url(../fonts/NotoSerif-ThinItalic.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight:200 ;
+    src: 
+        url(../fonts/NotoSerif-ExtraLight.woff2) format("woff2"),
+        url(../fonts/NotoSerif-ExtraLight.woff) format("woff"),
+        url(../fonts/NotoSerif-ExtraLight.otf) format("opentype"),
+        url(../fonts/NotoSerif-ExtraLight.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: italic ;
+    font-weight: 200;
+    src: 
+        url(../fonts/NotoSerif-ExtraLightItalic.woff2) format("woff2"),
+        url(../fonts/NotoSerif-ExtraLightItalic.woff) format("woff"),
+        url(../fonts/NotoSerif-ExtraLightItalic.otf) format("opentype"),
+        url(../fonts/NotoSerif-ExtraLightItalic.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight:300 ;
+    src: 
+        url(../fonts/NotoSerif-Light.woff2) format("woff2"),
+        url(../fonts/NotoSerif-Light.woff) format("woff"),
+        url(../fonts/NotoSerif-Light.otf) format("opentype"),
+        url(../fonts/NotoSerif-Light.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: italic ;
+    font-weight: 300;
+    src: 
+        url(../fonts/NotoSerif-LightItalic.woff2) format("woff2"),
+        url(../fonts/NotoSerif-LightItalic.woff) format("woff"),
+        url(../fonts/NotoSerif-LightItalic.otf) format("opentype"),
+        url(../fonts/NotoSerif-LightItalic.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+        url(../fonts/NotoSerif-Regular.woff2) format("woff2"),
+        url(../fonts/NotoSerif-Regular.woff) format("woff"),
+        url(../fonts/NotoSerif-Regular.otf) format("opentype"),
+        url(../fonts/NotoSerif-Regular.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style:italic ;
+    font-weight: 400;
+    src: 
+        url(../fonts/NotoSerif-Italic.woff2) format("woff2"),
+        url(../fonts/NotoSerif-Italic.woff) format("woff"),
+        url(../fonts/NotoSerif-Italic.otf) format("opentype"),
+        url(../fonts/NotoSerif-Italic.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 500;
+    src: 
+        url(../fonts/NotoSerif-Medium.woff2) format("woff2"),
+        url(../fonts/NotoSerif-Medium.woff) format("woff"),
+        url(../fonts/NotoSerif-Medium.otf) format("opentype"),
+        url(../fonts/NotoSerif-Medium.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: italic ;
+    font-weight:500 ;
+    src: 
+        url(../fonts/NotoSerif-MediumItalic.woff2) format("woff2"),
+        url(../fonts/NotoSerif-MediumItalic.woff) format("woff"),
+        url(../fonts/NotoSerif-MediumItalic.otf) format("opentype"),
+        url(../fonts/NotoSerif-MediumItalic.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style:normal ;
+    font-weight: 600;
+    src: 
+        url(../fonts/NotoSerif-SemiBold.woff2) format("woff2"),
+        url(../fonts/NotoSerif-SemiBold.woff) format("woff"),
+        url(../fonts/NotoSerif-SemiBold.otf) format("opentype"),
+        url(../fonts/NotoSerif-SemiBold.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style:italic ;
+    font-weight:600 ;
+    src: 
+        url(../fonts/NotoSerif-SemiBoldItalic.woff2) format("woff2"),
+        url(../fonts/NotoSerif-SemiBoldItalic.woff) format("woff"),
+        url(../fonts/NotoSerif-SemiBoldItalic.otf) format("opentype"),
+        url(../fonts/NotoSerif-SemiBoldItalic.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight:700 ;
+    src: 
+        url(../fonts/NotoSerif-Bold.woff2) format("woff2"),
+        url(../fonts/NotoSerif-Bold.woff) format("woff"),
+        url(../fonts/NotoSerif-Bold.otf) format("opentype"),
+        url(../fonts/NotoSerif-Bold.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: italic;
+    font-weight:700 ;
+    src: 
+        url(../fonts/NotoSerif-BoldItalic.woff2) format("woff2"),
+        url(../fonts/NotoSerif-BoldItalic.woff) format("woff"),
+        url(../fonts/NotoSerif-BoldItalic.otf) format("opentype"),
+        url(../fonts/NotoSerif-BoldItalic.ttf) format("truetype");
+        font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight:800 ;
+    src: 
+        url(../fonts/NotoSerif-ExtraBold.woff2) format("woff2"),
+        url(../fonts/NotoSerif-ExtraBold.woff) format("woff"),
+        url(../fonts/NotoSerif-ExtraBold.otf) format("opentype"),
+        url(../fonts/NotoSerif-ExtraBold.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: italic;
+    font-weight:800 ;
+    src: 
+        url(../fonts/NotoSerif-ExtraBoldItalic.woff2) format("woff2"),
+        url(../fonts/NotoSerif-ExtraBoldItalic.woff) format("woff"),
+        url(../fonts/NotoSerif-ExtraBoldItalic.otf) format("opentype"),
+        url(../fonts/NotoSerif-ExtraBoldItalic.ttf) format("truetype");
+        font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight:900 ;
+    src: 
+        url(../fonts/NotoSerif-Black.woff2) format("woff2"),
+        url(../fonts/NotoSerif-Black.woff) format("woff"),
+        url(../fonts/NotoSerif-Black.otf) format("opentype"),
+        url(../fonts/NotoSerif-Black.ttf) format("truetype");
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: italic;
+    font-weight:900 ;
+    src: 
+        url(../fonts/NotoSerif-blackItalic.woff2) format("woff2"),
+        url(../fonts/NotoSerif-blackItalic.woff) format("woff"),
+        url(../fonts/NotoSerif-blackItalic.otf) format("opentype"),
+        url(../fonts/NotoSerif-blackItalic.ttf) format("truetype");
+        font-display: swap;
+}
+
+/*👉 -------------- TEXTO --------------👈*/
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight:100 ;
+    src: 
+        url(../fonts/WorkSans-Thin.woff2) format("woff2"),
+        url(../fonts/WorkSans-Thin.woff) format("woff"),
+        url(../fonts/WorkSans-Thin.otf) format("opentype"),
+        url(../fonts/WorkSans-Thin.ttf) format("truetype");
+        
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: italic ;
+    font-weight: 100;
+    src: 
+        url(../fonts/WorkSans-ThinItalic.woff2) format("woff2"),
+        url(../fonts/WorkSans-ThinItalic.woff) format("woff"),
+        url(../fonts/WorkSans-ThinItalic.otf) format("opentype"),
+        url(../fonts/WorkSans-ThinItalic.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight:200 ;
+    src: 
+        url(../fonts/WorkSans-ExtraLight.woff2) format("woff2"),
+        url(../fonts/WorkSans-ExtraLight.woff) format("woff"),
+        url(../fonts/WorkSans-ExtraLight.otf) format("opentype"),
+        url(../fonts/WorkSans-ExtraLight.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: italic ;
+    font-weight: 200;
+    src: 
+        url(../fonts/WorkSans-ExtraLightItalic.woff2) format("woff2"),
+        url(../fonts/WorkSans-ExtraLightItalic.woff) format("woff"),
+        url(../fonts/WorkSans-ExtraLightItalic.otf) format("opentype"),
+        url(../fonts/WorkSans-ExtraLightItalic.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight:300 ;
+    src: 
+        url(../fonts/WorkSans-Light.woff2) format("woff2"),
+        url(../fonts/WorkSans-Light.woff) format("woff"),
+        url(../fonts/WorkSans-Light.otf) format("opentype"),
+        url(../fonts/WorkSans-Light.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: italic ;
+    font-weight: 300;
+    src: 
+        url(../fonts/WorkSans-LightItalic.woff2) format("woff2"),
+        url(../fonts/WorkSans-LightItalic.woff) format("woff"),
+        url(../fonts/WorkSans-LightItalic.otf) format("opentype"),
+        url(../fonts/WorkSans-LightItalic.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal ;
+    font-weight: 400;
+    src: 
+        url(../fonts/WorkSans-Regular.woff2) format("woff2"),
+        url(../fonts/WorkSans-Regular.woff) format("woff"),
+        url(../fonts/WorkSans-Regular.otf) format("opentype"),
+        url(../fonts/WorkSans-Regular.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: 
+        url(../fonts/WorkSans-Italic.woff2) format("woff2"),
+        url(../fonts/WorkSans-Italic.woff) format("woff"),
+        url(../fonts/WorkSans-Italic.otf) format("opentype"),
+        url(../fonts/WorkSans-Italic.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style:normal ;
+    font-weight:500 ;
+    src: 
+        url(../fonts/WorkSans-Medium.woff2) format("woff2"),
+        url(../fonts/WorkSans-Medium.woff) format("woff"),
+        url(../fonts/WorkSans-Medium.otf) format("opentype"),
+        url(../fonts/WorkSans-Medium.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style:italic ;
+    font-weight: 500;
+    src: 
+        url(../fonts/WorkSans-MediumItalic.woff2) format("woff2"),
+        url(../fonts/WorkSans-MediumItalic.woff) format("woff"),
+        url(../fonts/WorkSans-MediumItalic.otf) format("opentype"),
+        url(../fonts/WorkSans-MediumItalic.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style:normal ;
+    font-weight: 600;
+    src: 
+        url(../fonts/WorkSans-SemiBold.woff2) format("woff2"),
+        url(../fonts/WorkSans-SemiBold.woff) format("woff"),
+        url(../fonts/WorkSans-SemiBold.otf) format("opentype"),
+        url(../fonts/WorkSans-SemiBold.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: 
+        url(../fonts/WorkSans-SemiBoldItalic.woff2) format("woff2"),
+        url(../fonts/WorkSans-SemiBoldItalic.woff) format("woff"),
+        url(../fonts/WorkSans-SemiBoldItalic.otf) format("opentype"),
+        url(../fonts/WorkSans-SemiBoldItalic.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+        url(../fonts/WorkSans-Bold.woff2) format("woff2"),
+        url(../fonts/WorkSans-Bold.woff) format("woff"),
+        url(../fonts/WorkSans-Bold.otf) format("opentype"),
+        url(../fonts/WorkSans-Bold.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: 
+        url(../fonts/WorkSans-BoldItalic.woff2) format("woff2"),
+        url(../fonts/WorkSans-BoldItalic.woff) format("woff"),
+        url(../fonts/WorkSans-BoldItalic.otf) format("opentype"),
+        url(../fonts/WorkSans-BoldItalic.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: 
+        url(../fonts/WorkSans-ExtraBold.woff2) format("woff2"),
+        url(../fonts/WorkSans-ExtraBold.woff) format("woff"),
+        url(../fonts/WorkSans-ExtraBold.otf) format("opentype"),
+        url(../fonts/WorkSans-ExtraBold.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: 800;
+    src: 
+        url(../fonts/WorkSans-ExtraBoldItalic.woff2) format("woff2"),
+        url(../fonts/WorkSans-ExtraBoldItalic.woff) format("woff"),
+        url(../fonts/WorkSans-ExtraBoldItalic.otf) format("opentype"),
+        url(../fonts/WorkSans-ExtraBoldItalic.ttf) format("truetype");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 900;
+    src: 
+        url(../fonts/WorkSans-Black.woff2) format("woff2"),
+        url(../fonts/WorkSans-Black.woff) format("woff"),
+        url(../fonts/WorkSans-Black.otf) format("opentype"),
+        url(../fonts/WorkSans-Black.ttf) format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: 900;
+    src: 
+        url(../fonts/WorkSans-BlackItalic.woff2) format("woff2"),
+        url(../fonts/WorkSans-BlackItalic.woff) format("woff"),
+        url(../fonts/WorkSans-BlackItalic.otf) format("opentype"),
+        url(../fonts/WorkSans-BlackItalic.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 900;
+    src: 
+        
+        url(../fonts/WorkSans-Black.woff2) format("woff2"),
+        url(../fonts/WorkSans-Black.woff) format("woff"),
+        url(../fonts/WorkSans-Black.otf) format("opentype"),
+        url(../fonts/WorkSans-Black.ttf) format("truetype");
+        font-display: swap;
+}
+
+/*👉 -------------- ORDINAL --------------👈*/
+/*👉@font-face {
+    font-family: '';
+    font-style: ;
+    font-weight: ;
+    src: url(../fonts/.otf) format("opentype"),
+        url(../fonts/.ttf) format("truetype"),
+        url(../fonts/.woff2) format("woff2"),
+        url(../fonts/.woff) format("woff");
+    font-display: swap;
+}
+👈*/
+/*👉 -------------- QUIMICO --------------👈*/
+@font-face {
+    font-family: '';
+    font-style: ;
+    font-weight: ;
+    src: url(../fonts/.otf) format("opentype"),
+        url(../fonts/.ttf) format("truetype"),
+        url(../fonts/.woff2) format("woff2"),
+        url(../fonts/.woff) format("woff");
+    font-display: swap;
+}
+
+
+:root {
+    /* Fontes */
+    --titulo: 'Barlow' ;
+    --citacao: 'Noto Serif' ;
+    --texto:  'Work Sans' ;
+    --ordinal: ;
+    --quimico: ;
+    --fonema: ;
+
+    --oedtitulo:;
+    --oedtexto:;
+    --oedcitacao:;
+    --oedinstrucao:;
+
+    /* Tamanhos */
+    --peso1: 1.8em;
+    --peso2: 1.7em;
+    --peso3: 1.6em;
+    --peso4: 1.5em;
+    --peso5: 1.4em;
+    --peso6: 1.3em;
+    --peso6: 1.2em;
+    --peso7: 1.1em;
+    --peso8: 0.9em;
+    --pesoPadrao: 1em;
+    --pesoMenor: 0.8em;
+    --pesoIntermediario:0.9em;
+
+    /* Cores */
+    --corprof: #8a014c;
+    --preto_: #2B2E34;
+    --preto:#000;
+    --branco: #fff;
+    --cinza: #ececec;
+    --link: #00649c;
+    --manualu: #E4F2E7;
+
+    --bxoshadow:rgba(0, 0, 0, 0.1);
+
+    --creditoimg:#3EE0CE;
+    --unidade: #50b848 ;
+    --dezena: #ef404a;
+    --centena: #0095d9 ;
+    --decimo: #f5833c;
+    --centesimo: #6f60aa;
+    --milesimo: #00b6be;
+
+    
+    --azul1:#398CCB;
+    --azul2:#86C2EB;
+    --azul3:#BCDCF5;
+    --azul4:#DFEAF8;
+
+    --turquesa1:#00ACA9;
+    --turquesa2:#87CDD3;
+    --turquesa3:#BEE2E9;
+    --turquesa4:#E0F1F5;
+
+    --verde1:#4DB05B;
+    --verde2:#9BCEA4;
+    --verde3:#CCE4CE;
+    --verde4:#E1F0EB;
+
+    --citrico1:#94C23E;
+    --citrico2:#D0DE84;
+    --citrico3:#E4ECBC;
+    --citrico4:#ECF3DA;
+
+    --laranja1:#F07F3C;
+    --laranja2:#F7AE82;
+    --laranja3:#FCD7B8;
+    --laranja4:#FDE7DD;
+
+    --amarelo1:#FBB900;
+    --amarelo2:#FED27A;
+    --amarelo3:#FFE6AC;
+    --amarelo4:#FEEFDE;
+
+    --vermelho1:#ac2d31;
+    --vermelho2:#EDAAA0;
+    --vermelho3:#fce3df;
+    --vermelho4:#fff5f3;
+
+    --rosa1:#ED6D84;
+    --rosa2:#F39DB0;
+    --rosa3:#F8C7D0;
+    --rosa4:#FCE5E9;
+
+    --roxo1:#7263A9;
+    --roxo2:#A69DCD;
+    --roxo3:#D2CDE8;
+    --roxo4:#EDEBF7;
+
+    --lilas1:#7263A9;
+    --lilas2:#A69DCD;
+    --lilas3:#D2CDE8;
+    --lilas4:#EDEBF7;
+}
+
+.boxdegrade{
+    width: 100px;
+    height: 100px;
+    margin: 1em 0;
+}
+
+.gradiente_a1 {
+    background: linear-gradient(24deg,#94C23E, #7263A9);
+}
+.gradiente_a2 {
+    background: linear-gradient(24deg,#D0DE84, #A69DCD);
+}
+
+.gradiente_b1 {
+    background: linear-gradient(24deg,#87CDD3, #F7AE82);
+}
+.gradiente_b2 {
+    background: linear-gradient(24deg,#BEE2E9, #FCD7B8);
+}
+
+.gradiente_c1 {
+    background: linear-gradient(24deg,#FED27A, #F39DB0);
+}
+.gradiente_c2 {
+    background: linear-gradient(24deg,#FFE6AC, #F8C7D0);
+}
+
+.gradiente_d1 {
+    background: linear-gradient(24deg,#87CDD3, #A69DCD);
+}
+.gradiente_d2 {
+    background: linear-gradient(24deg,#BEE2E9, #D2CDE8);
+}
+
+
+.gradiente_e1 {
+    background: linear-gradient(24deg,#F39DB0, #86C2EB);
+}
+.gradiente_e2 {
+    background: linear-gradient(24deg,#F8C7D0, #BCDCF5);
+}
+
+
+.gradiente_h1 {
+    background: linear-gradient(24deg,#D0DE84, #9BCEA4, #87CDD3, #86C2EB);
+}
+.gradiente_h2 {
+    background: linear-gradient(24deg,#E4ECBC, #BEE2E9, #BEE2E9, #BCDCF5);
+}
+
+
+
