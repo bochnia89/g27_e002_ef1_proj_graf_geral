@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.543" height="42.995" viewBox="0 0 25.543 42.995">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_429" data-name="Retângulo 429" width="25.543" height="42.995" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icone_conversa_mic" transform="translate(0 0)">
+    <g id="Grupo_3382" data-name="Grupo 3382" clip-path="url(#clip-path)">
+      <rect id="Retângulo_428" data-name="Retângulo 428" width="13.041" height="25.455" rx="1.633" transform="translate(6.251 1.497)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2.995"/>
+      <path id="Caminho_4597" data-name="Caminho 4597" d="M24.046,19.983a11.274,11.274,0,1,1-22.548,0" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.995"/>
+      <line id="Linha_3" data-name="Linha 3" y2="10.241" transform="translate(12.772 31.257)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.995"/>
+      <line id="Linha_4" data-name="Linha 4" x2="19.812" transform="translate(2.866 41.435)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.995"/>
+    </g>
+  </g>
+</svg>

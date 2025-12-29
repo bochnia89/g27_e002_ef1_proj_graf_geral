@@ -1,0 +1,16 @@
+<svg id="pv_navegador_botoes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="131.628" height="40" viewBox="0 0 131.628 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_432" data-name="Retângulo 432" width="131.628" height="40" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_3385" data-name="Grupo 3385" clip-path="url(#clip-path)">
+    <path id="Retângulo_431" data-name="Retângulo 431" d="M11.537,0H28.459A11.537,11.537,0,0,1,40,11.537V28.462A11.538,11.538,0,0,1,28.458,40H11.537A11.537,11.537,0,0,1,0,28.463V11.537A11.537,11.537,0,0,1,11.537,0Z" transform="translate(0 0)" fill="#15af97"/>
+    <line id="Linha_5" data-name="Linha 5" x2="24.861" transform="translate(7.566 20)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2.531"/>
+    <path id="Caminho_4599" data-name="Caminho 4599" d="M85.811,28.463A11.535,11.535,0,0,1,74.274,40H57.348A11.534,11.534,0,0,1,45.815,28.463V11.538A11.535,11.535,0,0,1,57.348,0H74.274A11.536,11.536,0,0,1,85.811,11.538Z" fill="#15af97"/>
+    <path id="Caminho_4600" data-name="Caminho 4600" d="M62.847,10.933h0v6.043H68.78v6.048h8.669V10.933Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2.531"/>
+    <path id="Caminho_4601" data-name="Caminho 4601" d="M68.781,29.071H54.174V16.976H68.781Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2.531"/>
+    <path id="Caminho_4602" data-name="Caminho 4602" d="M131.628,28.463A11.535,11.535,0,0,1,120.091,40H103.165A11.534,11.534,0,0,1,91.632,28.463V11.538A11.535,11.535,0,0,1,103.165,0h16.926a11.536,11.536,0,0,1,11.537,11.538Z" fill="#15af97"/>
+    <path id="Caminho_4603" data-name="Caminho 4603" d="M121.063,10.933l-18.708,18.7m0-18.7,18.708,18.7" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2.531"/>
+  </g>
+</svg>

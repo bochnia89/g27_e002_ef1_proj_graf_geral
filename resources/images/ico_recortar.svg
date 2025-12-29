@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="21" viewBox="0 0 55 21">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_2026" data-name="Caminho 2026" d="M10.63,0H36.409V-13.17H10.63Z" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Caminho_2028" data-name="Caminho 2028" d="M0,0H48.689V-13.17H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ico_recortar" transform="translate(-635 -1438)">
+    <rect id="Retângulo_147" data-name="Retângulo 147" width="55" height="21" transform="translate(635 1438)" fill="#ffe5c2"/>
+    <g id="Grupo_1482" data-name="Grupo 1482" transform="translate(638 1454.34)">
+      <g id="Grupo_1479" data-name="Grupo 1479" clip-path="url(#clip-path)">
+        <g id="Grupo_1477" data-name="Grupo 1477" transform="translate(33.499 -9.873)">
+          <path id="Caminho_2024" data-name="Caminho 2024" d="M0,0A2.6,2.6,0,0,1-.915,3.563a2.6,2.6,0,0,1-3.563-.915A2.6,2.6,0,0,1-3.563-.915,2.6,2.6,0,0,1,0,0M-4.547-2.579A4.52,4.52,0,0,0-6.131-1c-.011.02-.058.1-.121.226A4.534,4.534,0,0,0-6.584,2.6l.009.044a2.146,2.146,0,0,1-.745,2.4l-1.226.607c-1.707-1.051-3.617-2.2-5.254-3.106-6-3.326-9.158.774-7.38,1.592.607.265,4.437,2.125,7.936,3.831-1.3.643-2.66,1.309-3.875,1.905H-1.553L-3.9,8.583l0,0,0-.008s-.346-.224-.921-.591c.581-.372.931-.6.931-.6L-.364,5.451a4.336,4.336,0,0,0,.433-.224c.04-.024.076-.052.115-.076l.023-.013v0A4.531,4.531,0,0,0,1.664-.984,4.536,4.536,0,0,0-4.547-2.579" fill="#afb0b3"/>
+        </g>
+        <g id="Grupo_1478" data-name="Grupo 1478" transform="translate(25.008 -0.733)">
+          <path id="Caminho_2025" data-name="Caminho 2025" d="M0,0A1.157,1.157,0,0,1-1.157-1.157,1.157,1.157,0,0,1,0-2.313,1.157,1.157,0,0,1,1.157-1.157,1.157,1.157,0,0,1,0,0" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Grupo_1481" data-name="Grupo 1481" clip-path="url(#clip-path-2)">
+        <g id="Grupo_1480" data-name="Grupo 1480" transform="translate(0.25 -0.25)">
+          <path id="Caminho_2027" data-name="Caminho 2027" d="M0,0H48.189" fill="none" stroke="#2b2e34" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" stroke-dasharray="1.928 1.928"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

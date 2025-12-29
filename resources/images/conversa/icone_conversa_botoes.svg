@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="143.328" height="46" viewBox="0 0 143.328 46">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_421" data-name="Retângulo 421" width="36.07" height="42" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Retângulo_429" data-name="Retângulo 429" width="27.328" height="46" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Retângulo_430" data-name="Retângulo 430" width="51.959" height="40" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icone_conversa_botoes" transform="translate(-149 -2733)">
+    <g id="icone_conversa_emoji" transform="translate(149 2737)">
+      <g id="Grupo_3366" data-name="Grupo 3366" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Caminho_4583" data-name="Caminho 4583" d="M35.135,18.852V11.471a2.184,2.184,0,0,0-2.185-2.185H25.467A1.318,1.318,0,0,1,24.18,7.8a5.871,5.871,0,1,0-11.714-.571,5.677,5.677,0,0,0,.03.578A1.314,1.314,0,0,1,11.21,9.286H3.541a2.185,2.185,0,0,0-2.186,2.185V38.882a2.186,2.186,0,0,0,2.186,2.185h29.41a2.185,2.185,0,0,0,2.185-2.185V31.5a1.271,1.271,0,0,0-.669-1.13,5.861,5.861,0,0,1,0-10.386A1.272,1.272,0,0,0,35.135,18.852Z" transform="translate(-0.211 -0.211)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2.711"/>
+        <path id="Caminho_4584" data-name="Caminho 4584" d="M13.257,26.2a3.942,3.942,0,1,0-3.942-3.942A3.942,3.942,0,0,0,13.257,26.2" transform="translate(-1.448 -2.848)" fill="#fff"/>
+        <path id="Caminho_4585" data-name="Caminho 4585" d="M13.516,25.051a2.537,2.537,0,1,0-2.537-2.537,2.538,2.538,0,0,0,2.537,2.537" transform="translate(-1.707 -3.106)" fill="#fff"/>
+        <path id="Caminho_4586" data-name="Caminho 4586" d="M25.783,26.2a3.942,3.942,0,1,0-3.942-3.942A3.942,3.942,0,0,0,25.783,26.2" transform="translate(-3.396 -2.848)" fill="#fff"/>
+        <path id="Caminho_4587" data-name="Caminho 4587" d="M26.042,25.051A2.537,2.537,0,1,0,23.5,22.514a2.538,2.538,0,0,0,2.537,2.537" transform="translate(-3.655 -3.106)" fill="#fff"/>
+        <path id="Caminho_4588" data-name="Caminho 4588" d="M12.4,30.451a6.816,6.816,0,0,0,6.623,6.994,6.817,6.817,0,0,0,6.623-6.994" transform="translate(-1.929 -4.735)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2.711"/>
+      </g>
+    </g>
+    <g id="icone_conversa_mic" transform="translate(265 2733)">
+      <g id="Grupo_3382" data-name="Grupo 3382" transform="translate(0 0)" clip-path="url(#clip-path-2)">
+        <rect id="Retângulo_428" data-name="Retângulo 428" width="13.952" height="27.234" rx="1.633" transform="translate(6.688 1.602)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2.995"/>
+        <path id="Caminho_4597" data-name="Caminho 4597" d="M25.622,19.983a12.062,12.062,0,0,1-24.124,0" transform="translate(0.105 1.396)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.995"/>
+        <line id="Linha_3" data-name="Linha 3" y2="10.957" transform="translate(13.664 33.442)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.995"/>
+        <line id="Linha_4" data-name="Linha 4" x2="21.197" transform="translate(3.066 44.331)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.995"/>
+      </g>
+    </g>
+    <g id="icone_conversa_foto" transform="translate(199 2739)">
+      <g id="Grupo_3384" data-name="Grupo 3384" transform="translate(0 0)" clip-path="url(#clip-path-3)">
+        <path id="Caminho_4598" data-name="Caminho 4598" d="M46.2,6.787h-5.33a3.877,3.877,0,0,0,.195-1.167,3.938,3.938,0,0,0-3.936-3.938h-10.8a3.887,3.887,0,0,0-3.741,5.1H6.022a4.34,4.34,0,0,0-4.34,4.339V34.24a4.339,4.339,0,0,0,4.34,4.338H46.2a4.337,4.337,0,0,0,4.338-4.338V11.126A4.338,4.338,0,0,0,46.2,6.787Z" transform="translate(-0.131 -0.131)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.365"/>
+        <circle id="Elipse_16" data-name="Elipse 16" cx="11.539" cy="11.539" r="11.539" transform="translate(20.058 11.013)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.365"/>
+      </g>
+    </g>
+  </g>
+</svg>

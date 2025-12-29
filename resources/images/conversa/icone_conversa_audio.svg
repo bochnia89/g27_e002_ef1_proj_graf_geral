@@ -1,0 +1,14 @@
+<svg id="icone_conversa_audio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="417.474" height="40" viewBox="0 0 417.474 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_422" data-name="Retângulo 422" width="417.474" height="40" fill="none"/>
+    </clipPath>
+  </defs>
+  <path id="Caminho_4589" data-name="Caminho 4589" d="M0,0V40L39.669,20Z" fill="#161615"/>
+  <g id="Grupo_3369" data-name="Grupo 3369">
+    <g id="Grupo_3368" data-name="Grupo 3368" clip-path="url(#clip-path)">
+      <line id="Linha_2" data-name="Linha 2" x2="359.652" transform="translate(57.82 17.857)" fill="none" stroke="#161615" stroke-width="10.651"/>
+      <path id="Caminho_4590" data-name="Caminho 4590" d="M60.509,31.248A12.954,12.954,0,0,0,73.282,18.121a12.778,12.778,0,1,0-25.546,0A12.954,12.954,0,0,0,60.509,31.248" fill="#0058a7"/>
+    </g>
+  </g>
+</svg>

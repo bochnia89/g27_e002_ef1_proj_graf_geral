@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="27" viewBox="0 0 28 27">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_2033" data-name="Caminho 2033" d="M0,0H18.833V-22.871H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ico_colar" transform="translate(-643 -1491)">
+    <rect id="Retângulo_149" data-name="Retângulo 149" width="28" height="27" transform="translate(643 1491)" fill="#ffe5c2"/>
+    <g id="Grupo_1489" data-name="Grupo 1489" transform="translate(648 1515.742)">
+      <g id="Grupo_1488" data-name="Grupo 1488" clip-path="url(#clip-path)">
+        <g id="Grupo_1486" data-name="Grupo 1486" transform="translate(18.369 -18.477)">
+          <path id="Caminho_2031" data-name="Caminho 2031" d="M0,0-7.715-4.281a.9.9,0,0,0-1.268.44l-3.984,9.526A3.253,3.253,0,0,0-12.1,9.909L-12.82,13.6c-.031.055.036.15.148.212s.229.069.259.014l2.7-2.589A3.253,3.253,0,0,0-5.676,9.73L.3,1.309A.9.9,0,0,0,0,0" fill="#afb0b3"/>
+        </g>
+        <g id="Grupo_1487" data-name="Grupo 1487" transform="translate(1.571 -2.635)">
+          <path id="Caminho_2032" data-name="Caminho 2032" d="M0,0-.244.061l.01.023A2.1,2.1,0,0,0-.6.217a1.48,1.48,0,0,0-.854,1.865,1.48,1.48,0,0,0,2.029.3c.057-.031.108-.068.161-.1l.006.013A7.247,7.247,0,0,0,3.469-1.225,13.194,13.194,0,0,1,.01,0L0,0" fill="#afb0b3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
