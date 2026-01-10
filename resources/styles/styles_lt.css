@@ -13,6 +13,7 @@ html {
 }
 body {
     font-family: var(--texto);
+    font-size: var(--pesoPadrao);
     font-size: 16px;   
     font-weight:500 ;
     line-height: 1.5em;
@@ -563,31 +564,137 @@ p0tit6negativo
 .p0tit6negativo{
     font-family: var(--titulo);
     font-weight: bold;
-    line-height: 1.5em;
+    line-height: 1.3em;
+    width: fit-content;
+    max-width: 100%;
 }
 .p0tit1{
-    font-size: var(--peso1);
+     color: var(--preto);
+    background: var(--amarelo1);
+    border-radius: 1.2em;
+    padding: 0.5em 1em;
+    display: inline-block;
 }
-.p0tit1numpv{}
-.p0tit1pv{}
+.p0tit1numpv{
+    background: var(--azul1);
+    color: var(--branco);
+    display: inline-block;
+    padding: 0.5em;
+    font-weight: 900;
+    font-size: var(--peso3);
+    font-family: var(--titulo);
+    border-radius: 3em;
+    border-style: solid;
+    border-width: 10px;
+    border-left-color: var(--amarelo1);
+    border-bottom-color: var(--amarelo1);
+    border-right-color: var(--amarelo1);
+    border-top-color: var(--amarelo1);
+    width: fit-content;
+    max-width: 3em;
+    height: fit-content;
+    line-height: 1em;
+    text-align: center;
+}
+.p0tit1pv{
+      font-family: var(--titulo);
+    background: var(--amarelo1);
+    color: var(--preto);
+    padding: 0.5em;
+    border-radius: 1em;
+    width: fit-content;
+    max-width: 100%;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
 
 
 .p0tit2{
-    font-size: var(--peso2);
+    color: var(--vermelho1);
+    display: inline-block;
+  
+    margin-left:30px;
+
 }
-.p0tit2numpv{}
-.p0tit2pv{}
+.p0tit2numpv{
+    border-color: var(--azul1);
+    background: var(--branco);
+    color: var(--vermelho1);
+    padding: 0.5em;
+    font-weight: 900;
+    border-radius: 3em;
+    border-style: solid;
+    border-width: 8px;
+    width: 80px;
+    height: 80px;
+    line-height: 1.4em;
+    
+}
+.p0tit2numpv::after {
+    background: url(../images/pv_tit2_num.svg) top left no-repeat;
+    background-size: 100%;
+    content: '';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin: -19px 0 0 -20px;
+    z-index: -5;
+}
+.p0tit2pv{
+    font-family: var(--titulo);
+    font-weight: bold;
+    color: var(--azul1);
+    background: var(--branco);
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    padding: 0.3em 0.2em;
+    text-align: center;
+    margin-left: 40px;
+    border-radius: 50%;
+}
 
 
 .p0tit3{
     font-size: var(--peso3);
+    color: var(--azul1);
+    background: var(--branco);
+    border: 3px solid var(--azul1);
+    border-radius: 30px;
+    padding: 0.2em 0.8em;
+    margin: 1em 0 0.5em 1.5em;
+}
+.p0tit3::before {
+    background: url('../images/pv_tit3.svg') top left no-repeat;
+    background-size: 100%;
+    content: '';
+    position: absolute;
+    width: 73px;
+    height: 39px;
+    margin: 2px 0 0 -60px;
+    z-index: -5;
 }
 .p0tit3pv{}
 .p0tit4{
     font-size: var(--peso4);
+    color: var(--vermelho1);
+    margin: 1em 0 0.5em 1em;
 }
+.p0tit4::before {
+    background: url('../images/pv_tit4.svg') top left no-repeat;
+    background-size: 100%;
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 39px;
+    margin: 0.5em 0 0 -0.8em;
+    z-index: -5;
+}
+
 .p0tit5{
     font-size: var(--peso5);
+    color: var(--laranja1);
+    margin: 1em 0 0.5em 0em;
 }
 .p0tit6{
     font-size: var(--peso6);
@@ -737,7 +844,7 @@ p1box3tit
 .p1box3tit{
     font-family: var(--titulo);
     font-weight: bold;
-    color: var(--preto);
+    color: var(--roxoquente1);
 }
 
 /* TÍTULO SEÇÃO */
@@ -798,55 +905,155 @@ p1materialcomplementartit1
 p1materialcomplementartit2
 p1materialcomplementartit3
 */
+.p1sec1tit1,
+.p1sec1tit2,
+.p1sec1tit3,
+.p1sec1tit4,
+.p1sec2tit1,
+.p1sec2tit2,
+.p1sec2tit3,
+.p1sec2tit4,
+.p1sec3tit1,
+.p1sec3tit2,
+.p1sec3tit3,
+.p1sec3tit4,
+.p1sec4tit1,
+.p1sec4tit2,
+.p1sec4tit3,
+.p1sec4tit4,
+.p1sec5tit1,
+.p1sec5tit2,
+.p1sec5tit3,
+.p1sec5tit4,
+.p1sec6tit1,
+.p1sec6tit2,
+.p1sec6tit3,
+.p1sec6tit4,
+.p1sec7tit1,
+.p1sec7tit2,
+.p1sec7tit3,
+.p1sec7tit4,
+.p1sec8tit1,
+.p1sec8tit2,
+.p1sec8tit3,
+.p1sec8tit4,
+.p1sec9tit1,
+.p1sec9tit2,
+.p1sec9tit3,
+.p1sec9tit4,
+.p1sec10tit1,
+.p1sec10tit2,
+.p1sec10tit3,
+.p1sec10tit4,
+.p1sec11tit1,
+.p1sec11tit2,
+.p1sec11tit3,
+.p1sec11tit4,
+.p1sec12tit1,
+.p1sec12tit2,
+.p1sec12tit3,
+.p1sec12tit4,
+.p1sec13tit1,
+.p1sec13tit2,
+.p1sec13tit3,
+.p1sec13tit4{
+font-family: var(--titulo);
+font-weight: bold;
+}
 .p1sec1tit1{}
-.p1sec1tit2{}
+.p1sec1tit2{    
+    font-size: var(--peso3);    
+    color: var(--azul1);
+}
 .p1sec1tit3{}
 .p1sec1tit4{}
 
 .p1sec2tit1{}
 .p1sec2tit2{}
-.p1sec2tit3{}
+.p1sec2tit3{
+    font-size: var(--peso3);
+    color: var(--azul1);
+}
 .p1sec2tit4{}
 
 .p1sec3tit1{}
-.p1sec3tit2{}
+.p1sec3tit2{    
+    font-size: var(--peso3); 
+    color: var(--vermelho1);
+}
 .p1sec3tit3{}
 .p1sec3tit4{}
 
-.p1sec4tit1{}
+.p1sec4tit1{    
+    font-size: var(--peso2); 
+    color: var(--vermelho1);
+}
 .p1sec4tit2{}
 .p1sec4tit3{}
 .p1sec4tit4{}
 
-.p1sec5tit1{}
+.p1sec5tit1{    
+    font-size: var(--peso3);
+    color: var(--vermelho1);
+}
 .p1sec5tit2{}
 .p1sec5tit3{}
 .p1sec5tit4{}
 
-.p1sec6tit1{}
+.p1sec6tit1{
+    font-size: var(--peso2); 
+    color: var(--roxoquente1);
+}
 .p1sec6tit2{}
 .p1sec6tit3{}
 .p1sec6tit4{}
 
-.p1sec7tit1{}
-.p1sec7tit2{}
-.p1sec7tit3{}
+.p1sec7tit1{
+    font-size: var(--peso2); 
+    color: var(--laranja1);
+}
+.p1sec7tit2{
+    font-size: var(--peso3); 
+    color: var(--turquesa1);
+}
+.p1sec7tit3{
+     font-size: var(--peso4); 
+    color: var(--turquesa1);
+}
 .p1sec7tit4{}
 
-.p1sec8tit1{}
+.p1sec8tit1{
+     font-size: var(--peso2); 
+    color: var(--roxoquente1);
+}
 .p1sec8tit2{}
 .p1sec8tit3{}
 .p1sec8tit4{}
 
-.p1sec9tit1{}
+.p1sec9tit1{
+    font-size: var(--peso2); 
+    color: var(--turquesa1);
+}
 .p1sec9tit2{}
 .p1sec9tit3{}
 .p1sec9tit4{}
 
-.p1sec10tit1{}
-.p1sec10tit2{}
-.p1sec10tit3{}
-.p1sec10tit4{}
+.p1sec10tit1{
+    font-size: var(--peso2); 
+    color: var(--preto);
+}
+.p1sec10tit2{
+    font-size: var(--peso3); 
+    color: var(--azul1);
+}
+.p1sec10tit3{
+    font-size: var(--peso4); 
+    color: var(--vermelho1);
+}
+.p1sec10tit4{
+    font-size: var(--peso5); 
+    color: var(--branco);
+}
 
 .p1sec11tit1{}
 .p1sec11tit2{}
@@ -903,7 +1110,16 @@ p2sugestcomp
 p2sugestcompitem
 p2sugestcompcoment
 */
-.p1sugestcomptit1{}
+.p1sugestcomptit1,
+.p1sugestcomptit2,
+.p1sugestcomptit3{
+    font-family: var(--titulo);
+    font-weight: bold;
+}
+.p1sugestcomptit1{
+    font-size: var(--peso2);
+    color: var(--turquesa1);
+}
 .p1sugestcomptit2{}
 .p1sugestcomptit3{}
 .p2sugestcomp{}
@@ -2036,7 +2252,18 @@ p4iconeoed4
 .p4iconeoed4{}
 
 /* Legenda */
-.p4legenda{}
+.p4legenda{
+    font-size: var(--pesoIntermediario);
+    margin: 0.2em 0 0 1em;
+}
+.p4legenda::before {
+    background: url(../images/pv_legenda.svg) no-repeat;
+    content: '';
+    width:15px;
+    height: 10px;
+    position: absolute;
+    margin: 0.5em 0 0 -1em;
+}
 .p4legendanegativo{
     color: var(--corprof);
 }
@@ -2214,15 +2441,17 @@ p5marcadorcaixa3negativo
 p5marcadorquestao
 */
 .p5marcador{
-    background: var(--preto);
+    background: var(--amarelo1);
+    border-radius: 0.2em;
     font-family: var(--texto);
-    color: var(--branco);
+    color: var(--preto);
     font-weight: bold;
     height: 25px;
     position: absolute;
     text-align: center;
     margin: 0 0 0 -30px;
     width: 25px;
+    padding:0.2em 0 0 0 ;
 }
 .p5marcadornegativo{}
 .p5marcadorromano{
@@ -2355,6 +2584,7 @@ d0imgabertura
 d0tit1
 d0tit2
 d0boxaberturatit
+d0boxaberturatit2
 d0materiaistit
 d0secatividade
 d0secatividadetit
@@ -2407,7 +2637,32 @@ d0table
 .d0imgabertura{}
 .d0tit1{}
 .d0tit2{}
-.d0boxaberturatit{}
+.d0boxaberturatit{
+    margin: 2em 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    font-size: var(--peso1);}
+.d0boxaberturatit::before{
+    background: url(../images/pv_tit1.svg) top left no-repeat;
+    background-size: 100%;
+    content: '';
+    width: 300px;
+    height: 184px;
+    position: absolute;
+    margin: -40px 0 0 0;
+    z-index: -5;
+}
+.d0boxaberturatit2{
+    font-size: var(--peso2);
+    
+    margin: 1em 0 0.5em 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
 .d0materiaistit{}
 .d0secatividade{}
 .d0secatividadetit{}
@@ -2620,6 +2875,16 @@ c0destaquebullet 👉Demanda surgiu no G26 física E002 para trocar cor de bulle
 .c0destaqueoed1{}
 .c0destaqueoed2{}
 .c0destaqueoed3{}
+
+.c0destaqueintermediarioletra,
+.c0destaqueintermediarionumero,
+.c0destaqueintermediarioparentese,
+.c0destaqueletra,
+.c0destaquenumero,
+.c0destaqueparentese,
+.c0destaqueromano {
+    color: var(--vermelho1);
+}
 
 .c0destaqueletra{
     font-weight: bold;
@@ -2838,10 +3103,12 @@ c3idiomavocabulariodestaqueitalico
 */
 .c3idiomavocabulariodestaque{
     font-weight: bold;
+    border-bottom: 2px solid var(--laranja1);
 }
 .c3idiomavocabulariodestaqueitalico{
     font-style: italic;
     font-weight: bold;
+    border-bottom: 2px solid var(--laranja1);
 }
 
 /*👉C4: Estilos de Suporte👈*/
@@ -2932,11 +3199,11 @@ c4linhalacuna
     margin: 0.5em 0 0.5em 30px;
 }
 .c4vocabulariodestaque{
-    border-bottom: 2px solid var(--verde1);
+    border-bottom: 2px solid var(--laranja1);
     font-weight: bold;
 }
 .c4vocabulariodestaqueitalico{
-    border-bottom: 2px solid var(--verde1);
+    border-bottom: 2px solid var(--laranja1);
     font-weight: bold;
     font-style: italic;
 }
@@ -2959,16 +3226,16 @@ a:has(.c4vocabulariodestaque)::before{
     color: #000;
 }
 .c4glossariodestaque{
-     font-weight: bold;
+    font-weight: bold;
     color: #000;
 }
 .c4glossariodestaqueitalico{
-     font-weight: bold;
+    font-weight: bold;
     color: #000;
     font-style: italic;
 }
 .c4glossariodestaquevoltar{
-      background: var(--cinza);
+    background: var(--cinza);
     font-weight: bold;
     color: #000;
 }
@@ -2995,7 +3262,7 @@ a:has(.c4vocabulariodestaque)::before{
 .c4quadrinho{
     width: 40px; 
     height: 40px;
-    border: 1px solid var(--preto);
+    border: 1px solid var(--turquesa1);
     display:inline-block;
 }
 
@@ -3023,22 +3290,22 @@ c5extraitalicoidioma
 }
 .c5extradestaqueleitura{}
 .c5extradestaquecor1{
-    background: var(--amarelo1);
+    background: var(--pinteamarelo);
 }
 .c5extradestaquecor2{
-    background: var(--vermelho2);
+    background: var(--pintevermelho);
 }
 .c5extradestaquecor3{
-     background: var(--verde1);
+     background: var(--pinteverde);
 }
 .c5extradestaquecor4{
-     background: var(--azul2);
+     background: var(--pinteazul);
 }
 .c5extradestaquecor5{
-     background: var(--laranja1);
+     background: var(--pintelaranja);
 }
 .c5extradestaquecor6{
-     background: var(--marrom);
+     background: var(--pintemarrom);
 }
 
 .c5extradestaquecor1::before, .c5extradestaquecor1::after,
@@ -3290,8 +3557,28 @@ o0glossario
 }
 .o0sumariobox1{}
 .o0aberturabox{}
-.o0aberturaintrobox{}
-.o0aberturaatvbox{}
+.o0aberturaintrobox{
+    background: var(--amarelo2);
+    border-radius: 30px;
+    padding: 1em;
+    margin: 1em 0;
+}
+.o0aberturaatvbox{
+    border: 3px solid var(--vermelho1);
+    border-radius: 30px;
+    padding: 1em;
+    margin:1em 0 1em 0;
+}
+.o0aberturaatvbox::before {
+    background: url(../images/pv_abertura_box.svg) top left no-repeat;
+    background-size: 100%;
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 25px;
+    margin: -30px 0 0 -20px;
+    z-index: 5;
+}
 .o0aberturaobjbox{}
 .o0aberturalegenda{}
 .o0aberturaimgmini{}
@@ -4158,7 +4445,7 @@ p2textosemrecuoquadrinho
 .p2textosemrecuoquadrinho .c4quadrinho{
     width: 40px;
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid var(--turquesa1);
     display: inline-block;
     position: absolute;
     margin: 0 0 0 -50px;
@@ -4255,7 +4542,7 @@ oemorientacoesdeuso
 
 /*MEDIA QUERY*/
 /*👉Versão Mobile Cel👈*/
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen  and (max-width: 700px) {
      main {
         max-width: 100%;
         margin: 0 10px;
@@ -4312,7 +4599,23 @@ oemorientacoesdeuso
     }
 
     /*👉TABELA MOBILE 👈*/
+    table{
+        max-width: 100%;
+        overflow-x: auto;
+    }
     table, thead, tbody, th, td, tr{
+        display: block;
+    }
+    
+    div.d0table {
+        max-width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+
+    /* títulos */
+    .d0boxaberturatit{
         display: block;
     }
 }
