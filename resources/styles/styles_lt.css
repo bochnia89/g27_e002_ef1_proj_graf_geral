@@ -1082,10 +1082,37 @@ font-weight: bold;
 }
 .p1sec2tit4{}
 
-.p1sec3tit1{}
+.p1sec3tit1{
+    font-size: var(--peso2);
+    background: var(--branco);
+    border: 4px solid var(--amarelo1);
+    border-radius: 2em ;
+    padding: 0.3em 1em;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0 0em 2.4em;
+}
+.p1sec3tit1::before{
+    background: url(../images/pv_sec3tit1.svg) center left no-repeat;
+    background-size: contain;
+    content: '';
+    width:110px ;
+    height:105px ;
+    position:absolute;
+    margin: -40px 0 0 -96px;
+    z-index: -5;
+}
 .p1sec3tit2{    
     font-size: var(--peso3); 
     color: var(--vermelho1);
+    border-top:4px solid var(--amarelo1);
+    border-left:4px solid var(--amarelo1);
+    border-right:4px solid var(--amarelo1);
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 0.2em 0.5em;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0 0.5em 0;
 }
 .p1sec3tit3{}
 .p1sec3tit4{}
@@ -1147,6 +1174,14 @@ font-weight: bold;
 .p1sec10tit1{
     font-size: var(--peso2); 
     color: var(--preto);
+    border: 3px solid var(--azul1);
+    border-radius: 2em ;
+    font-size: var(--peso2);
+    padding: 0.2em 0.5em;
+    margin: 1em 0 1em 1.5em;
+    width: fit-content;
+    max-width: 100%;
+    background: var(--branco);
 }
 .p1sec10tit2{
     font-size: var(--peso3); 
@@ -3749,6 +3784,9 @@ o0glossario
     padding:0em 1em 1em 1em;
 }
 .o0sec3{}
+.o0sec3 .box{
+    padding: 1em;
+}
 .o0sec4{}
 .o0sec5{}
 .o0sec6{}  
@@ -3762,6 +3800,9 @@ o0glossario
 .o0sec1a{}
 .o0sec2a{}
 .o0sec3a{}
+.o0sec3a .box{
+    padding: 1em;
+}
 .o0sec4a{}
 .o0sec5a{}
 .o0sec6a{}  
