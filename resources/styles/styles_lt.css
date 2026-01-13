@@ -1040,11 +1040,45 @@ font-weight: bold;
 .p1sec1tit3{}
 .p1sec1tit4{}
 
-.p1sec2tit1{}
-.p1sec2tit2{}
+.p1sec2tit1{
+    font-size: var(--peso2);
+    background: var(--branco);
+    border: 4px solid var(--amarelo1);
+    border-radius: 2em ;
+    padding: 0.3em 1em;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0 0em 2.4em;
+
+}
+.p1sec2tit1::before{
+    background: url(../images/pv_sec2tit1.svg) center left no-repeat;
+    background-size: contain;
+    content: '';
+    width:120px ;
+    height:121px ;
+    position:absolute;
+    margin: -50px 0 0 -95px;
+    z-index: -5;
+}
+.p1sec2tit2{
+    font-size: var(--peso3);
+    margin: 0 0  0.5em 4.5em;
+}
+.p1sec2tit2::before{
+    background: url(../images/pv_sec2tit2.svg) center left no-repeat;
+    background-size: contain;
+    content: '';
+    width:34px ;
+    height:43px ;
+    position:absolute;
+    margin: -7px 0 0 -34px;
+    z-index: -5;
+}
 .p1sec2tit3{
     font-size: var(--peso3);
     color: var(--azul1);
+    margin: 1em 0 0.5em 0;
 }
 .p1sec2tit4{}
 
@@ -2605,15 +2639,26 @@ figure>.p5marcador {
 }
 .p5marcadorcaixa{
     background: var(--branco);
-    border-radius: 0em 0 0 0;
-    border: 3px solid var(--azul1);
+    border-radius:3em;
+    border: 4px solid var(--azul1);
     color: var(--azul1);
     font-family: var(--titulo);
     font-weight: bold;
-    width: fit-content;
+    width: 40px;
+    height: 40px;
     max-width: 100%;
-    padding: 0 1em 0.2em 1em;
-    margin: 0.5em 0;
+    padding: 0.2em 0.7em;
+    margin:0 0.5em  0 0 ;
+}
+.p5marcadorcaixa::before{
+    content: '';
+    background: url(../images/pv_sec2tit3_marc.svg) left center no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: -8px 0 0 -25px;
+    z-index: -5;
 }
 .p5marcadorcaixanegativo{}
 
@@ -3700,6 +3745,9 @@ o0glossario
 .o0secrespostas{}
 .o0sec1{}
 .o0sec2{}
+.o0sec2 .box{
+    padding:0em 1em 1em 1em;
+}
 .o0sec3{}
 .o0sec4{}
 .o0sec5{}
