@@ -1158,8 +1158,44 @@ font-weight: bold;
 .p1sec8tit1{
      font-size: var(--peso2); 
     color: var(--roxoquente1);
+    background: var(--branco);
+    border-radius: 1em 1em 0 0;
+    border-top:4px solid var(--roxoquente1);
+    border-left:4px solid var(--roxoquente1);
+    border-right:4px solid var(--roxoquente1);
+    width: fit-content;
+    max-width: 100%;
+    padding:0.5em 1em;
+    margin-bottom: -4px;
+    z-index: 5;
+    position: relative;
 }
-.p1sec8tit2{}
+.o0sec8::before{
+    content: '';
+    background: url(../images/pv_sec8tit.svg) left center no-repeat;
+    background-size: contain;
+    width:83px ;
+    height:57px;
+    position: absolute;
+    margin: -18px 0 0 -10px;
+    z-index: -5;
+}
+.p1sec8tit2{
+    font-size: var(--peso4);
+    color: var(--roxoquente1);
+    margin: 1em 0 0.5em 0.9em;
+    width: fit-content;
+    max-width: 100%;
+}
+.p1sec8tit2::before{
+    content: '';
+    background: url(../images/pv_sec8tit2.svg) left center no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin: 10px 0 0 -20px;
+}
 .p1sec8tit3{}
 .p1sec8tit4{}
 
@@ -3904,7 +3940,14 @@ o0glossario
 .o0sec5{}
 .o0sec6{}  
 .o0sec7{}
-.o0sec8{}
+.o0sec8{
+    margin: 1em;
+}
+.o0sec8>.box{
+    border: 4px solid var(--roxoquente1);
+    border-radius: 0em 1em 1em 1em;
+    padding: 1em;
+}
 .o0sec9{}
 .o0sec10{}
 .o0sec10 .box{
