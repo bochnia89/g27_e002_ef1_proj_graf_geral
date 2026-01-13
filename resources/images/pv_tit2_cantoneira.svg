@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125.051" height="99.383" viewBox="0 0 125.051 99.383">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_4799" data-name="Caminho 4799" d="M0,0H125.051V-99.383H0Z" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Caminho_4803" data-name="Caminho 4803" d="M0-99.383V0H.006A51.411,51.411,0,0,0,23.289-9.7h0a51.407,51.407,0,0,0,18.206-25.48h0c4.472-11.847,15.657-24.032,36.068-26.157h0a51.575,51.575,0,0,0,6.325-.717h0c.1-.006.188-.02.285-.025h0v-.031a51.377,51.377,0,0,0,21.951-9.446h0a51.423,51.423,0,0,0,18.927-27.83H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="pv_tit2_cantoneira" transform="translate(0 99.383)">
+    <g id="Grupo_3578" data-name="Grupo 3578" clip-path="url(#clip-path)">
+      <g id="Grupo_3577" data-name="Grupo 3577" transform="translate(0 -99.383)">
+        <path id="Caminho_4798" data-name="Caminho 4798" d="M0,0V99.383a51.388,51.388,0,0,0,23.289-9.7,51.4,51.4,0,0,0,18.2-25.48c4.473-11.847,15.658-24.032,36.069-26.157a51.575,51.575,0,0,0,6.325-.717c.1-.006.188-.019.285-.025v-.03a51.4,51.4,0,0,0,21.952-9.447A51.416,51.416,0,0,0,125.05,0Z" fill="#ff5639"/>
+      </g>
+    </g>
+    <g id="Grupo_3582" data-name="Grupo 3582" clip-path="url(#clip-path-2)">
+      <g id="Grupo_3579" data-name="Grupo 3579" transform="translate(90.469 -60.427)">
+        <path id="Caminho_4800" data-name="Caminho 4800" d="M0,0A22.927,22.927,0,0,1,10.957-30.517,22.928,22.928,0,0,1,41.474-19.56" fill="none" stroke="#ff886a" stroke-width="9.7"/>
+      </g>
+      <g id="Grupo_3580" data-name="Grupo 3580" transform="translate(-15.166 -65.419)">
+        <path id="Caminho_4801" data-name="Caminho 4801" d="M0,0H18.894a22.927,22.927,0,1,1,0,45.855H-4.535" fill="none" stroke="#ff886a" stroke-width="9.7"/>
+      </g>
+      <g id="Grupo_3581" data-name="Grupo 3581" transform="translate(1.233 -116.605)">
+        <path id="Caminho_4802" data-name="Caminho 4802" d="M0,0S-2.9-14.558.088,6.7s23.8,35.9,46.483,32.709,38.655-23,35.668-44.255" fill="none" stroke="#ff886a" stroke-width="9.7"/>
+      </g>
+    </g>
+  </g>
+</svg>
