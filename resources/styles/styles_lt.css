@@ -898,6 +898,10 @@ p1box3tit
     font-family: var(--titulo);
     font-weight: bold;
     color: var(--roxoquente1);
+    font-size: var(--peso3);
+    padding: 0.2em 0.5em ;
+    width: fit-content;
+    max-width: 100%;
 }
 
 /* TÍTULO SEÇÃO */
@@ -1320,17 +1324,31 @@ font-weight: bold;
 .p1sec13tit4{}
 
 .p1materialcomplementartit1{
+    background: var(--branco);
+    border: 4px solid var(--azul1);
+    border-radius: 3em;
     color: var(--preto);
     font-family: var(--titulo);
     font-size: var(--peso2);
     font-weight: 800;
+    line-height: 1.2em;
     width: fit-content;
     max-width: 100%;
-    margin: 2em 0 0.5em 0;
-    padding: 0.5em;
+    margin: 2em 0 0.5em 1em;
+    padding: 0.5em 1em;
+}
+.p1materialcomplementartit1::before{
+    content: '';
+    background: url(../images/pv_p1materialcomplementartit1.svg) left center no-repeat;
+    background-size: contain;
+    width: 97px;
+    height: 62px;
+    position: absolute;
+    margin: -30px  0 0 -65px;
+    z-index: -5;
 }
 .p1materialcomplementartit2{
-      color: var(--preto);
+      color: var(--azul1);
     font-family: var(--titulo);
     font-size: var(--peso3);
     font-weight: 800;
@@ -1340,7 +1358,7 @@ font-weight: bold;
     padding: 0.5em;
 }
 .p1materialcomplementartit3{
-      color: var(--preto);
+      color: var(--laranja1);
     font-family: var(--titulo);
     font-size: var(--peso4);
     font-weight: 800;
@@ -4395,7 +4413,22 @@ span.o4ficha2 {
     width: fit-content;
     margin: 0em;
 }
-.o4boxinfo{}
+.o4boxinfo{
+    background: var(--laranja2);
+    border-radius: 1em;
+    margin: 1em;
+    padding: 1em 1.5em;
+}
+.o4boxinfo::before{
+    content: '';
+    background: url(../images/pv_o4boxinfo.svg) left center no-repeat;
+    background-size: contain;
+    width:44px ;
+    height:20px ;
+    position: absolute;
+    margin: -26px 0 0 -30px;
+
+}
 .o4boxmateriais{
     margin: 1em 0;
 }
@@ -4564,7 +4597,23 @@ span.o4ficha2 {
 .o4tipofrase1{}
 .o4tipofrase2{}
 .o4tipofrase3{}
-.o4ideiabox{}
+.o4ideiabox{
+    border: 2px solid var(--roxoquente1);
+    border-radius: 1em 1em 1em 1em;
+    margin: 1em;
+}
+.o4ideiabox::before{
+    content: '';
+    background: url(../images/pv_o4ideiabox.svg) left center no-repeat;
+    background-size: contain;
+    width:44px ;
+    height: 20px;
+    position: absolute;
+    margin: -11px 0 0 -5px;
+}
+.o4ideiabox>.box{
+    padding: 1em;
+}
 .o4quadrinho{}
 
 /*👉O5: Papeletas e papelaria👈*/
