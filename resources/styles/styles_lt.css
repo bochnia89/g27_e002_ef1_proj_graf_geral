@@ -1146,16 +1146,42 @@ font-weight: bold;
 .p1sec6tit4{}
 
 .p1sec7tit1{
+    background: var(--branco);
+    background-size: 55px;
+    border-radius: 5em;
+    border: 4px solid var(--laranja1);
     font-size: var(--peso2); 
     color: var(--laranja1);
+    padding: 0.4em 1em 0.4em 2em;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0 0em 0;
+}
+.p1sec7tit1::before{
+    content: '';
+    background: url(../images/pv_sec7tit1.svg) left center no-repeat;
+    background-size: contain;
+    width:51px ;
+    height:51px ;
+    position: absolute;
+    margin: -13px 0 0 -57px;
 }
 .p1sec7tit2{
     font-size: var(--peso3); 
     color: var(--turquesa1);
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0 0.5em 0;
 }
 .p1sec7tit3{
-     font-size: var(--peso4); 
+    border: 3px solid var(--turquesa1);
+    border-radius: 3em;
+     font-size: var(--peso5); 
     color: var(--turquesa1);
+    padding: 0.2em 0.5em;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0 0.5em 0;
 }
 .p1sec7tit4{}
 
@@ -3957,7 +3983,24 @@ o0glossario
 .o0sec4{}
 .o0sec5{}
 .o0sec6{}  
-.o0sec7{}
+.o0sec7{
+    background: var(--laranja2);
+    border-radius:1.8em 1em 1em 1em;
+    margin: 1em 0;
+}
+.o0sec7::before{
+    content: '';
+    background: url(../images/pv_sec7.svg) left center no-repeat;
+    background-size: contain;
+    width: 73px;
+    height:47px ;
+    position: absolute;
+    margin:-20px 0 0 -20px ;
+    z-index: -5;
+}
+.o0sec7>.box{
+    padding:1em 1.5em;
+}
 .o0sec8{
     margin: 1em;
 }
