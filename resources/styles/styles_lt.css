@@ -1248,7 +1248,27 @@ font-weight: bold;
 
 }
 
-.p1sec11tit1{}
+.p1sec11tit1{
+    font-size: var(--peso2);
+    color: var(--preto);
+    border-radius: 3em;
+    border-top: 3px solid var(--azul1);
+    border-right: 3px solid var(--azul1);
+    border-left: 3px solid var(--azul1);
+    padding: 0.4em 1em 0.5em 2em;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0 0.5em 0;
+}
+.p1sec11tit1::before{
+    content: '';
+    background: url(../images/pv_sec11tit1.svg) left center no-repeat;
+    background-size: contain;
+    width:45px;
+    height:45px ;
+    position: absolute;
+    margin: -10px 0 0 -2em;
+}
 .p1sec11tit2{}
 .p1sec11tit3{}
 .p1sec11tit4{}
@@ -4453,7 +4473,23 @@ span.o4ficha2 {
     padding: 1em;
     margin: 1em 0;
 }
-.o4dicabox{}
+.o4dicabox{
+    background: var(--azul2);
+    border-radius: 0 0.5em 0.5em 0.5em ;
+    margin: 1em;
+}
+.o4dicabox::before{
+    content: '';
+    background: url(../images/pv_o4dicabox.svg) left center no-repeat;
+    background-size: contain;
+    width:43px ;
+    height:25px ;
+    position: absolute;
+    margin:-10px 0 0 -12px ;
+}
+.o4dicabox .box{
+    padding: 1em;
+}
 .o4dicaboxnegativo{}
 .o4autorbox{}
 .o4atencaobox{}
