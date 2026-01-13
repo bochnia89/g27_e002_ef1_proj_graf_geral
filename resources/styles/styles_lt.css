@@ -1312,9 +1312,36 @@ p2sugestcompcoment
 .p1sugestcomptit1{
     font-size: var(--peso2);
     color: var(--turquesa1);
+    background: var(--branco);
+    border: 4px solid var(--turquesa1);
+    border-radius: 2em;
+    padding: 0.4em 1em;
+    margin:  0 0 0 1.5em;
 }
-.p1sugestcomptit2{}
-.p1sugestcomptit3{}
+.p1sugestcomptit1::before{
+    content:'';
+    background: url(../images/pv_p1sugestcomptit1.svg) left center no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 65px;
+    position: absolute;
+    margin: -10px 0 0 -80px;
+ 
+}
+.p1sugestcomptit2{
+    color: var(--turquesa1);
+    font-size: var(--peso4);
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0 0.5em 0;
+}
+.p1sugestcomptit3{
+    color: var(--preto);
+    font-size: var(--peso6);
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0 0.5em 0;
+}
 .p2sugestcomp{}
 .p2sugestcompitem{}
 .p2sugestcompcoment{}
@@ -1348,12 +1375,26 @@ p2referenciasbibliocoment
 }
 
 .p1referenciasbibliotit1{
+    background: var(--amarelo1);
+    border-radius: 3em;
     font-family: var(--titulo);
     font-size: var(--peso2);
     font-weight: bold;
+    line-height: 1.2em;
     width: fit-content;
+    padding: 0.5em 1em;
     max-width: 100%;
-    margin: 0.5em 0 0.5em 0;
+    margin: 0.5em 0 0.5em 1.5em;
+}
+.p1referenciasbibliotit1::before{
+    content: '';
+    background: url(../images/pv_p1referenciasbibliotit1.svg) left center no-repeat;
+    background-size: contain;
+    width: 106px;
+    height: 71px;
+    position: absolute;
+    margin: -30px 0 0 -80px;
+    z-index: -5;
 }
 .p1referenciasbibliotit2{
     font-family: var(--titulo);
@@ -3912,7 +3953,15 @@ o0glossario
 .o0referencias{}
 .o0materialcomplementar{}
 .o0pronuncia{}
-.o0sugestcomp{}
+.o0sugestcomp{
+    background: var(--turquesa2);
+    border-radius: 1em 1em 1em 1em;
+    margin: 1em;
+}
+.o0sugestcomp .box{
+    padding: 1.5em;
+}
+
 .o4medidaanimalbox{}
 .o0boxpalavra{
     display: flex;
