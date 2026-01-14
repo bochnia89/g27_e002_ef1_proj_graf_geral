@@ -3123,7 +3123,15 @@ d0table
 .d0materiaistit{}
 .d0secatividade{}
 .d0secatividadetit{}
-.d0anote{}
+.d0anote{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    background: var(--azul2);
+    color: var(--azul10);
+    border-radius: 2em;
+    padding: 0.2em 0.5em ;
+    margin: 0.5em 0;
+}
 .d0estrategiastit{}
 .d0ods{}
 .d0atvanote{}
