@@ -893,6 +893,7 @@ p1box3tit
     font-family: var(--titulo);
     font-weight: bold;
     color: var(--preto);
+    font-size: var(--peso4);
 }
 .p1box3tit{
     font-family: var(--titulo);
@@ -4774,7 +4775,26 @@ span.o4ficha2 {
     padding: 1em;
 }
 .o4dicaboxnegativo{}
-.o4autorbox{}
+.o4autorbox{
+   margin: 1em;
+   background: url(../images/pv_o4autorbox.svg) left top no-repeat;
+   background-size:85px ;
+}
+.o4autorbox>.box{
+    background: var(--azul2);
+    border-radius: 1em;
+    padding: 1em;
+}
+.o4autorbox>.p1box2tit{
+    background: url(../images/pv_o4autorboxtit.svg) left center no-repeat var(--azul2);
+    background-position-x: 10px;
+
+    border-radius: 2em;
+    padding: 0.2em 0.5em 0.2em 1.5em;
+    margin: 0 0 0 0.5em ;
+    width: fit-content;
+    max-width: 100%;
+}
 .o4atencaobox{}
 .o4conceitobox{
     background: var(--amarelo2);
@@ -4782,7 +4802,21 @@ span.o4ficha2 {
     padding: 1em;
     margin: 1em 0;
 }
-.o4avaliacaobox{}
+.o4avaliacaobox{
+    background: var(--laranja2);
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 1em ;
+}
+.o4avaliacaobox::before{
+    content: '';
+    background: url(../images/pv_o4avaliacaobox.svg) left center no-repeat;
+    background-size: contain;
+    width: 44px;
+    height: 20px;
+    position: absolute;
+    margin: -26px 0 0 -22px;
+}
 .o4vocabulariobox{
     border-left:2px solid var(--laranja1);
     border-bottom:2px solid var(--laranja1);
