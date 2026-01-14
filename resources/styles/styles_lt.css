@@ -4179,7 +4179,24 @@ o0glossario
 .o0sec1box{}
 .o0sec1box2{}
 .o0sec1box3{}
-.o0sec2box{}
+.o0sec2box{
+    margin: 1em 0;
+}
+.o0sec2box>.box{
+    padding: 1em;
+    border: 2px solid var(--azul1);
+    border-radius: 0.6em;
+}
+.o0sec2box>.p1box1tit{
+    background: url(../images/pv_sec2boxtiti.svg) center left no-repeat var(--azul1);
+    background-position-x:10px ;
+    font-size: var(--peso6);
+    color: var(--branco);
+    border-radius: 2em;
+    padding: 0.2em 0.5em 0.2em 1.5em;
+    width: fit-content;
+    max-width: 100%;
+}
 .o0sec2box2{}
 .o0sec2box3{}
 .o0sec3box{}
