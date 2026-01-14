@@ -4793,7 +4793,22 @@ span.o4ficha2 {
 .o4vocabularioboxbranco{}
 .o4glossariobox{}
 .o4etapabox{}
-.o4exemplobox{}
+.o4exemplobox{
+    margin: 1em;
+}
+.o4exemplobox>.box{
+    background: var(--vermelho2);
+    border-radius: 1em;
+    padding: 1em;
+}
+.o4exemplobox>.p1box2tit{
+    font-size: var(--peso5);
+    background: var(--vermelho2);
+    border-radius: 3em;
+    padding: 0.2em 0.5em;
+    width: fit-content;
+    max-width: 100%;
+}
 .o4intermediariobox{}
 .o4destaquepalavrabox{}
 .o4destaquepalavrafio{}
