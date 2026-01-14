@@ -4359,16 +4359,19 @@ div.o1boxfundoazul1{
     margin: 1em;
     max-width: 100%;
     width: fit-content;
+    background: var(--azul2);
 }
 p.o1boxfundoazul1{
      padding: 1em;
     margin: 1em;
     width: fit-content;
     max-width: 100%;
+    background: var(--azul2);
 }
 span.o1boxfundoazul1{
     padding: 0.2em 0.5em;
     display: inline-block;
+    background: var(--azul2);
 }
 ul.o1boxfundoazul1{
     background: none;
