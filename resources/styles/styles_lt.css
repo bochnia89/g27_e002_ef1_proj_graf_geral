@@ -1124,6 +1124,21 @@ font-weight: bold;
 .p1sec4tit1{    
     font-size: var(--peso2); 
     color: var(--vermelho1);
+    border:5px solid var(--azul1);
+    background: var(--branco);
+    border-radius: 3em;
+    padding: 0.4em 1em 0.4em 1.5em;
+    width: fit-content;
+    max-width: 100%;
+}
+.p1sec4tit1::before{
+    content: '';
+    background: url(../images/pv_sec4tit1.svg) left center no-repeat;
+    background-size: contain;
+    width:40px ;
+    height:40px ;
+    position: absolute;
+    margin:-20px 0 0 -48px ;
 }
 .p1sec4tit2{}
 .p1sec4tit3{}
@@ -1180,7 +1195,13 @@ font-weight: bold;
     position: absolute;
     margin: -12px 0 0 -56px;
 }
-.p1sec6tit2{}
+.p1sec6tit2{
+    font-size: var(--peso4);
+    color: var(--roxoquente1);
+    margin: 0.5em 0;
+    width: fit-content;
+    max-width: 100%;
+}
 .p1sec6tit3{}
 .p1sec6tit4{}
 
@@ -4019,7 +4040,25 @@ o0glossario
 .o0sec3 .box{
     padding: 1em;
 }
-.o0sec4{}
+.o0sec4{
+    margin: 1em 0;
+    background: var(--amarelo2);
+    border-radius: 1em;
+}
+.o0sec4::before{
+    content: '';
+    background: url(../images/pv_sec4.svg) left center no-repeat;
+    background-size: contain;
+    width:83px ;
+    height:57px ;
+    position: absolute;
+    margin:-20px 0 0 -5px ;
+    z-index: -5;
+}
+.o0sec4>.box{
+    padding: 1em;
+   
+}
 .o0sec5{
     margin: 1em 0;
 }
