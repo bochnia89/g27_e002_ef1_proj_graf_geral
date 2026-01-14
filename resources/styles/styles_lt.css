@@ -4340,6 +4340,12 @@ span.o1boxfundobranco{
 ul.o1boxfundobranco{
      background: none;
 }
+.o1boxfundoazul1{
+    padding: 1em;
+    margin: 1em;
+    max-width: 100%;
+    width: fit-content;
+}
 ul.o1boxfundoazul1>li{
      background: var(--branco);
     border-radius: 0.5em;
