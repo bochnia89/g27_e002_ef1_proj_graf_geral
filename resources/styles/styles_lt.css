@@ -5080,7 +5080,11 @@ o8quadrolibras
 }
 .o8quadroconsumivel{
     border: 2px solid var(--turquesa1);
-    margin: 1em 0;
+    background: var(--branco);
+    width: 90%;
+    height: 250px;
+    padding: 1em;
+    margin: 1em 2em;
 }
 
 .o8quadroconsumivelp,
