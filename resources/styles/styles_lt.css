@@ -5078,7 +5078,10 @@ o8quadrolibras
     margin: 0.5em 0;
     height: 60px;
 }
-.o8quadroconsumivel{}
+.o8quadroconsumivel{
+    border: 2px solid var(--turquesa1);
+    margin: 1em 0;
+}
 
 .o8quadroconsumivelp,
 .o8quadroconsumivelm,
