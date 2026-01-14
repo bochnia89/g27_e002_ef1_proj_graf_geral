@@ -2932,7 +2932,7 @@ p5marcadorquestao
     padding: 4px 0px 0 0px;
 }
 figure>.p5marcador {
-    background: var(--preto);
+    background: var(--amarelo1);
     color: var(--branco);
     font-weight: bold;
     height: 25px;
