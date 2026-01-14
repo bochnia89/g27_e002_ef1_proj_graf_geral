@@ -4796,16 +4796,27 @@ span.o4ficha2 {
 .o4exemplobox{
     margin: 1em;
 }
+.o4exemplobox::before{
+    content: '';
+    background: url(../images/pv_o4exemplobox.svg) left center no-repeat;
+    background-size: contain;
+    width:46px ;
+    height:31px ;
+    position: absolute;
+    margin:-10px 0 0 -3px ;
+    z-index: -5;
+}
 .o4exemplobox>.box{
     background: var(--vermelho2);
     border-radius: 1em;
     padding: 1em;
 }
 .o4exemplobox>.p1box2tit{
-    font-size: var(--peso5);
-    background: var(--vermelho2);
+    font-size:  var(--peso5);
+    background: url(../images/pv_o4exemploboxtit.svg) center left no-repeat var(--vermelho2);
+    background-position-x:10px ;
     border-radius: 3em;
-    padding: 0.2em 0.5em;
+    padding: 0.2em 0.5em 0.2em 1.5em ;
     width: fit-content;
     max-width: 100%;
 }
