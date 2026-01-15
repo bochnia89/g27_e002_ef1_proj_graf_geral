@@ -4216,7 +4216,7 @@ o0glossario
 .o0sec3a{
     border-right: 3px solid var(--turquesa1);
 }
-.o0sec3a .box{
+.o0sec3a>.box{
     padding: 1em;
 }
 .o0sec4a{}
@@ -4232,7 +4232,7 @@ o0glossario
 .o0sec10a{
     border-right:3px solid var(--laranja1) ;
 }
-.o0sec10a .box{
+.o0sec10a>.box{
     padding: 1em;
 }
 .o0sec1box{}
