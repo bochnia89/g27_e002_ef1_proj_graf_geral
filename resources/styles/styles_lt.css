@@ -5415,7 +5415,7 @@ p2textosemrecuoquadrinho
     border: 2px solid var(--turquesa1);
     display: inline-block;
     position: absolute;
-    margin: 0 0 0 -50px;
+    margin: -8px 0 0 -50px;
 }
 
 .p2atvitemletraquadrinho{
