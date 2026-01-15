@@ -5229,7 +5229,7 @@ o8quadrolibras
 .o8pautacaligrafica{
      border:1px solid var(--pautacaligrafica);
     background: url(../images/pautacaligrafica.svg) center left repeat-x;
-    margin: 0.5em 0;
+    margin: 1em;
     height: 60px;
 }
 .o8quadroconsumivel{
