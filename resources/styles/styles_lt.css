@@ -2665,8 +2665,31 @@ p4iconeoed3
 p4iconeoed4
 */
 .p4iconeoed{}
-.p4iconeoed1{}
-.p4iconeoed2{}
+.p4iconeoed1{
+    color: var(--roxoquente1);
+    margin: 1em 0 1em 2.5em;
+}
+.p4iconeoed1::before{
+    background: url(../images/ico_e002_oed.svg) no-repeat;
+    background-size: contain;
+    content: '';
+    width:25px;
+    height: 25px;
+    position: absolute;
+    margin: -0.2em 0 0 -2em;
+}
+.p4iconeoed2{
+    margin: 1em 0 1em 2.5em;
+}
+.p4iconeoed2::before{
+    background: url(../images/ico_e002_audio.svg) no-repeat;
+    background-size: contain;
+    content: '';
+    width:25px;
+    height: 25px;
+    position: absolute;
+    margin: -0.2em 0 0 -2em;
+}
 .p4iconeoed3{}
 .p4iconeoed4{}
 
@@ -3337,7 +3360,11 @@ c0destaquesecao 👉Estilo de caracter utilizado no sumário mp
 c0destaquebullet 👉Demanda surgiu no G26 física E002 para trocar cor de bullet para azul
 */
 .c0destaqueoed{}
-.c0destaqueoed1{}
+.c0destaqueoed1{
+    background: var(--azul2);
+    border-radius: 2em;
+    padding: 0.2em 0.5em ;
+}
 .c0destaqueoed2{}
 .c0destaqueoed3{}
 
