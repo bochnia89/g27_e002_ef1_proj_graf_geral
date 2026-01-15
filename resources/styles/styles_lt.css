@@ -4195,7 +4195,8 @@ o0glossario
     margin:-20px 0 0 -20px ;
     z-index: -5;
 }
-.o0sec9>.box{
+.o0sec9>.box
+.o0sec9a>.box{
   padding: 1em;
 }
 .o0sec10{}
@@ -4216,7 +4217,11 @@ o0glossario
 .o0sec6a{}  
 .o0sec7a{}
 .o0sec8a{}
-.o0sec9a{}
+.o0sec9a{
+      background: var(--turquesa2);
+    border-radius:1.5em 1em 1em 1em;
+    margin: 1em 0;
+}
 .o0sec10a{}
 .o0sec1box{}
 .o0sec1box2{}
