@@ -3679,7 +3679,7 @@ c4linhalacuna
 }
 
 .c4linhalacuna, .c4linhalacunap, .c4linhalacunam, .c4linhalacunag{
-    margin: 0.5em 0;
+
      display: inline-block;
       border-bottom: 1px solid var(--preto);
 }
