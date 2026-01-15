@@ -3386,7 +3386,14 @@ c0destaquebullet 👉Demanda surgiu no G26 física E002 para trocar cor de bulle
     margin: 0 0 0 -30px;
 } /* Estilo de caracter utilizado na citacao */ 
 
-.c0destaqueparentese{}
+.c0destaqueparentese{
+    font-weight: bold;
+    width: 10px;
+    height: 24px;
+    position: absolute;
+    margin: 0 0 0 -10px;
+    text-align: center;
+}
 
 .c0destaqueromano{
     font-weight: bold;
