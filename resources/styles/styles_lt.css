@@ -4091,7 +4091,7 @@ o0glossario
 .o0secrespostas{}
 .o0sec1{}
 .o0sec2{}
-.o0sec2 .box{
+.o0sec2>.box{
     padding:0em 1em 1em 1em;
 }
 .o0sec3{}
@@ -4207,8 +4207,15 @@ o0glossario
 .o0sec12{}
 .o0sec13{}
 .o0sec1a{}
-.o0sec2a{}
-.o0sec3a{}
+.o0sec2a{
+    border-right: 3px solid var(--azul1);
+}
+.o0sec2a>.box{
+    padding: 1em;
+}
+.o0sec3a{
+    border-right: 3px solid var(--turquesa1);
+}
 .o0sec3a .box{
     padding: 1em;
 }
@@ -4222,7 +4229,12 @@ o0glossario
     border-radius:1.5em 1em 1em 1em;
     margin: 1em 0;
 }
-.o0sec10a{}
+.o0sec10a{
+    border-right:3px solid var(--laranja1) ;
+}
+.o0sec10a .box{
+    padding: 1em;
+}
 .o0sec1box{}
 .o0sec1box2{}
 .o0sec1box3{}
