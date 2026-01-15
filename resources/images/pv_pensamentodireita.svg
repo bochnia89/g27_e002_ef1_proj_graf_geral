@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.482" height="30.346" viewBox="0 0 25.482 30.346">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_3275" data-name="Caminho 3275" d="M0,0H30.346V25.482H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="pv_pensamentodireita" transform="translate(25.482) rotate(90)">
+    <g id="Grupo_2091" data-name="Grupo 2091" transform="translate(0)" clip-path="url(#clip-path)">
+      <g id="Grupo_2087" data-name="Grupo 2087" transform="translate(1 8.661)">
+        <path id="Caminho_3271" data-name="Caminho 3271" d="M9.074.079a7.908,7.908,0,1,1-9,6.721,7.941,7.941,0,0,1,9-6.721" fill="#fff"/>
+      </g>
+      <g id="Grupo_2088" data-name="Grupo 2088" transform="translate(1 8.661)">
+        <path id="Caminho_3272" data-name="Caminho 3272" d="M9.074.079a7.908,7.908,0,1,1-9,6.721A7.941,7.941,0,0,1,9.074.079Z" fill="none" stroke="#0fbed2" stroke-width="2"/>
+      </g>
+      <g id="Grupo_2089" data-name="Grupo 2089" transform="translate(18.465 1)">
+        <path id="Caminho_3273" data-name="Caminho 3273" d="M6.192.054A5.4,5.4,0,1,1,.053,4.643,5.419,5.419,0,0,1,6.192.054" fill="#fff"/>
+      </g>
+      <g id="Grupo_2090" data-name="Grupo 2090" transform="translate(18.465 1)">
+        <path id="Caminho_3274" data-name="Caminho 3274" d="M6.192.054A5.4,5.4,0,1,1,.053,4.643,5.419,5.419,0,0,1,6.192.054Z" fill="none" stroke="#0fbed2" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

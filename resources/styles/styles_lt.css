@@ -4307,8 +4307,31 @@ o0glossario
 .o0sugestcomp .box{
     padding: 1.5em;
 }
-
-.o4medidaanimalbox{}
+.o4medidaanimalbox{
+    margin: 0.2em 0 0 0;
+}
+figure .o4medidaanimalbox{
+    max-width: 350px;
+    hyphens: none;
+    margin-left: 0.5em;
+}
+.o4medidaanimalbox::before{
+    content: '';
+    background: url(../images/pv_medidaservivo.svg) left center no-repeat;
+    background-size: contain;
+    width:20px ;
+    height:20px ;
+    position: absolute;
+    margin:-5px 0 0 -10px ;
+    z-index: -5;
+}
+.o4medidaanimalbox>.p4recadoimagem{
+    background: none;
+    text-align: left;
+    font-size: var(--pesoIntermediario);
+    margin: 0;
+    padding: 0;
+}
 .o0boxpalavra{
     display: flex;
     flex-direction: row;
@@ -5243,7 +5266,7 @@ o8quadrolibras
 .o8quadrolibras{}
 
 figure .p5marcador{
-    float: left;    
+  /*👉  float: left;  👈*/  
 }
 
 /*👉08: Estilos para CONSUMÍVEL LINHA 👈*/
