@@ -4222,7 +4222,14 @@ o0glossario
 }
 .o0sec4a{}
 .o0sec5a{}
-.o0sec6a{}  
+.o0sec6a{
+      margin: 1em 0;
+    background: var(--roxoquente2);
+    border-radius: 1.5em 1em 1em 1em;
+}  
+.o0sec6a>.box{
+    padding: 1em;
+}
 .o0sec7a{}
 .o0sec8a{}
 .o0sec9a{
