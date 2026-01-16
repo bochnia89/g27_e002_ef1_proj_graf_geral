@@ -797,7 +797,7 @@ p1tabelatextoitemcont
 }
 .tb_tabela th {
     border: 1px solid var(--turquesa1);
-    background: var(--turquesa2);
+    background: var(--turquesa3);
     font-family: var(--titulo);
     font-size: 0.9em;
     text-align: center;
