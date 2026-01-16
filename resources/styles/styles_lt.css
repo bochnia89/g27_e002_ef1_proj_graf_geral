@@ -2963,6 +2963,7 @@ figure>.p5marcador {
     margin: 0 0 0 0px;
     position: static;
     width: 25px;
+    display: inline-block;
 }
 .p5marcadorcaixa{
     background: var(--branco);
