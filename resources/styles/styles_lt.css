@@ -4742,13 +4742,13 @@ span.o4ficha2 {
 }
 .o4boxmateriais{
    
-    margin: 1em 0;
+    margin: 1em ;
 }
 .o4boxmateriais .p1box1tit{
     background: url(../images/pv_o4boxmateriais.svg) center left  no-repeat var(--turquesa1);
     background-position-x:8px ;
     border-radius: 3em;
-    font-size: var(--peso5);
+    font-size: var(--peso6);
     width: fit-content;
     max-width: 100%;
     padding: 0.2em 0.5em 0.2em 1.5em;
