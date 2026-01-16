@@ -4896,7 +4896,23 @@ span.o4ficha2 {
 .o4dicabox .box{
     padding: 1em;
 }
-.o4dicaboxnegativo{}
+.o4dicaboxnegativo{
+    background: var(--branco);
+    border-radius: 0 0.5em 0.5em 0.5em ;
+    margin: 1em;
+}
+.o4dicaboxnegativo::before{
+    content: '';
+    background: url(../images/pv_o4dicabox.svg) left center no-repeat;
+    background-size: contain;
+    width:43px ;
+    height:25px ;
+    position: absolute;
+    margin:-10px 0 0 -12px ;
+}
+.o4dicaboxnegativo{
+      padding: 1em;
+}
 .o4autorbox{
    margin: 1em;
    background: url(../images/pv_o4autorbox.svg) left top no-repeat;
