@@ -4997,6 +4997,9 @@ span.o4ficha2 {
 .o4destaquepalavrafio{}
 .o4recadoimagem1{}
 .o4recadoimagem2{}
+.o4recadoimagem2>.p4recadoimagem{
+    background: var(--branco);
+}
 .o4recadoimagem3{}
 .o4recadoimagem4{}
 .o4tipofrase1{}
