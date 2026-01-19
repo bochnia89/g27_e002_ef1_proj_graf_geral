@@ -174,7 +174,7 @@ p1sec10mptit4
 .p1sec2mptit1,
 .p1sec3mptit1,
 .p1sec4mptit1,
-.p1sec5mptit1,{
+.p1sec5mptit1{
      border-radius: 0.5em;
     font-family: var(--titulo);
     font-size: var(--peso6);
@@ -202,7 +202,6 @@ p1sec10mptit4
 .p1sec2mptit4{}
 
 .p1sec3mptit1{
-    background: var(--branco);
     border-top:3px solid var(--amarelo1);
     border-left:3px solid var(--amarelo1);
     border-right:3px solid var(--amarelo1);
@@ -214,7 +213,6 @@ p1sec10mptit4
 .p1sec3mptit4{}
 
 .p1sec4mptit1{
-    background: var(--branco);
     border-top:3px solid var(--azul1);
     border-left:3px solid var(--azul1);
     border-right:3px solid var(--azul1);

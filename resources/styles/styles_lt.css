@@ -195,7 +195,9 @@ sr-only
 .d0box_aluno{
     padding: 0.5em 0 1em 0;
 }
-.d0box_geralmp{}
+.d0box_geralmp{
+    background: var(--manualg);
+}
 .d0box_especificompu{
     background: var(--manualu);
     padding: 0 1em 1em 1em;
