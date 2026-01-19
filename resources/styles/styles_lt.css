@@ -4496,10 +4496,18 @@ ul.o1boxfundoazul1>li{
 .o1boxfundoazul2{}
 .o1boxfundoroxo1{}
 .o1boxfundoroxo2{}
-.o1boxfundorosa1{}
+.o1boxfundorosa1{
+     background: var(--rosa3);
+     border-radius: 0.5em;
+     padding: 0.5em;
+     margin: 1em;
+}
 .o1boxfundorosa2{}
 .o1boxfundoamarelo1{
-
+     background: var(--amarelo3);
+     border-radius: 0.5em;
+     padding: 0.5em;
+     margin: 1em;
 }
 .o1boxfundoamarelo2{}
 
@@ -4539,7 +4547,12 @@ ul.o1boxfundolaranja1>li{
 .o1boxfundolaranja2{}
 .o1boxfundoverde1{}
 .o1boxfundoverde2{}
-.o1boxfundoturquesa1{}
+.o1boxfundoturquesa1{
+     background: var(--turquesa3);
+     border-radius: 0.5em;
+     padding: 0.5em;
+     margin: 1em;
+}
 .o1boxfundoturquesa2{}
 .o1fioindicacaoroxo1{}
 .o1fioindicacaoverde1{}
