@@ -115,12 +115,12 @@ p1sumariomppv
 */
 .p1sumariomppeso1{
     font-weight: bold;
-    font-size: var(--peso3);
+    font-size: 1.4em;
 }
 .p1sumariomppeso2{
     padding: 0 0 0 1em;
     font-weight: bold;
-    font-size: var(--peso4);
+    font-size:  1.3em;
 }
 .p1sumariomppeso2::before{
     content: '';
@@ -134,16 +134,16 @@ p1sumariomppv
 .p1sumariomppeso3{
      padding: 0 0 0 1.5em;
      font-weight: bold;
-     font-size: var(--peso5);
+     font-size: 1.2em;
 }
 .p1sumariomppeso4{
      padding: 0 0 0 2em;
      font-weight: bold;
-     font-size: var(--peso6);
+     font-size: 1.1em;
 }
 .p1sumariomppeso5{
      padding: 0 0 0 2.5em;
-     font-size: var(--peso7);
+     font-size: 1em;
 }
 
 .p1sumariompextrapeso1{}
