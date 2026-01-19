@@ -197,6 +197,7 @@ sr-only
 }
 .d0box_geralmp{
     background: var(--manualg);
+    padding: 1em;
 }
 .d0box_especificompu{
     background: var(--manualu);

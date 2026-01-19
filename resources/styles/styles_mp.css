@@ -23,9 +23,13 @@ p0tit6mpnegativo
 .p0tit1mppv{}
 .p0tit1mpnumpv{}
 .p0tit1mp{
+    color: var(--branco);
+    background: var(--vermelho1);
+    border-radius: 4em;
     font-family: var(--titulo);
     font-size: var(--peso1);
     line-height: 1.1em;
+    padding: 0.2em 0.5em;
     width: fit-content;
     max-width: 100%;
     margin: 1em 0 0.5em 0;
@@ -34,6 +38,7 @@ p0tit6mpnegativo
 .p0tit2mppv{}
 .p0tit2mpnumpv{}
 .p0tit2mp{
+    color: var(--vermelho1);
     font-family: var(--titulo);
     font-size: var(--peso2);
     font-weight: bold;
@@ -44,6 +49,7 @@ p0tit6mpnegativo
 .p0tit2mpnegativo{}
 
 .p0tit3mp{
+    color: var(--azul1);
     font-family: var(--titulo);
     font-size: var(--peso3);
     font-weight: bold;
@@ -54,6 +60,7 @@ p0tit6mpnegativo
 .p0tit3mpnegativo{}
 
 .p0tit4mp{
+    color: var(--azul1);
     font-family: var(--titulo);
     font-size: var(--peso4);
     font-weight: bold;
