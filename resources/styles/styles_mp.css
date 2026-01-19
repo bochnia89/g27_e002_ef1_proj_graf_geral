@@ -32,7 +32,7 @@ p0tit6mpnegativo
     padding: 0.2em 0.5em;
     width: fit-content;
     max-width: 100%;
-    margin: 1em 0 0.5em 0;
+    margin: 0.5em 0 0.5em 0;
 }
 .p0tit1mpnegativo{}
 .p0tit2mppv{}
@@ -113,11 +113,38 @@ p1sumariomppv
 
 
 */
-.p1sumariomppeso1{}
-.p1sumariomppeso2{}
-.p1sumariomppeso3{}
-.p1sumariomppeso4{}
-.p1sumariomppeso5{}
+.p1sumariomppeso1{
+    font-weight: bold;
+    font-size: var(--peso3);
+}
+.p1sumariomppeso2{
+    padding: 0 0 0 1em;
+    font-weight: bold;
+    font-size: var(--peso4);
+}
+.p1sumariomppeso2::before{
+    content: '';
+    background: url(../images/pv_p0tit2mp.svg) center left no-repeat;
+    background-size: contain;
+    width:22px ;
+    height:17px ;
+    position: absolute;
+    margin:0.2em 0 0 -1em;
+}
+.p1sumariomppeso3{
+     padding: 0 0 0 1.5em;
+     font-weight: bold;
+     font-size: var(--peso5);
+}
+.p1sumariomppeso4{
+     padding: 0 0 0 2em;
+     font-weight: bold;
+     font-size: var(--peso6);
+}
+.p1sumariomppeso5{
+     padding: 0 0 0 2.5em;
+     font-size: var(--peso7);
+}
 
 .p1sumariompextrapeso1{}
 .p1sumariompextrapeso2{}

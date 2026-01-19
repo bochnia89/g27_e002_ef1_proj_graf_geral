@@ -473,7 +473,15 @@ p1sumarioaudiospeso1
 p1sumarioaudiospeso2
 p1sumarioaudiospeso3
 */
-.p1sumariopv{}
+.p1sumariopv{
+    color: var(--branco);
+    background: var(--vermelho1);
+    padding: 0.5em 1em;
+    border-radius: 3em;
+    margin: 1em 0 0.5em 0;
+    width: fit-content;
+    max-width: 100%;
+}
 
 .p1seciniciaistit1,
 .p1seciniciaistit2{
@@ -1586,6 +1594,9 @@ p2referenciasbibliocoment
 .p1referenciasbibliotit3{}
 .p2referenciasbiblio{
     margin: 1em 0 0.1em 0;
+    
+}
+.p2referenciasbiblio>.url_para_encurtar{
     word-break: break-all;
 }
 .p2referenciasbiblioitem{}
@@ -3112,6 +3123,11 @@ d0table
 .d0icoatencao{}
 .d0sumariosecinicial{}
 .d0boxsumariotit{}
+.d0boxsumario{
+    background: var(--branco);
+    padding:0.5em 1em;
+    border-radius: 1em;
+}
 .d0semfundo{}
 .d0bgbranco{
     background: var(--branco);
