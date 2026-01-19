@@ -175,7 +175,7 @@ p1sec10mptit4
 .p1sec3mptit1,
 .p1sec4mptit1,
 .p1sec5mptit1{
-     border-radius: 0.5em;
+    border-radius: 0.5em;
     font-family: var(--titulo);
     font-size: var(--peso6);
     font-weight: bold;
