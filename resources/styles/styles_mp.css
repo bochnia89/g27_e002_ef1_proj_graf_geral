@@ -158,7 +158,18 @@ p1sumariomppv
 .p1sumariompoedpeso1{}
 .p1sumariompoedpeso2{}
 .p1sumariompoedpeso3{}
-.p1sumariomppv{}
+.p1sumariomppv{
+        color: var(--branco);
+    background: var(--vermelho1);
+    border-radius: 4em;
+    font-family: var(--titulo);
+    font-size: var(--peso1);
+    line-height: 1.1em;
+    padding: 0.2em 0.5em;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0.5em 0 0.5em 0;
+}
 
 
 /*👉SEÇÃO👈*/
