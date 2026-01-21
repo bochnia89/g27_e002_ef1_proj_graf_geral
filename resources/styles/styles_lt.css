@@ -3397,6 +3397,7 @@ c0destaquebullet 👉Demanda surgiu no G26 física E002 para trocar cor de bulle
 .c0destaqueromano {
     color: var(--vermelho1);
 }
+.p2questaoletra  .c0destaqueparentese,
 .p2questaoletra>.c0destaqueletra{
     color: var(--turquesa1);
 }
