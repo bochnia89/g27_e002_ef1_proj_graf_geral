@@ -5136,6 +5136,8 @@ o5redesocial
 o5redesocial2
 o5livroreceita
 o5caderno
+o5etiqueta1
+o5etiqueta2
 */
 .o5bilhete1, 
 .o5postit1, 
@@ -5257,7 +5259,25 @@ o5caderno
     min-height: 2em;
 }
 
-
+.o5etiqueta1{
+    background: var(--turquesa2);
+    border-left: 3px solid var(--turquesa1);
+    border-right: 3px solid var(--turquesa1);
+    border-radius: 0.2em;
+    padding:0.2em 0.3em;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em;
+}
+.o5etiqueta2{background: var(--laranja2);
+    border-left: 3px solid var(--laranja1);
+    border-right: 3px solid var(--laranja1);
+    border-radius: 0.2em;
+    padding:0.2em 0.3em;
+        width: fit-content;
+    max-width: 100%;
+    margin: 1em;
+}
 /*👉06: Elistos para Fluxograma👈*/
 /* 
 o6fluxogramaseta
