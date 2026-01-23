@@ -1629,7 +1629,16 @@ p2glossario
 p2glossarioitem
 p2glossariocoment
 */
-.p1glossariotit1{}
+.p1glossariotit1{
+    font-family: var(--titulo);
+    color: var(--preto);
+    background: var(--amarelo1);
+    border: 4px solid var(--azul1);
+    border-radius: 4em;
+    width: fit-content;
+    max-width: 100%;
+    padding: 0.2em 0.5em;
+}
 .p1glossariotit2{}
 .p2glossario{
     margin: 0.5em 0 0.5em 0;
@@ -4421,7 +4430,14 @@ figure .o4medidaanimalbox{
 }
 .o0transcricao{}
 .o0glossariobox{}
-.o0glossario{}
+.o0glossario{
+
+}
+.o0glossario>.box{
+    padding: 1em;
+    border: 2px solid var(--azul1);
+    border-radius: 1em;
+}
 
 /*👉O1: Estilos para boxes genéricos, suportes e papeletas👈*/
 /* 
