@@ -4431,7 +4431,7 @@ figure .o4medidaanimalbox{
 .o0transcricao{}
 .o0glossariobox{}
 .o0glossario{
-
+    margin: 1em;
 }
 .o0glossario>.box{
     padding: 1em;
