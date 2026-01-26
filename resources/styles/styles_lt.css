@@ -3849,7 +3849,10 @@ c5extraitalicoidioma
 .c5destaqueverbetedicionario{
     color: var(--link);
 }
-.c5indicacao{}
+.c5indicacao{
+    color:var(--azul1);
+    background: var(--azul2);
+}
 .c5extradestaque{
     color: var(--roxo1);
 }
