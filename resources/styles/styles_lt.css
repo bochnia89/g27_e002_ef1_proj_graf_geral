@@ -158,7 +158,7 @@ d0box_respostas
 
 aluno
 professor
-url_para_encurta
+url_para_encurtar
 pag
 pag-tx
 pag-tx-mp
@@ -187,7 +187,9 @@ sr-only
 
 .aluno{}
 .professor{}
-.url_para_encurta{}
+.url_para_encurtar{
+    word-break: break-all;
+}
 .pag{}
 .pag-tx{}
 .pag-tx-mp{}
