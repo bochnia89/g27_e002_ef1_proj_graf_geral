@@ -5195,6 +5195,7 @@ o5etiqueta2
     border: 5px solid var(--turquesa1);
   border-radius: 15px;
   width: fit-content;
+  background: var(--branco);
 }
 .o5bilhete2{}
 .o5nota1{}
