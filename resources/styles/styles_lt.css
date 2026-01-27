@@ -4090,6 +4090,7 @@ o0pronuncia
 o0sugestcomp
 o4medidaanimalbox
 o0boxpalavra
+o0boxpalavranegativo
 o0pronunciation 👉 Especifico de inglês
 o0transcricao
 o0glossariobox
@@ -4420,12 +4421,16 @@ figure .o4medidaanimalbox{
     margin: 0;
     padding: 0;
 }
-.o0boxpalavra{
+.o0boxpalavranegativo{
+    background: var(--branco);
+}
+.o0boxpalavra, 
+.o0boxpalavranegativo{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.2em 1em;
-    background: var(--vermelho2);
+  
     justify-content: center;
     border-radius: 0.5em;
     padding: 1em;
@@ -4433,14 +4438,19 @@ figure .o4medidaanimalbox{
     max-width: 100%;
     margin: 1em ;
 }
-.o0boxpalavra li::before {
+.o0boxpalavra{
+    background: var(--vermelho2);
+}
+.o0boxpalavra li::before,
+.o0boxpalavranegativo li::before {
     content: '•';
     width: 10px;
     text-align: center;
     position: absolute;
     margin: 0 0 0 -13px;
 }
-.o0boxpalavra li:first-child::before {
+.o0boxpalavra li:first-child::before,
+.o0boxpalavranegativo li:first-child::before  {
     content: '';
 }
 .o0transcricao{}
@@ -4613,7 +4623,12 @@ ul.o1boxfundolaranja1>li{
 }
 
 .o1boxfundolaranja2{}
-.o1boxfundoverde1{}
+.o1boxfundoverde1{
+    background: var(--verde2);
+     border-radius: 0.5em;
+     padding: 0.5em;
+     margin: 1em;
+}
 .o1boxfundoverde2{}
 .o1boxfundoturquesa1{
      background: var(--turquesa3);
