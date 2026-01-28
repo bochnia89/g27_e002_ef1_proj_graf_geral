@@ -4574,7 +4574,13 @@ ul.o1boxfundoazul1>li{
     max-width: 100%;
 }
 .o1boxfundoazul2{}
-.o1boxfundoroxo1{}
+div.o1boxfundoroxo1{
+    padding: 1em;
+    margin: 1em;
+    max-width: 100%;
+    width: fit-content;
+    background: var(--roxoquente2);
+}
 .o1boxfundoroxo2{}
 .o1boxfundorosa1{
      background: var(--vermelho3);
