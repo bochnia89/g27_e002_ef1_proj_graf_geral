@@ -2653,6 +2653,9 @@ div.o3jornalfundo.p3citacaotit1{
     text-align: center;
     margin: 0.5em 0;
 }
+.p3citacaoolho>.c3idioma{
+    font-style: normal;
+}
 
 .p3citacaosemrecuo{
     font-family: var(--pesoPadrao);
