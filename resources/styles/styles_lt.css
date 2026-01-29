@@ -2570,6 +2570,7 @@ margin: 0.5em 0 0.5em 3.5em;
 /* TEXTOS CITADOS - CITAÇÃO */
 /*
 p3citacaomanchete
+p3citacaomarcador
 p3citacaotit1
 p3citacaotit2
 p3citacaoolho
@@ -2587,6 +2588,7 @@ p3citacaopoemabastao
 p3citacaosemrecuobastao
 */
 .p3citacaomanchete,
+.p3citacaomarcador,
 .p3citacaotit1,
 .p3citacaotit2,
 .p3citacaoolho,
@@ -2611,6 +2613,9 @@ p3citacaosemrecuobastao
     font-size: var(--peso5);
     text-align: center;
     margin: 0.5em 0;
+}
+.p3citacaomarcador{
+    margin: 0.5em 0 0.5em 2em;
 }
 .o3jornalfundo>.p3citacaomanchete {
     font-weight: bold;
