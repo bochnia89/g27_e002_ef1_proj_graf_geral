@@ -47,10 +47,18 @@
     --cinza15:#edebdd;
     --cinza50:;
     --link: #00649c;
+<<<<<<< HEAD
     --manualu: #E4F2E7;
     --jornal:#edebdd;
     --fiojornal:#9c9a83;
     --pautacaligrafica:#B5E4FA;
+=======
+    --manualu: #f7f7f7;
+    --manualg: #fff3d1;
+    --jornal:#edebdd;
+    --fiojornal:#9c9a83;
+    --pautacaligrafica:#D6F0E9;
+>>>>>>> afb6dfe6d73d7039ce557b0ac06c0d6e0d453ec4
 
     --boxshadow:rgba(0, 0, 0, 0.1);
 
@@ -103,15 +111,15 @@
     */
 
     --amarelo1: #fed061;
-    --amarelo2: #fff1c4;
-    /*
-    --amarelo3:#FFE6AC;
+    --amarelo2: #fff1c4;   
+    --amarelo3:#fcd885;
+     /*
     --amarelo4:#FEEFDE;
     */
 
     --vermelho1: #e94f35;
     --vermelho2: #fce4e0;
-    /*👉--vermelho3:#fce3df;
+   --vermelho3:#fbc8bc; /*👉
     --vermelho4:#fff5f3;👈*/
 
     /*👉

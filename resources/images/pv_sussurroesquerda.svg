@@ -1,0 +1,21 @@
+<svg id="pv_sussurroesquerda" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12.488" height="17.653" viewBox="0 0 12.488 17.653">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_3267" data-name="Caminho 3267" d="M12.488,0H0V-17.653H12.488Z" transform="translate(0 17.653)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_2075" data-name="Grupo 2075" transform="translate(0.999 1)">
+    <path id="Caminho_3263" data-name="Caminho 3263" d="M10.489,0,0,15.654V0Z" fill="#fff"/>
+  </g>
+  <g id="Grupo_2079" data-name="Grupo 2079" clip-path="url(#clip-path)">
+    <g id="Grupo_2076" data-name="Grupo 2076" transform="translate(1 6.371)">
+      <path id="Caminho_3264" data-name="Caminho 3264" d="M0,0V6.37" transform="translate(0)" fill="none" stroke="#0fbed2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="4.913 2.913"/>
+    </g>
+    <g id="Grupo_2077" data-name="Grupo 2077" transform="translate(4.654 4.914)">
+      <path id="Caminho_3265" data-name="Caminho 3265" d="M-4.211,0,0-6.285" transform="translate(4.211 6.285)" fill="none" stroke="#0fbed2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="5.71 3.71"/>
+    </g>
+    <g id="Grupo_2078" data-name="Grupo 2078" transform="translate(1 1.001)">
+      <path id="Caminho_3266" data-name="Caminho 3266" d="M-10.488,0V2.457m0,10.739v2.457L-8.9,13.281m7.31-10.909L0,0" transform="translate(10.488)" fill="none" stroke="#0fbed2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
